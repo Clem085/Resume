@@ -1,0 +1,101 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.42in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+
+% Contact information (kept inline so this revision compiles from one source file)
+\newcommand{\mylocation}{Murphy, NC}
+\newcommand{\myemail}{consav04@gmail.com}
+\newcommand{\myphone}{+1-828-541-9487}
+\newcommand{\mylinkedin}{connorsavugot}
+\newcommand{\mygithub}{Clem085}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\vspace{-0.5em}\rule{\textwidth}{0.7pt}]
+\titlespacing{\section}{0pt}{0.5em}{0.25em}
+
+\newlist{compactitem}{itemize}{1}
+\setlist[compactitem]{nosep, leftmargin=0.3in, label=\textbullet, itemsep=0.05em}
+
+\begin{document}
+\fontsize{8.5}{9.2}\selectfont
+
+\begin{center}
+  {\LARGE\textbf{Connor Savugot}}\\[2pt]
+  {\small \mylocation \enspace|\enspace \href{mailto:\myemail}{\myemail} \enspace|\enspace \href{tel:\myphone}{\myphone} \\
+  \href{https://linkedin.com/in/\mylinkedin}{linkedin.com/in/\mylinkedin} \enspace|\enspace \href{https://github.com/\mygithub}{github.com/\mygithub}}
+\end{center}
+
+\section{Technical Skills}
+\begin{compactitem}
+  \item \textbf{Languages:} C, C++, Python, Bash, MATLAB, VBA
+  \item \textbf{Embedded Systems:} FreeRTOS, Embedded Linux, systemd services, IPMI, external watchdogs, BMS integration, Yocto/Arago, device trees, board bring-up
+  \item \textbf{Platforms:} TI MSP430, TI TMS320, TI AM62-class / ARM Linux SoCs, STM32, dsPIC
+  \item \textbf{Protocols \& Peripherals:} CAN, CAN FD, UART, RS232, SPI, I2C, ADC, PWM, GPIO, timers, JTAG
+  \item \textbf{Hardware \& Tools:} Through-hole and SMT soldering, PCB rework, breadboard prototyping, KiCad, Git/GitLab, JTAG, oscilloscopes, logic analyzers
+\end{compactitem}
+
+\section{Professional Experience}
+\textbf{AEGIS Power Systems} \hfill Current\\
+Embedded Firmware Engineer
+\begin{compactitem}
+  \item Developed firmware control for custom bidirectional buck-boost power supplies using 24 independently configurable PWM channels across transformer-coupled input and output stages.
+  \item Built a centralized configuration framework that translated requested input and output voltages into coordinated PWM timing, duty-cycle, and switching behavior across paired converter channels; integrated ADC feedback and safe-operating constraints.
+  \item Evaluated BMS, monitoring, interface, and support ICs against electrical limits, host protocols, protection features, footprints, tool support, and sourcing risk; converted datasheet and reference-design findings into firmware and integration plans.
+  \item Root-caused I2C, CAN/CAN FD, SPI, and UART faults by correlating register transactions and analyzer captures with schematics, timing requirements, bus configuration, and known-good hardware; implemented focused tests for peripheral-by-peripheral bring-up.
+  \item Characterized IPMI 2.0 and chassis-management services on embedded power hardware, validating IPMB addressing plus sensor and FRU access while separating transport, session, authentication, and firmware-compatibility failures.
+  \item Created external-watchdog and systemd services, device-tree and Yocto/Arago support, and Python/Bash tooling for reproducible monitoring, flashing, automated validation, and field diagnostics on TI AM62-class Linux systems.
+\end{compactitem}
+
+\textbf{AEGIS Power Systems} \hfill May 2024 -- Aug 2024\\
+Computer Science Intern
+\begin{compactitem}
+  \item Built a secured chroot environment and restricted SSH command-line interface on a stripped TI Yocto/Arago system, using custom Bash/Python commands to inspect and control embedded power hardware.
+  \item Created Python and Bash firmware flashing utilities with packetized transfer, checksum validation, and SPI reflashing support for TI TMS320 targets.
+  \item Reverse-engineered serial command transactions from limited vendor documentation, generated checksums, and helped construct a relay, resistive-load, and power-supply test circuit for burn-in monitoring.
+  \item Authored Git and embedded-system guides to standardize firmware delivery, testing, and toolchain onboarding.
+\end{compactitem}
+
+\textbf{TEAM Industries} \hfill Jun 2022 -- Aug 2022\\
+Engineering Intern
+\begin{compactitem}
+  \item Automated Excel-based quality-control reporting and revision tracking using VBA macros and structured technical worksheets.
+  \item Produced technical documentation that clarified engineering changes and supported manufacturing process reviews.
+\end{compactitem}
+
+\section{Selected Technical Projects}
+\textbf{EV Active Sensor Adapter} \hfill Senior Design, MSP430FR2355\\
+\begin{compactitem}
+  \item Defined the end-to-end architecture and interface specifications for an EV active-sensor adapter integrating an MSP430, BMS and power-management hardware, sensors, custom PCBs, embedded firmware, and system telemetry.
+  \item Evaluated BMS and supporting components against electrical, sensing, protection, communication, packaging, and sourcing requirements; documented trade studies and translated selected-device requirements into hardware and firmware interfaces.
+  \item Prototyped interrupt-driven SPI master/slave register transactions and integrated ADC acquisition, UART diagnostics, timers, GPIO, and LCD telemetry while validating each subsystem before full-system integration.
+  \item Maintained requirements, architecture diagrams, interface definitions, test plans, design decisions, and progress reports; coordinated work across team members and communicated specifications, risks, and results during design reviews.
+\end{compactitem}
+
+\section{Education}
+\textbf{North Carolina State University} \hfill May 2026\\
+B.S. Computer Engineering
+
+\section{Technical Leadership}
+\textbf{Lead Instructor, Project-Based Electronics Workshop} \hfill Two Semesters\\
+\begin{compactitem}
+  \item Co-led a project-based class from concept through final demonstration, guiding students as they scoped, designed, debugged, and completed original electronics projects.
+  \item Developed and taught through-hole and SMT soldering theory, safety, and hands-on technique using two custom NCSU IEEE flashing-light PCB keepsakes: one through-hole and one surface-mount.
+\end{compactitem}
+
+\textbf{Embedded Systems Teaching Assistant} \hfill NC State University\\
+\begin{compactitem}
+  \item Delivered supplemental lectures and test preparation; taught embedded theory, code debugging, lab techniques, and systematic hardware bring-up while advising students on projects, coursework, and ECE pathways.
+  \item Used question-driven, one-on-one coaching to help students diagnose their own problems and form lasting professional relationships, raising the class average from its typical C+ to an A-.
+\end{compactitem}
+
+\end{document}

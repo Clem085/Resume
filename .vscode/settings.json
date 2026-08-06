@@ -1,0 +1,29 @@
+{
+  "latex-workshop.latex.outDir": "%DIR%",
+  "latex-workshop.latex.recipe.default": "latexmk (clean revision root)",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latexmk-clean-revision-root",
+      "command": "latexmk",
+      "args": [
+        "-pdf",
+        "-synctex=0",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-emulate-aux-dir",
+        "-auxdir=%DIR%/.build",
+        "-outdir=%DIR%",
+        "%DOC%"
+      ],
+      "env": {}
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latexmk (clean revision root)",
+      "tools": [
+        "latexmk-clean-revision-root"
+      ]
+    }
+  ]
+}

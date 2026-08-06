@@ -1,0 +1,115 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[ignoreheadfoot,top=0.42cm,bottom=0.42cm,left=0.55cm,right=0.55cm]{geometry}
+% Contact information (kept inline so this revision compiles from one source file)
+\newcommand{\mylocation}{Murphy, NC}
+\newcommand{\myemail}{consav04@gmail.com}
+\newcommand{\myphone}{+1-828-541-9487}
+\newcommand{\mylinkedin}{connorsavugot}
+\newcommand{\mygithub}{Clem085}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default,type1]{sourcesanspro}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[explicit]{titlesec}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{amssymb}
+\usepackage{tabularx}
+
+\definecolor{headergray}{RGB}{226,226,226}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\titleformat{\section}{\fontsize{12}{12}\selectfont\bfseries\uppercase}{}{0pt}{#1\hspace{0.12cm}\titlerule[0.7pt]}
+\titlespacing{\section}{0pt}{0.16cm}{0.08cm}
+
+\newlist{resumebullets}{itemize}{1}
+\setlist[resumebullets]{label=$\vartriangleright$,leftmargin=0.48cm,topsep=0.02cm,itemsep=0pt,parsep=0pt,partopsep=0pt}
+
+\newcommand{\resumeentry}[3]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & #2
+  \end{tabularx}\vspace{-0.08cm}
+  #3
+}
+
+\begin{document}
+\fontsize{8.8}{9.6}\selectfont
+\sloppy
+
+\AddToShipoutPictureBG{%
+  \AtPageUpperLeft{\color{headergray}\rule[-1.58cm]{\paperwidth}{1.58cm}}%
+}
+
+\begin{center}
+  {\fontsize{23}{24}\selectfont\bfseries Connor Savugot}\\[3pt]
+  {\fontsize{8.2}{9}\selectfont
+  \faMapMarker*\enspace \mylocation\enspace
+  \faEnvelope\enspace \href{mailto:\myemail}{\myemail}\enspace
+  \faPhone\enspace \href{tel:\myphone}{\myphone}\enspace
+  \faLinkedinIn\enspace \href{https://linkedin.com/in/\mylinkedin}{\mylinkedin}\enspace
+  \faGithub\enspace \href{https://github.com/\mygithub}{\mygithub}}
+\end{center}
+\vspace{-0.25cm}
+
+\section{Summary}
+\textbf{North Carolina State University | B.S. Computer Engineering | May 2026}\\
+Embedded firmware engineer focused on power electronics, BMS integration, communication buses, Embedded Linux, board bring-up, and system-level validation.
+
+\section{Technical Skills}
+\textbf{Languages:} C, C++, Python, Bash, MATLAB, VBA \quad
+\textbf{Platforms:} MSP430, TMS320, TI AM62/ARM Linux, STM32, dsPIC, FreeRTOS\\
+\textbf{Systems \& Interfaces:} Embedded Linux, systemd, IPMI, external watchdogs, BMS, Yocto/Arago, device trees, CAN/CAN FD, UART/RS232, SPI, I2C, ADC, PWM, GPIO, JTAG\\
+\textbf{Hardware \& Tools:} Through-hole/SMT soldering, PCB rework, breadboards, KiCad, Git/GitLab, oscilloscopes, logic analyzers
+
+\section{Professional Experience}
+\resumeentry{AEGIS Power Systems | Embedded Firmware Engineer}{Current}{
+\begin{resumebullets}
+  \item Developed firmware control for custom bidirectional buck-boost power supplies using 24 independently configurable PWM channels across transformer-coupled input and output stages.
+  \item Built a centralized framework translating requested input/output voltages into coordinated PWM timing, duty cycles, switching behavior, ADC feedback, and safe-operating constraints across paired converter channels.
+  \item Evaluated BMS, monitoring, interface, and support ICs against electrical limits, host protocols, protection, footprints, tool support, and sourcing risk; converted datasheet and reference-design findings into integration plans.
+  \item Root-caused I2C, CAN/CAN FD, SPI, and UART faults by correlating register transactions and analyzer captures with schematics, timing, bus configuration, and known-good hardware; created focused peripheral bring-up tests.
+  \item Characterized IPMI 2.0 and chassis-management services, validating IPMB addressing, sensors, and FRU access while separating transport, session, authentication, and firmware-compatibility failures.
+  \item Created watchdog/systemd services, device-tree and Yocto/Arago support, and Python/Bash tooling for reproducible monitoring, flashing, validation, and field diagnostics on TI AM62-class Linux systems.
+\end{resumebullets}}
+
+\resumeentry{AEGIS Power Systems | Embedded Systems Intern}{May--Aug 2024 \& May--Aug 2025}{
+\begin{resumebullets}
+  \item Built a secured chroot and restricted SSH CLI on a stripped TI Yocto/Arago system, using custom Bash/Python commands to inspect and control embedded power hardware.
+  \item Created Python/Bash firmware-flashing utilities with packetized transfers, checksum validation, and SPI reflashing for TI TMS320 targets, turning manual update steps into a repeatable workflow.
+  \item Reverse-engineered RS232 command transactions from limited vendor documentation, generated checksums, and helped construct a relay, resistive-load, and power-supply circuit for burn-in monitoring.
+  \item Supported FreeRTOS firmware, ADC/PWM and serial-interface testing, schematic review, and Code Composer Studio debugging; documented Git, firmware-delivery, and toolchain procedures for engineering handoffs.
+\end{resumebullets}}
+
+\resumeentry{TEAM Industries | Engineering Intern}{Jun--Aug 2021 \& Jun--Aug 2022}{
+\begin{resumebullets}
+  \item Automated quality-control reporting and revision tracking with Excel/VBA, including identification and reporting of out-of-spec production parts.
+  \item Built structured engineering worksheets, custom formulas, and revision records that made manufacturing and quality data easier to review and maintain.
+  \item Collaborated with engineering and manufacturing personnel to document design changes and produce technical reports supporting process and revision reviews.
+\end{resumebullets}}
+
+\section{Senior Design}
+\resumeentry{EV Active Sensor Adapter | MSP430FR2355}{NC State University}{
+\begin{resumebullets}
+  \item Defined system architecture and interface specifications integrating an MSP430, BMS/power-management hardware, sensors, custom PCBs, embedded firmware, and telemetry.
+  \item Evaluated BMS components against electrical, sensing, protection, communication, packaging, and sourcing requirements; documented trade studies and translated requirements into hardware/firmware interfaces.
+  \item Prototyped interrupt-driven SPI register transactions and integrated ADC, UART, timers, GPIO, and LCD telemetry, validating each subsystem before full-system integration.
+  \item Maintained requirements, architecture diagrams, interface definitions, test plans, design decisions, and progress reports; coordinated team work and communicated specifications, risks, and results in design reviews.
+\end{resumebullets}}
+
+\section{Technical Leadership}
+\resumeentry{Lead Instructor | Project-Based Electronics Workshop}{Two Semesters}{
+\begin{resumebullets}
+  \item Co-led students from project concept through final demonstration; developed and taught through-hole/SMT soldering theory, safety, and hands-on technique using custom NCSU IEEE PCB keepsakes.
+\end{resumebullets}}
+\resumeentry{Embedded Systems Teaching Assistant}{NC State University}{
+\begin{resumebullets}
+  \item Delivered supplemental lectures and test preparation; taught theory, code debugging, lab techniques, hardware bring-up, project strategy, and ECE advising.
+  \item Used question-driven coaching to build independent troubleshooting skills and lasting professional relationships, raising the class average from its typical C+ to an A-.
+\end{resumebullets}}
+
+\end{document}

@@ -1,0 +1,225 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[ignoreheadfoot,top=0.5cm,bottom=0.5cm,left=0.5cm,right=0.5cm,footskip=1.0cm]{geometry}
+
+% Contact information (kept inline so this revision compiles from one source file)
+\newcommand{\mylocation}{Murphy, NC}
+\newcommand{\myemail}{consav04@gmail.com}
+\newcommand{\myphone}{+1-828-541-9487}
+\newcommand{\mylinkedin}{connorsavugot}
+\newcommand{\mygithub}{Clem085}
+
+\usepackage[explicit]{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0,0,0}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage[hidelinks]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{lmodern}
+\fi
+
+\usepackage[default, type1]{sourcesanspro}
+\usepackage{amssymb}
+
+% Layout basics:
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0.15cm}
+\makeatletter
+
+\titleformat{\section}{
+  \needspace{4\baselineskip}\Large\color{primaryColor}
+}{}{0pt}{\textbf{#1}\hspace{0.15cm}\titlerule[0.8pt]\hspace{-0.1cm}}[]
+\titlespacing{\section}{-1pt}{0.3cm}{0.2cm}
+
+\newenvironment{highlights}{
+  \begin{itemize}[topsep=0.10cm,parsep=0.10cm,partopsep=0pt,itemsep=0pt,leftmargin=0.4cm+10pt]
+}{\end{itemize}}
+
+\newenvironment{highlightsforbulletentries}{
+  \begin{itemize}[topsep=0.10cm,parsep=0.10cm,partopsep=0pt,itemsep=0pt,leftmargin=10pt]
+}{\end{itemize}}
+
+\newenvironment{onecolentry}{
+  \begin{adjustwidth}{0.2cm+0.00001cm}{0.2cm+0.00001cm}
+}{\end{adjustwidth}}
+
+\newenvironment{twocolentry}[2][]{
+  \onecolentry
+  \def\secondColumn{#2}
+  \setcolumnwidth{\fill,4.5cm}
+  \begin{paracol}{2}
+}{
+  \switchcolumn \raggedleft \secondColumn
+  \end{paracol}
+  \endonecolentry
+}
+
+\newenvironment{threecolentry}[3][]{
+  \onecolentry
+  \def\thirdColumn{#3}
+  \setcolumnwidth{1cm,\fill,4.5cm}
+  \begin{paracol}{3}
+  {\raggedright #2} \switchcolumn
+}{
+  \switchcolumn \raggedleft \thirdColumn
+  \end{paracol}
+  \endonecolentry
+}
+
+\newenvironment{header}{
+  \setlength{\topsep}{-0.2cm}\par\kern\topsep\centering\linespread{1.5}
+}{\par\kern\topsep}
+
+% Links:
+\let\hrefWithoutArrow\href
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
+
+% (Optional) You can also remove this color if unused:
+% \definecolor{gr}{RGB}{225,225,225}
+
+\begin{document}
+
+\definecolor{gr}{RGB}{225,225,225}
+\AddToShipoutPictureBG{%
+  \color{gr}
+  \AtPageUpperLeft{\rule[-0.9in]{\paperwidth}{0.9in}}
+}
+
+\begin{header}
+  \fontsize{28}{0}\selectfont\scshape Connor Savugot
+\end{header}
+\vspace{0.05cm} % small breathing room below the name
+
+\begin{header}
+  \normalsize
+  \faMapMarker*\enspace \mylocation\enspace
+  \faEnvelope\enspace \href{mailto:\myemail}{\myemail}\enspace
+  \faPhone\enspace \href{tel:\myphone}{\myphone}\enspace
+  \faLinkedinIn\enspace \href{https://linkedin.com/in/\mylinkedin}{\mylinkedin}\enspace
+  \faGithub\enspace \href{https://github.com/\mygithub}{\mygithub}
+\end{header}
+
+\section{Objective}
+\begin{onecolentry}
+Seeking a Summer 2025 internship in embedded systems, ASIC chip design, or software development. Passionate about hardware and software engineering, I aim to contribute to innovative projects and deepen my expertise.
+\end{onecolentry}
+
+\section{Education}
+\begin{twocolentry}{May 2026}
+\textbf{North Carolina State University | Raleigh, NC}
+\end{twocolentry}
+\begin{onecolentry}
+\begin{highlights}
+  \item[$\vartriangleright$] B.S. in Computer Engineering
+  \item[$\vartriangleright$] G.P.A: 2.8
+\end{highlights}
+\end{onecolentry}
+
+\begin{twocolentry}{Fall 2024}
+\textbf{Tri-County Community College | Murphy, NC}
+\end{twocolentry}
+\begin{onecolentry}
+\begin{highlights}
+  \item[$\vartriangleright$] Associate's Degree in Arts
+  \item[$\vartriangleright$] G.P.A: 4.0
+\end{highlights}
+\end{onecolentry}
+
+\section{Work Experience}
+\begin{twocolentry}{May 2024 -- August 2024}
+\textbf{Aegis Power Systems | Computer Science Intern}
+\end{twocolentry}
+\begin{onecolentry}
+\begin{highlights}
+  \item[$\vartriangleright$] Designed and constructed a custom command line interface for an embedded power supply that could be controlled remotely using Secure Shell Protocol
+  \item[$\vartriangleright$] Communicated with and controlled devices using the RS232 protocol and enabled real-time data exchange between systems via the CAN bus.
+  \item[$\vartriangleright$] Gained experience in Linux, Bash, and Python
+\end{highlights}
+\end{onecolentry}
+
+\begin{twocolentry}{June 2022 -- August 2022}
+\textbf{TEAM Industries | Engineering Intern}
+\end{twocolentry}
+\begin{onecolentry}
+\begin{highlights}
+  \item[$\vartriangleright$] Programmed a Visual Basic script within Excel to identify out-of-spec parts
+  \item[$\vartriangleright$] Created and maintained spreadsheets by designing custom formulas
+  \item[$\vartriangleright$] Developed technical reports clarifying project revisions
+\end{highlights}
+\end{onecolentry}
+
+\begin{twocolentry}{January 2022 -- May 2022}
+\textbf{Tri-County Community College | Math Tutor}
+\end{twocolentry}
+\begin{onecolentry}
+\begin{highlights}
+  \item[$\vartriangleright$] Taught pre-calculus, statistics, and quantitative literacy to high school and community college students
+  \item[$\vartriangleright$] Cultivated tutoring methods to benefit a student's academic needs
+  \item[$\vartriangleright$] Dedicated 2--3 hours a day explaining concepts to remote and in-person students
+\end{highlights}
+\end{onecolentry}
+
+\section{Projects}
+\begin{twocolentry}{Fall 2024}
+\textbf{ECE 306: C Language Embedded System Toy Car}
+\end{twocolentry}
+\begin{onecolentry}
+\begin{highlights}
+  \item[$\vartriangleright$] Built and programmed a toy car using a TI MSP430 microcontroller and custom PCB boards.
+  \item[$\vartriangleright$] Integrated IoT Wi-Fi control, ADC line-following capabilities, and PWM for motor control.
+  \item[$\vartriangleright$] Programmed an LCD to display essential system information in real time.
+\end{highlights}
+\end{onecolentry}
+
+\begin{twocolentry}{Spring 2024}
+\textbf{ECE 212: Vending Machine Logic Circuit}
+\end{twocolentry}
+\begin{onecolentry}
+\begin{highlights}
+  \item[$\vartriangleright$] Designed and built a sequential logic circuit on a breadboard
+  \item[$\vartriangleright$] Tested hardware accuracy on WaveForms test-bench using an Analog Discovery 2
+  \item[$\vartriangleright$] Optimized circuit design for efficiency by minimizing gate usage.
+\end{highlights}
+\end{onecolentry}
+
+\begin{twocolentry}{Spring 2024}
+\textbf{ECE 309: C++ Maze Solver \& Search Algorithms}
+\end{twocolentry}
+\begin{onecolentry}
+\begin{highlights}
+  \item[$\vartriangleright$] Implemented three search algorithms: BFS, DFS, and GBFS
+  \item[$\vartriangleright$] Analyzed the time efficiency of each algorithm across various maze configurations.
+  \item[$\vartriangleright$] Evaluated the memory consumption of each algorithm to assess its resource efficiency.
+\end{highlights}
+\end{onecolentry}
+
+\section{Skills}
+\begin{onecolentry}
+\textbf{Programming Languages:} C, C++, Python, Verilog, Bash, VBA, MATLAB, and Assembly (LC3).\\
+\textbf{Technical:} Soldering, Logic Circuit Design, Microcontroller Programming, Circuit Analysis, Linux CLI Usage
+\end{onecolentry}
+
+\end{document}
