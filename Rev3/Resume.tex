@@ -1,0 +1,108 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.55in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default,type1]{sourcesanspro}
+\usepackage[explicit]{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage[hidelinks]{hyperref}
+
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\titleformat{\section}
+  {\fontsize{11.5}{12}\selectfont\bfseries\uppercase}
+  {}{0pt}{#1\hspace{0.12cm}\titlerule[0.65pt]}
+\titlespacing{\section}{0pt}{0.20cm}{0.08cm}
+
+\newlist{resumebullets}{itemize}{1}
+\setlist[resumebullets]{
+  label=\textbullet,
+  leftmargin=0.43cm,
+  topsep=0.02cm,
+  itemsep=0.01cm,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\newcommand{\resumeentry}[3]{%
+  \begin{tabularx}{\textwidth}{@{}Xr@{}}
+    \textbf{#1} & #2
+  \end{tabularx}\vspace{-0.06cm}
+  #3
+}
+
+\begin{document}
+\fontsize{10}{10.8}\selectfont
+\setlength{\RaggedRightRightskip}{0pt plus 5em}
+\RaggedRight
+\emergencystretch=1.5em
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{center}
+  {\fontsize{21}{22}\selectfont\bfseries Connor Savugot}\\[2pt]
+  {\bfseries B.S. Computer Engineering | North Carolina State University | May 2026}\\[2pt]
+  \href{mailto:consav04@gmail.com}{consav04@gmail.com}
+  \enspace|\enspace +1-828-541-9487
+  \enspace|\enspace Murphy, NC
+  \enspace|\enspace \href{https://linkedin.com/in/connorsavugot}{linkedin.com/in/connorsavugot}
+  \enspace|\enspace \href{https://github.com/Clem085}{github.com/Clem085}
+\end{center}
+\vspace{-0.17cm}
+
+\section{Technical Profile}
+Embedded firmware engineer spanning programmable power conversion, BMS integration, Embedded Linux/BSPs, board bring-up, communication protocols, and hardware--firmware validation from component selection through custom-PCB testing.
+
+\section{Technical Skills}
+\textbf{Firmware \& Software:} C, C++, Python, Bash; FreeRTOS, Embedded Linux, Yocto/Arago, systemd\\
+\textbf{Platforms \& Hardware:} MSP430FR2355, STM32, dsPIC, TI TMS320, TI AM62; BMS, bidirectional buck-boost converters, custom PCBs, board bring-up\\
+\textbf{Interfaces \& Protocols:} I2C, CAN/CAN FD, SPI, UART/RS232, IPMI/IPMB, ADC, PWM, GPIO, JTAG\\
+\textbf{Test \& Tooling:} Git/GitLab, Code Composer Studio, KiCad, SocketCAN/PCAN, oscilloscopes, logic/protocol analyzers, through-hole/SMT soldering\\
+\textbf{Additional Languages:} MATLAB, VBA, Assembly, Verilog
+
+\section{Professional Experience}
+\resumeentry{AEGIS Power Systems | Embedded Firmware Engineer}{Current}{
+\begin{resumebullets}
+  \item Developed firmware for custom programmable bidirectional buck-boost power systems, coordinating 24 independently configurable PWM channels, ADC feedback, and transformer-coupled input/output stages through a centralized control interface.
+  \item Integrated BMS and peripheral ICs from datasheet, schematic, and reference-design trade studies through driver development, breakout-board prototyping, custom-PCB bring-up, and validation.
+  \item Implemented and debugged CAN/CAN FD, I2C, SPI, and UART interfaces; isolated root causes with register-level tests, oscilloscopes, logic/protocol analyzers, known-good nodes, and controlled hardware substitutions.
+  \item Supported TI AM62-class Linux BSPs using Yocto/Arago, device trees, systemd watchdogs, and Python/Bash diagnostics; validated IPMI/IPMB sensor and FRU access for embedded platform management.
+\end{resumebullets}}
+
+\resumeentry{AEGIS Power Systems | Intern}{May--Aug 2024 \& May--Aug 2025}{
+\begin{resumebullets}
+  \item Built a restricted SSH/chroot CLI and Python/Bash tools for remotely controlling and inspecting TI Yocto/Arago embedded power hardware.
+  \item Developed checksum-validated TMS320 flashing tools, reverse-engineered RS232 transactions, and supported FreeRTOS, serial-interface, schematic, soldering, and burn-in test debugging.
+\end{resumebullets}}
+
+\section{Senior Design}
+\resumeentry{EV Active Sensor Adapter | MSP430FR2355}{NC State University}{
+\begin{resumebullets}
+  \item Defined architecture and hardware/firmware requirements for an MSP430 EV sensor adapter with BMS and power-management hardware, sensing, custom PCBs, communications, and telemetry.
+  \item Evaluated BMS and support ICs against electrical, protection, communications, packaging, sourcing, and integration constraints; documented tradeoffs, risks, selection rationale, and validation requirements.
+  \item Prototyped interrupt-driven SPI and staged ADC, UART, timer, GPIO, and LCD interface validation while coordinating subsystem dependencies through test plans, design reviews, and progress documentation.
+\end{resumebullets}}
+
+\section{Technical Leadership \& Earlier Experience}
+\resumeentry{Embedded Systems Teaching Assistant | NC State University}{}{
+\begin{resumebullets}
+  \item Delivered lectures and hands-on support for C/MSP430 firmware, ADC, timers, interrupts, GPIO, LCDs, and custom-PCB bring-up; diagnosed firmware, soldering, wiring, and toolchain failures while teaching systematic root-cause analysis.
+\end{resumebullets}}
+
+\resumeentry{Lead Instructor | Project-Based Electronics Workshop}{Two Semesters}{
+\begin{resumebullets}
+  \item Co-led students from project scoping through final demonstration and taught through-hole/SMT soldering theory, safety, debugging, and assembly using purpose-built instructional PCBs.
+\end{resumebullets}}
+
+\resumeentry{TEAM Industries | Engineering Intern}{Jun--Aug 2021 \& Jun--Aug 2022}{
+\begin{resumebullets}
+  \item Built Excel/VBA quality tools to flag out-of-spec parts and organized 17,000+ tooling and part records linking vendors, operations, locations, and revision data for manufacturing and engineering teams.
+\end{resumebullets}}
+
+\end{document}
