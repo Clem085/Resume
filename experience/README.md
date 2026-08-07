@@ -82,7 +82,6 @@ Important facts recovered from the archive include:
 - Current status of Adobe and FAA credentials
 - Exact TA/workshop dates, audience size, and official role names
 - Public-disclosure boundaries for current AEGIS power topology and platform-management work
-- Whether the archived twelve PWM modules/channels with A/B outputs reconcile to the directly supplied 24-channel description
 - Whether the C++/UART, Python/TCP, and SPI-flash firmware-update descriptions are separate tools or conflicting summaries
 - Whether the IEEE $2,000/two-week result and the C+-to-A- teaching result can be documented and publicly attributed
 - Whether repeated Verilog records or the lone VHDL cover-letter claim accurately describes each digital-design project

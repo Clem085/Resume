@@ -53,13 +53,16 @@ Files with matching extracted text but different bytes were kept because typogra
 
 ## Conflicts to Resolve Before Publication
 
-- Twelve TMS320 PWM modules/channels with A/B outputs versus 24 independently configurable PWM channels. A likely interpretation is twelve modules producing 24 physical outputs, but pairing and independent-control behavior must be confirmed.
 - C++/UART DSP flashing plus PIC32 SPI storage versus the earlier summary of Python/Bash utilities with SPI reflashing. These may be separate tools or paths.
 - `Computer Science Intern` versus `Embedded Systems Firmware Intern` for one or both AEGIS summers.
 - Verilog in repeated project records versus one VHDL cover-letter claim.
 - Multiple historical NC State GPA values; omit GPA without a current transcript.
 - Whether OPS2 leadership was sole lead, co-lead, or one of two lead instructors.
 - Whether the reported $2,000/two-week IEEE result and C+-to-A- teaching outcome can be documented and publicly attributed.
+
+## Resolved Source Question
+
+- The twelve-versus-24 PWM discrepancy is resolved: the system had 24 physical outputs arranged as twelve A/B pairs. Each A output had independently configurable duty cycle, period/frequency, and relative phase; its B output could only match or exactly invert the paired A waveform.
 
 ## Privacy and Disclosure
 

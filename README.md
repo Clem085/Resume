@@ -14,13 +14,15 @@ The recovered resumes, cover letters, LaTeX sources, application packets, and su
 | [`Rev1/`](Rev1/) | Compact one-page embedded-firmware résumé created before the visual redesign. |
 | [`Rev2/`](Rev2/) | Previous content presented in the Rev0 visual style, with expanded AEGIS, BMS, senior-design, soldering-instructor, and teaching-assistant experience. |
 | [`Rev3/`](Rev3/) | Rewritten embedded firmware and hardware-integration résumé emphasizing power conversion, BMS integration, protocol debugging, Embedded Linux, IPMI, senior design, and technical teaching. |
+| [`Rev4/`](Rev4/) | General full-time embedded-firmware résumé using the reconciled 12-pair/24-output power-control architecture, stronger end-to-end engineering workflows, and a matching adaptable cover letter. |
 
-Rev3 is the newest résumé revision.
+Rev4 is the newest résumé revision.
 
 Each revision root contains:
 
 - `Resume.tex` — self-contained LaTeX source, including contact information
 - `Resume.pdf` — compiled résumé
+- `CoverLetter.tex` and `CoverLetter.pdf` — matching blanket cover-letter source and PDF in Rev4
 - `.build/` — hidden directory for LaTeX intermediates such as `.aux`, `.log`, `.fls`, and SyncTeX files
 
 ## Building
@@ -30,8 +32,9 @@ VS Code's LaTeX Workshop is configured by [`.vscode/settings.json`](.vscode/sett
 For the same behavior from a terminal, run this from the desired revision directory:
 
 ```sh
-cd Rev3
+cd Rev4
 latexmk -pdf -synctex=0 -emulate-aux-dir -auxdir=.build -outdir=. Resume.tex
+latexmk -pdf -synctex=0 -emulate-aux-dir -auxdir=.build -outdir=. CoverLetter.tex
 ```
 
 Use `latexmk -C -auxdir=.build -outdir=. Resume.tex` to clean generated outputs. SyncTeX is disabled so it does not place a `.synctex.gz` file beside the PDF. The `.build/` name is used because these files are compiler outputs, not dependencies.
@@ -141,7 +144,7 @@ The file must make clear that PWM was not the project itself. PWM was the contro
 Correct framing:
 
 - Developed firmware control for custom bidirectional buck-boost power supplies.
-- Coordinated 24 independently configurable PWM channels across transformer-coupled input and output stages.
+- Coordinated 24 physical PWM outputs as twelve A/B pairs across transformer-coupled input and output stages; each A output had configurable period/frequency, duty cycle, and relative phase, while B matched or inverted A.
 - Configured both input-side and output-side converter behavior.
 - Translated requested input/output voltage settings into coordinated switching behavior.
 - Managed timing, duty-cycle relationships, paired channel behavior, feedback, and safe-operating constraints.

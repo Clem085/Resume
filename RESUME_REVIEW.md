@@ -56,7 +56,7 @@ These facts may support a targeted variant, but they are weaker than current pro
 
 ## Confidentiality Concerns
 
-- Confirm whether the 24-channel count, transformer-coupled topology, paired-stage behavior, and safe-operating logic may be disclosed publicly.
+- Confirm whether the 24-output count, transformer-coupled topology, A/B paired-stage behavior, and safe-operating logic may be disclosed publicly.
 - Confirm public use of TI AM62/TMS320 family names, SocketCAN/PCAN, DBC/signal-mapping work, and platform-management behavior.
 - Keep customer names, internal board/product identifiers, credentials, IP addresses, raw frames, proprietary register maps, schematics, and electrical specifications out of this public repository.
 - Do not link or copy local AEGIS logs into the résumé repository; some contain third-party notices and sensitive system data.
@@ -68,8 +68,7 @@ These facts may support a targeted variant, but they are weaker than current pro
 - Official title for the May–August 2025 AEGIS internship and which deliverables belong to 2024 versus 2025.
 - Exact number/types of BMS, monitoring, protection, charger, and interface ICs evaluated, validated, or integrated.
 - Whether SocketCAN, PCAN, DBC interpretation, CAN signal mapping, and target-family names are safe to disclose.
-- Whether the 24 channels are 24 total PWM channels or 24 paired control channels, and the public-safe transformer topology.
-- Whether a newer source's twelve TMS320 ePWM modules/channels with A/B outputs describes those same 24 physical outputs, and which A/B outputs were independently configurable.
+- Whether the confirmed 24 physical outputs/twelve A-B pair topology and transformer-coupled architecture are approved for public disclosure. Each A output was independently parameterized; each B output only matched or inverted its paired A waveform.
 - Whether the C++/UART DSP flasher, Python/TCP PIC32 sender, SPI-flash image store/golden image, and prior Python/Bash SPI-reflash summary are one update path or several tools.
 - Whether IPMB, FRU, and sensor access were investigated, validated, integrated, or implemented in deliverable code.
 - Exact senior-design team size, personally owned subsystems, final prototype state, and completed validation.

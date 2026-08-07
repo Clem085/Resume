@@ -9,7 +9,8 @@ The official title and start date still need confirmation. The work itself spans
 ### Programmable bidirectional power conversion
 
 - Developed firmware control for custom programmable power supplies built around variable bidirectional buck-boost converter stages; PWM is the switching-control mechanism inside the power-conversion architecture, not the project by itself.
-- Coordinated 24 independently configurable PWM channels across transformer-coupled input and output stages rather than treating each PWM output as an unrelated signal.
+- Coordinated 24 physical PWM outputs arranged as twelve A/B channel pairs across transformer-coupled input and output stages.
+- Independently configured each A output's duty cycle, period/frequency, and phase shift relative to another signal; each paired B output could either match its A waveform or produce its exact inverse.
 - Translated requested input/output voltage behavior into coordinated switching configuration for the associated converter channels.
 - Managed timing, duty-cycle relationships, paired-channel behavior, synchronization, ADC feedback, and safe-operating constraints through centralized configuration logic.
 - Built the control interface so converter behavior could be changed without rewriting low-level peripheral code for each power channel.
@@ -76,12 +77,13 @@ The official title and start date still need confirmation. The work itself spans
 
 Archived 2024 résumés identify the official role as **Computer Science Intern**. Newer drafts sometimes combine both summers under **Embedded Systems Firmware Intern** and sometimes under **Computer Science Intern**; the official 2025 title is not preserved. Until the two titles are confirmed, a public combined entry should use the neutral title **Intern**.
 
-### TMS320 power-control firmware — archive-derived, topology to confirm
+### TMS320 power-control firmware — topology reconciled
 
-- A newer résumé source describes C firmware on a TI TMS320 DSP that controlled twelve PWM modules/channels with per-channel frequency, duty cycle, and phase settings.
-- The same source describes A/B output behavior that could be mirrored or inverted and an ADC-read potentiometer that adjusted PWM6 duty cycle live during test.
-- This may describe twelve ePWM modules producing 24 physical A/B outputs, but it cannot yet be merged with the directly supplied claim of 24 independently configurable channels. The pairing, independence, product generation, and whether this was internship or later work must be confirmed.
-- The valuable résumé-level story is coordinated switching control inside a programmable power-conversion system; the numerical channel topology should remain unpublished until reconciled.
+- Connor confirmed that the system exposed 24 physical PWM outputs as twelve A/B pairs.
+- Each A output supported independent duty-cycle, period/frequency, and relative phase-shift configuration.
+- Each B output was dependent on its paired A output and could be selected only as a matching or exactly inverted waveform; it was not independently parameterized.
+- A newer résumé source also describes an ADC-read potentiometer that adjusted PWM6 duty cycle live during test.
+- Resume wording should say **24 physical PWM outputs in twelve configurable A/B pairs**, not “24 independently configurable channels.”
 
 ### Embedded Linux and remote-control interface
 
@@ -134,7 +136,7 @@ The following appear primarily in tailored cover letters. They are retained for 
 - Programmable bidirectional buck-boost power conversion
 - BMS and power-management IC evaluation and integration
 - I2C, CAN/CAN FD, CAN/J1939, SPI, UART, RS232, IPMI, and IPMB debugging
-- PIC32/TMS320 distributed control and firmware-update architecture, once topology is confirmed
+- PIC32/TMS320 distributed control and firmware-update architecture, once the update path is confirmed
 - TI AM62 Embedded Linux, Yocto/Arago, device trees, systemd, and watchdogs
 - Board bring-up, analyzers, scopes, JTAG, schematics, and datasheets
 - Firmware flashing, automated validation, field diagnostics, and documentation
@@ -143,11 +145,10 @@ The following appear primarily in tailored cover letters. They are retained for 
 
 - Official title and start date for the current role
 - Official title for the 2025 internship and which deliverables belong to each internship year
-- Whether the archived twelve ePWM modules/channels produced 24 A/B outputs, and which outputs were independently controllable, mirrored, or inverted
 - Whether the C++/UART DSP flasher, Python/TCP PIC32 sender, SPI-flash storage, golden image, and earlier Python/Bash SPI-reflash summary are one path or several tools
 - Meaning of `BDC` and the scope of any legacy-code repair
 - Whether CAN/J1939, PIC32/TMS320 names, Git tooling, and the 80+ page documentation metric may be disclosed
 - Exact number/types of BMS devices that were evaluated, validated, or fully integrated
 - Whether SocketCAN, PCAN, DBC/signal-mapping, and target-family names may be disclosed
-- Whether the 24-channel count, transformer-coupled topology, paired-channel behavior, and safe-operating details are public
+- Whether the 24-output count, transformer-coupled topology, A/B pairing behavior, and safe-operating details are approved for public disclosure
 - Which IPMI/IPMB/FRU/sensor capabilities were investigated, validated, or incorporated into deliverable firmware

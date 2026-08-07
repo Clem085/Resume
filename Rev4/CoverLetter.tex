@@ -1,0 +1,78 @@
+\documentclass[10pt,letterpaper]{article}
+
+% Customize these four lines for a specific application.
+\newcommand{\LetterDate}{August 7, 2026}
+\newcommand{\TargetRole}{Embedded Firmware Engineer}
+\newcommand{\TargetCompany}{your organization}
+\newcommand{\InterestSentence}{I am especially interested in teams building dependable embedded products where hardware, firmware, and system software must be validated together.}
+
+\usepackage[margin=0.74in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default,type1]{sourcesanspro}
+\usepackage[final]{microtype}
+\usepackage{ragged2e}
+\usepackage{iftex}
+\usepackage[hidelinks]{hyperref}
+
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\hypersetup{
+  pdftitle={Connor Savugot Cover Letter},
+  pdfauthor={Connor Savugot},
+  pdfsubject={Application for \TargetRole},
+  pdfkeywords={embedded firmware, Embedded Linux, BMS, board bring-up, hardware integration}
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.78em}
+\hfuzz=0.4pt
+
+\begin{document}
+\fontsize{10.5}{13.1}\selectfont
+\RaggedRight
+\setlength{\RaggedRightRightskip}{0pt plus 5em}
+\emergencystretch=1em
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{center}
+  {\fontsize{22}{23}\selectfont\bfseries Connor Savugot}\\[2pt]
+  {\bfseries B.S. Computer Engineering | North Carolina State University | May 2026}\\[2pt]
+  {\fontsize{9.7}{10.5}\selectfont
+    \href{mailto:consav04@gmail.com}{consav04@gmail.com}
+    \enspace|\enspace \href{tel:+18285419487}{+1-828-541-9487}
+    \enspace|\enspace Murphy, NC
+    \enspace|\enspace \href{https://linkedin.com/in/connorsavugot}{linkedin.com/in/connorsavugot}
+    \enspace|\enspace \href{https://github.com/Clem085}{github.com/Clem085}}
+\end{center}
+
+\vspace{-0.15em}
+\hrule
+\vspace{0.9em}
+
+\LetterDate
+
+\textbf{Re: \TargetRole}
+
+Dear Hiring Manager,
+
+I am applying for the \TargetRole{} position at \TargetCompany. My work at AEGIS Power Systems and computer engineering education at NC State have centered on embedded products where firmware, electronics, Linux, and test hardware must operate as one system. I am most effective in roles that span the full workflow: understanding a component and defining its interfaces, writing low-level firmware, bringing up hardware, and proving behavior on the bench.
+
+At AEGIS, I develop firmware for custom programmable power systems. I have implemented coordinated PWM control for transformer-coupled bidirectional power-conversion stages, evaluated and integrated BMS and supporting ICs, and brought up devices over CAN/CAN FD, I2C, SPI, and UART. My normal workflow begins with datasheets, reference designs, schematics, and electrical constraints; moves through focused driver code and breakout-board experiments; and ends with custom-PCB validation. When something fails, I correlate firmware state with register reads, logic-analyzer or oscilloscope captures, and known-good hardware to distinguish protocol, timing, configuration, wiring, and device faults.
+
+I also support TI AM62-class Embedded Linux systems using Yocto/Arago, device trees, systemd services, external watchdogs, and Python/Bash diagnostics. Across two AEGIS internships, I built a restricted SSH interface for embedded power hardware, developed checksum-validated firmware-update tools, reverse-engineered RS232 transactions, and worked with CAN, FreeRTOS, test hardware, and engineering documentation. Those projects taught me to treat deployment, diagnostics, and reproducible handoff as part of firmware development.
+
+My senior-design work reinforced that system view through architecture, interface specifications, component trade studies, MSP430 firmware, and subsystem validation. As an embedded-systems teaching assistant and project-workshop lead, I delivered supplemental lectures, guided students through C/MSP430 and custom-PCB debugging, and taught through-hole and surface-mount soldering. Teaching students to isolate their own faults has made me a more precise communicator and a more disciplined debugger.
+
+I would bring hands-on embedded C/C++, Linux, and scripting experience to \TargetCompany, along with comfort moving between a schematic, debugger, and bench instruments and a habit of documenting work so a team can reproduce it. \InterestSentence{} I would welcome the opportunity to discuss how I could contribute to your engineering team.
+
+Sincerely,
+
+\textbf{Connor Savugot}
+
+\end{document}
