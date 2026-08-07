@@ -74,7 +74,14 @@ The official title and start date still need confirmation. The work itself spans
 
 ## AEGIS Internships — May–August 2024 and May–August 2025
 
-Archived 2024 résumés identify the official role as **Computer Science Intern**. The official 2025 title is not preserved in the archive, so the public résumé uses the neutral title **Intern** for the combined entry.
+Archived 2024 résumés identify the official role as **Computer Science Intern**. Newer drafts sometimes combine both summers under **Embedded Systems Firmware Intern** and sometimes under **Computer Science Intern**; the official 2025 title is not preserved. Until the two titles are confirmed, a public combined entry should use the neutral title **Intern**.
+
+### TMS320 power-control firmware — archive-derived, topology to confirm
+
+- A newer résumé source describes C firmware on a TI TMS320 DSP that controlled twelve PWM modules/channels with per-channel frequency, duty cycle, and phase settings.
+- The same source describes A/B output behavior that could be mirrored or inverted and an ADC-read potentiometer that adjusted PWM6 duty cycle live during test.
+- This may describe twelve ePWM modules producing 24 physical A/B outputs, but it cannot yet be merged with the directly supplied claim of 24 independently configurable channels. The pairing, independence, product generation, and whether this was internship or later work must be confirmed.
+- The valuable résumé-level story is coordinated switching control inside a programmable power-conversion system; the numerical channel topology should remain unpublished until reconciled.
 
 ### Embedded Linux and remote-control interface
 
@@ -88,24 +95,46 @@ Archived 2024 résumés identify the official role as **Computer Science Intern*
 - Supported FreeRTOS firmware, ADC/PWM testing, serial-interface validation, schematic review, and Code Composer Studio debugging.
 - Turned manual update and diagnostic steps into documented, repeatable engineering workflows; the measurable time/reliability effect still needs confirmation.
 
+#### Recovered two-processor update architecture — confirm before publication
+
+- A newer source describes a PIC32 and TMS320 division of responsibility: the PIC32 coordinated I2C, SPI, CAN/J1939, UART, and update transport while the TMS320 executed PWM control.
+- It separately names a C++ serial flasher for the DSP and a Python TCP/IP sender for the PIC32, using chunking and checksum validation during transfer.
+- The draft describes the PIC32 storing received firmware in external SPI flash, retaining a golden image, reflashing the DSP over UART, verifying the image, and committing it to DSP on-chip flash.
+- Another version summarizes file generation, packetized/checksummed transfer, and SPI reflashing without the same topology. These may be different tools or stages; do not collapse them into one implementation until the path is confirmed.
+- One version says legacy `BDC` code was repaired. The acronym, ownership, and actual change are not established well enough for public use.
+
 ### Communication reverse engineering and validation
 
 - Reverse-engineered RS232 command transactions from limited documentation and generated the checksums required for valid messages.
 - Worked with RS232 and CAN communication between embedded devices and host/control systems.
+- Newer sources repeatedly name CAN/J1939 in the PIC32/TMS320 system; preserve J1939 as an archive-supported lead until the exact deliverable and summer are confirmed.
 - Compared documented behavior with observed responses and hardware state when validating commands.
 
 ### Test hardware and engineering handoff
 
 - Helped construct a relay, resistive-load, and power-supply circuit for burn-in monitoring and test support.
 - Reviewed schematics and assisted with soldering, wiring, and hardware setup during validation.
-- Documented Git workflows, firmware delivery, test procedures, and toolchain setup for engineering handoff.
+- Collaborated with electrical and mechanical engineers during hardware/firmware integration; archived cover letters also describe schematic review of a custom PCB controlling a Linux-based power supply.
+- Standardized a GitLab/Git Extensions workflow around GitFlow-style branches and signed annotated release tags.
+- A newer résumé reports an illustrated Git guide exceeding 80 pages plus a shorter handout and training slides. Confirm the exact page count and audience before using the metric publicly.
+- Documented firmware delivery, test procedures, CLI use, and toolchain setup for engineering handoff.
+
+### Lower-confidence internship leads
+
+The following appear primarily in tailored cover letters. They are retained for interview follow-up, not treated as established accomplishments without code, documentation, or Connor's confirmation:
+
+- TCP client/server implementation and Python/Bash automation used to manage embedded systems
+- C/C++ unit testing and timing-conscious use of print/LED diagnostics
+- The exact boundary between FreeRTOS application changes, test code, legacy-code repair, and production firmware
+- Customer/market language describing military or aerospace power supplies, which may also be inappropriate to disclose
 
 ## Best Resume Themes
 
 - Embedded C/C++, Python, and Bash across firmware and Linux
 - Programmable bidirectional buck-boost power conversion
 - BMS and power-management IC evaluation and integration
-- I2C, CAN/CAN FD, SPI, UART, RS232, IPMI, and IPMB debugging
+- I2C, CAN/CAN FD, CAN/J1939, SPI, UART, RS232, IPMI, and IPMB debugging
+- PIC32/TMS320 distributed control and firmware-update architecture, once topology is confirmed
 - TI AM62 Embedded Linux, Yocto/Arago, device trees, systemd, and watchdogs
 - Board bring-up, analyzers, scopes, JTAG, schematics, and datasheets
 - Firmware flashing, automated validation, field diagnostics, and documentation
@@ -114,6 +143,10 @@ Archived 2024 résumés identify the official role as **Computer Science Intern*
 
 - Official title and start date for the current role
 - Official title for the 2025 internship and which deliverables belong to each internship year
+- Whether the archived twelve ePWM modules/channels produced 24 A/B outputs, and which outputs were independently controllable, mirrored, or inverted
+- Whether the C++/UART DSP flasher, Python/TCP PIC32 sender, SPI-flash storage, golden image, and earlier Python/Bash SPI-reflash summary are one path or several tools
+- Meaning of `BDC` and the scope of any legacy-code repair
+- Whether CAN/J1939, PIC32/TMS320 names, Git tooling, and the 80+ page documentation metric may be disclosed
 - Exact number/types of BMS devices that were evaluated, validated, or fully integrated
 - Whether SocketCAN, PCAN, DBC/signal-mapping, and target-family names may be disclosed
 - Whether the 24-channel count, transformer-coupled topology, paired-channel behavior, and safe-operating details are public

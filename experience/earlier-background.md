@@ -45,9 +45,9 @@ These items demonstrate initiative and communication, but current technical teac
 
 ## Education and Credentials Preserved in the Archive
 
-- North Carolina State University: B.S. Computer Engineering, expected May 2026.
+- North Carolina State University: B.S. Computer Engineering; historical documents list expected completion in May 2026. Because that date has passed, confirm that the degree was conferred before changing future résumé wording from “Expected May 2026” to an earned-degree date.
 - Murphy High School: diploma, May 2022; archived records also show robotics, coding, student-government, and academic honors.
-- Tri-County Community College: older files conflict between August 2023 and Fall 2024 for the Associate in Arts completion date; confirm before public use.
+- Tri-County Community College: Associate in Arts awarded August 1, 2023. An official archived transcript records a 4.0 GPA and “Graduated Top of Class”; the transcript remains private, and the degree may be omitted from the general embedded résumé for space.
 - Adobe Photoshop and Illustrator certifications are recorded from 2021; current validity/relevance should be checked.
 - An FAA commercial drone pilot credential is recorded from 2022; current certificate status and recency requirements should be checked before use.
 - Archived NC State GPA values vary across old revisions and are not included in the current résumé.

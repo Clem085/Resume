@@ -1,8 +1,14 @@
 # Rev3 Resume Review
 
+## Post-Rev3 Archive Import — August 2026
+
+The complete recovered archive was organized under [`history/`](history/) after Rev3 was produced. Across the original and recovered sets, the audit covered 79 PDFs, 21 Word documents, 16 ZIP archives, all 40 extracted TeX files, and four saved career-page bundles. The newly recovered details were added to the `experience/` source library with evidence labels; **Rev3 itself was not silently rewritten from one-off or conflicted drafts**.
+
+High-value additions include a possible PIC32/TMS320 two-processor update architecture, CAN/J1939, separate C++ and Python transfer tools, GitFlow/signed-tag documentation, the IEEE parts program and OPS2 toolchain, additional ECE 306 controls, Qiskit/Grover work, Verilog/Vivado artifacts, and richer TEAM validation context. See the archive [inventory](history/INVENTORY.md) for the exact conflicts and privacy boundaries.
+
 ## Major Changes Made After the History Audit
 
-- Read all 36 files in `experience/history/` (10 DOCX and 26 PDF), using byte and extracted-text hashes to verify repeated copies and export/color variants.
+- Read the initial 36-file set now stored under `history/resumes/*/legacy-audit/` (10 DOCX and 26 PDF), using byte and extracted-text hashes to verify repeated copies and export/color variants.
 - Reorganized the experience library so detailed implementation, debugging, teamwork, and historical context remain available without forcing every fact into the résumé.
 - Added archive-supported TEAM details: dimensional inspection, tolerance validation, a factory-facing Excel/VBA checker, manufacturing collaboration, and a 17,000+ record tooling/part catalog.
 - Added the archive-supported Fall 2024 date and system scope for the MSP430 ECE 306 vehicle.
@@ -63,12 +69,16 @@ These facts may support a targeted variant, but they are weaker than current pro
 - Exact number/types of BMS, monitoring, protection, charger, and interface ICs evaluated, validated, or integrated.
 - Whether SocketCAN, PCAN, DBC interpretation, CAN signal mapping, and target-family names are safe to disclose.
 - Whether the 24 channels are 24 total PWM channels or 24 paired control channels, and the public-safe transformer topology.
+- Whether a newer source's twelve TMS320 ePWM modules/channels with A/B outputs describes those same 24 physical outputs, and which A/B outputs were independently configurable.
+- Whether the C++/UART DSP flasher, Python/TCP PIC32 sender, SPI-flash image store/golden image, and prior Python/Bash SPI-reflash summary are one update path or several tools.
 - Whether IPMB, FRU, and sensor access were investigated, validated, integrated, or implemented in deliverable code.
 - Exact senior-design team size, personally owned subsystems, final prototype state, and completed validation.
 - Exact TA semesters, official role/course title, sections, and student count.
 - Whether the workshop role should be described as co-lead or joint lead instructor and its exact dates/organization.
 - Whether the C+ to A- class change is documented and public.
-- Associate in Arts completion date; archived versions conflict between August 2023 and Fall 2024.
+- Whether the IEEE parts program's reported $2,000/two-week result and lower-student-cost outcome can be documented and precisely defined.
+- Whether OPS2 should be described as sole lead, co-lead, or one of two lead instructors, plus its exact dates.
+- Whether repeated Verilog sources or the lone VHDL claim accurately names each HDL project.
 - Current validity of the Adobe and FAA drone credentials.
 
 ## Recommended Role-Specific Variants

@@ -4,6 +4,8 @@ This repository keeps each major résumé design in a separate, self-contained r
 
 The [`experience/`](experience/) folder is the detailed source library for future résumé variants. Its [index](experience/README.md) covers professional work, senior design, technical teaching, TEAM Industries, earlier projects, and archive-only background while documenting relevance and unresolved facts.
 
+The recovered resumes, cover letters, LaTeX sources, application packets, and supporting files are organized under [`history/`](history/). See its [archive guide](history/README.md) and [evidence inventory](history/INVENTORY.md) before relying on a historical claim; duplicates and conflicted drafts are intentionally preserved.
+
 ## Revisions
 
 | Revision | Description |

@@ -1,13 +1,27 @@
 # Teaching, Technical Leadership, Tutoring, and Lecturing
 
-## Lead Instructor — Project-Based Electronics Workshop
+## IEEE at NC State — OPS2 Lead Instructor and ECE 306 Parts Coordinator
 
-- Co-led a project-based electronics class for two semesters, sharing lead-instructor responsibility rather than serving only as a classroom helper.
+Newer résumé drafts use the combined title **ECE 306 Parts Distribution Coordinator & OPS2 Instructor** and also refer to **OPS 2 Lead**. They date the role Fall 2025–Present; Connor describes two semesters of lead-instructor responsibility. Confirm the exact end date and whether the staffing model should be called sole lead, co-lead, or one of two lead instructors.
+
+### Open Project Space 2 lead instruction
+
+- Ran a project-based electronics class for two semesters with lead-instructor responsibility rather than serving only as a classroom helper.
+- Archived drafts expand OPS2 as **Open Project Space 2** and describe a ten-week project sequence.
 - Guided students from concept selection and project scoping through design, implementation, debugging, completion, and final demonstration.
 - Developed and delivered instruction covering through-hole and surface-mount soldering theory, safety, component handling, inspection, and hands-on technique.
 - Used two custom NCSU IEEE flashing-light PCB keepsakes for instruction: one through-hole design and one surface-mount design.
+- Supported embedded programming and project workflows using PlatformIO in VS Code, GitHub/version control, KiCad, BOM development, and custom PCB planning.
+- Archived curriculum language also mentions IoT and low-power design. Confirm which topics were formally taught versus individually supported before listing them as course coverage.
 - Helped students debug their own project decisions and workmanship instead of taking over the build or supplying the answer.
 - Balanced lecture, demonstration, individual coaching, and open-ended project support across students with different electronics experience.
+
+### ECE 306 parts-distribution program
+
+- Centralized parts sourcing for student projects through bulk purchasing, vetted substitutions, consolidated shipping, and on-campus distribution.
+- Managed order forms, pricing, high-volume email/coordination, and parts handoff so students could obtain compatible components through one repeatable process.
+- Documented sourcing, substitution, and distribution procedures for future IEEE officers rather than leaving the program dependent on one person.
+- A recovered résumé claims the program raised **$2,000 for IEEE in two weeks while lowering student costs**. This is a strong lead, but the amount, time window, definition of “raised,” and cost comparison should be confirmed before résumé use.
 
 ## Embedded Systems Teaching Assistant — NC State University
 
@@ -26,7 +40,11 @@
 - Used question-driven coaching and extra one-on-one time so students learned how to find the cause of a problem independently.
 - Built lasting professional relationships with students through consistent technical and academic support.
 
-The previously stated C+ to A- class-average improvement is intentionally excluded from public résumé material because no grade documentation is present in the repository.
+### Reported instructional outcome
+
+- Connor reports that the course had typically averaged a C+ in the preceding semester and reached a flat A- during his semester after he added supplemental lectures and extensive problem-solving support.
+- Preserve the exact C+-to-A- description as a direct user-reported outcome. Do not convert it to “15 letter points” or a percentage without defining the calculation.
+- The result remains excluded from the public résumé until the relevant semesters, Connor's level of attribution, and grade records or instructor confirmation are available.
 
 ## Mathematics Tutor — Tri-County Community College, January–May 2022
 
@@ -55,6 +73,8 @@ The previously stated C+ to A- class-average improvement is intentionally exclud
 - Embedded firmware and hardware debugging across many implementations
 - Through-hole and SMT soldering instruction
 - Project scoping, integration, and final demonstration
+- Parts sourcing, vetted substitutions, logistics, and documented program handoff
+- PlatformIO, VS Code, GitHub, KiCad, BOMs, and custom-PCB project support
 - Question-driven mentoring and independent problem solving
 - Laboratory leadership, advising, and technical communication
 
@@ -62,4 +82,4 @@ The previously stated C+ to A- class-average improvement is intentionally exclud
 
 - Keep the embedded-systems TA and electronics-workshop leadership on the general embedded résumé because they reinforce technical depth, soldering, communication, and rapid diagnosis.
 - Use mathematics tutoring or earlier STEM leadership only for teaching, applications-engineering, field-support, customer-facing, or leadership-focused variants.
-- Do not include unverified grade outcomes or old volunteer-hour totals on the general engineering résumé.
+- Do not include the unverified grade or IEEE fundraising outcomes—or old volunteer-hour totals—on the general engineering résumé until their definitions and evidence are confirmed.

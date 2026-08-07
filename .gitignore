@@ -1,0 +1,6 @@
+# Historical records and source packages containing private identifiers,
+# transcripts, personal narrative, or handwritten signatures.
+history/private/
+
+# Saved career pages contain third-party tracking data and large asset trees.
+history/job-postings/

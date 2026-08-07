@@ -1,0 +1,249 @@
+\documentclass[10pt, letterpaper]{article}
+
+% ==== Packages & setup ====
+\usepackage[
+    ignoreheadfoot,
+    top=0.5 cm,
+    bottom=0.5 cm,
+    left=0.5 cm,
+    right=0.5 cm,
+    footskip=1.0 cm
+]{geometry}
+
+\usepackage[explicit]{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 0, 0}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+
+% Ensure ATS/machine-readable
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage[default, type1]{sourcesanspro}
+\usepackage{amssymb}
+
+% ==== Global tightness tweaks (keeps it to one page) ====
+\linespread{0.97}
+\setlength{\tabcolsep}{4pt}
+\setlength{\parskip}{0pt}
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0.10cm}
+\makeatletter
+
+% Section title: smaller size, tighter paddings, thinner rule
+\titleformat{\section}{
+    \needspace{2\baselineskip}
+    \large\color{primaryColor}
+}{}{}{
+    \textbf{#1}\hspace{0.12cm}\titlerule[0.6pt]\hspace{-0.08cm}
+}[]
+\titlespacing{\section}{-1pt}{0.15 cm}{0.12 cm}
+
+% Tight bullets
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0pt,
+        parsep=0pt,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0.30 cm + 8pt
+    ]
+}{
+    \end{itemize}
+}
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0pt,
+        parsep=0pt,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=8pt
+    ]
+}{
+    \end{itemize}
+}
+
+% Tight single/dual column blocks
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{0.18 cm}{0.18 cm}
+}{
+    \end{adjustwidth}
+}
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.2 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+}
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{0.9 cm, \fill, 4.2 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+% Header
+\newenvironment{header}{
+    \setlength{\topsep}{-0.15cm}\par\kern\topsep\centering\linespread{1.16}
+}{
+    \par\kern\topsep
+}
+
+% Restore normal \href
+\let\hrefWithoutArrow\href
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{#2}}
+
+\definecolor{gr}{RGB}{225,225,225}
+
+\begin{document}
+
+\newcommand{\AND}{\unskip
+    \cleaders\copy\ANDbox\hskip\wd\ANDbox
+    \ignorespaces
+}
+\newsavebox\ANDbox
+\sbox\ANDbox{}
+
+% ===== Header =====
+\begin{header}
+    \fontsize{24}{26}\selectfont\scshape Connor Savugot
+\end{header}
+\begin{center}
+{\fontsize{9}{11}\selectfont
+\href{https://maps.app.goo.gl/6EoyjWCwyq2M3qoJ6}{\faMapMarker*\enspace Murphy, NC}\hspace{0.9em}%
+\href{mailto:consav04@gmail.com}{\faEnvelope\enspace consav04@gmail.com}\hspace{0.9em}%
+\href{tel:+1-828-541-9487}{\faPhone\enspace +1 (828) 541-9487}\hspace{0.9em}%
+\href{https://linkedin.com/in/connorsavugot}{\faLinkedinIn\enspace connorsavugot}\hspace{0.9em}%
+\href{https://github.com/Clem085}{\faGithub\enspace Clem085}
+}
+\end{center}
+
+% ===== Objective =====
+\section{Objective}
+\begin{onecolentry}
+Seeking an entry-level role in embedded systems programming, firmware engineering, or software engineering. \newline Focus: low-level C/C++, RTOS, and firmware/BIOS. Available May 2026; open to relocation.
+\end{onecolentry}
+\vspace{7pt}
+
+% ===== Education =====
+\section{EDUCATION}
+\begin{onecolentry}
+\begin{tabularx}{\textwidth}{@{}X r@{}}
+    \textbf{North Carolina State University} & \textit{May 2026 \;\;|\;\; Raleigh, NC} \\
+    \textit{Bachelor of Science in Computer Engineering} & \textbf{\textit{GPA: 3.0}} \\
+\end{tabularx}
+\end{onecolentry}
+\vspace{5pt}
+
+% ===== Leadership (IEEE) =====
+\begin{twocolentry}{Fall 2025 -- Present}
+    \textbf{IEEE at NC State \;| \; ECE 306 Parts Distribution Coordinator \& OPS2 Instructor}
+    \begin{highlights}
+        \item[\textbf{$\vartriangleright$}] Leading the ECE 306 parts program by centralizing sourcing (bulk buys, vetted substitutions), consolidating shipping, and running on-campus distribution. Raised \$2{,}000 for the IEEE chapter while lowering student costs.
+        \item[\textbf{$\vartriangleright$}] Teaching OPS2 -- Open Project Space 2 by guiding 10-week student projects, teaching through-hole and SMD soldering, embedded-systems programming, configuring PlatformIO in VS Code, and using GitHub for version control.
+    \end{highlights}
+\end{twocolentry}
+
+
+\vspace{7pt}
+
+% ===== Skills =====
+\section{SKILLS}
+\begin{onecolentry}
+\textbf{Programming:} C, C++, Python, Verilog, Bash, MATLAB, VBA, LC-3 Assembly \\
+\textbf{Embedded Systems:} TI TMS320 DSP, PIC32, MSP430, PlatformIO, RTOS concepts \\
+\textbf{Tools:} Git/GitHub (GitFlow, release tagging), VS Code, Linux CLI \\
+\textbf{Hardware:} Soldering (through-hole \& SMD), PCB design basics, microcontrollers, circuit analysis
+\end{onecolentry}
+
+
+\vspace{7pt}
+% ===== Work Experience =====
+\section{WORK EXPERIENCE}
+
+\begin{twocolentry}{Summers 2024 \& 2025}
+    \textbf{Aegis Power Systems \;| \; Embedded Systems Firmware Intern}
+    \begin{highlights}
+        \item[\textbf{$\vartriangleright$}] Developed PWM firmware in C on a TI TMS320 DSP. Configured 12 channels with per-channel frequency (kHz), duty cycle, and phase shift. Enabled A/B mirroring or inversion and added an ADC-read potentiometer to live-adjust PWM6 duty cycle.
+        \item[\textbf{$\vartriangleright$}] Built a remote CLI over SSH for embedded power supplies and integrated RS232 and CAN/J1939 for real-time control.
+        \item[\textbf{$\vartriangleright$}] Designed a two-processor update path where the PIC32 managed I2C, SPI, CAN/J1939, and UART orchestration while the TMS320 DSP executed PWM control.
+        \item[\textbf{$\vartriangleright$}] Wrote a C++ serial flasher for the DSP and a Python TCP/IP sender for the PIC32 with chunking and checksum verification to prevent corrupted updates.
+        \item[\textbf{$\vartriangleright$}] Implemented a fail-safe updater. The PIC32 stored images in SPI flash, maintained a golden image, reflashed the DSP over UART, and committed verified firmware to on-chip flash.
+        \item[\textbf{$\vartriangleright$}] Standardized Git practices (GitFlow, signed annotated tags) and authored an 80+ page illustrated guide, handout, and training slides.
+    \end{highlights}
+\end{twocolentry}
+\vspace{5pt}
+\begin{twocolentry}{Summers 2021 \& 2022}
+    \textbf{TEAM Industries \;| \; Engineering Intern}
+    \begin{highlights}
+        \item[\textbf{$\vartriangleright$}] Built a VBA quality-check tool in Excel that ingested measurement data, compared it against tolerance tables, and flagged out-of-spec parts with instant summaries.
+        \item[\textbf{$\vartriangleright$}] Engineered robust spreadsheets with custom formulas, data validation, and pivot summaries that reduced manual errors and made updates repeatable.
+        \item[\textbf{$\vartriangleright$}] Authored clear change reports with before-and-after specs, rationale, and action items that improved revision traceability across engineering and suppliers.
+    \end{highlights}
+\end{twocolentry}
+
+\vspace{7pt}
+% ===== Projects =====
+\section{Projects}
+\begin{twocolentry}{Fall 2024}
+    \textbf{Embedded Systems Toy Car (MSP430, C, CCS, PCB)}
+    \begin{highlights}
+        \item[\textbf{$\vartriangleright$}] Built and programmed a toy car using a TI MSP430 microcontroller and custom PCBs; integrated IoT Wi-Fi, ADC line following, and PWM motor control.
+        \item[\textbf{$\vartriangleright$}] Used an LCD for real-time diagnostics and two programmable buttons plus a rotary dial to select inputs and switch operation modes.
+
+    \end{highlights}
+\end{twocolentry}
+
+\vspace{5pt}
+
+\begin{twocolentry}{Summer 2024}
+    \textbf{Linux Multi-Boot \& GPU Power Management (Personal Project)}
+    \begin{highlights}
+        \item[\textbf{$\vartriangleright$}] Partitioned a laptop with Garuda (Arch-based), Ubuntu, and Windows; configured GRUB to detect all systems and set Garuda as default.
+        \item[\textbf{$\vartriangleright$}] Wrote \texttt{systemd} service scripts to detect HDMI connections and toggle iGPU/dGPU automatically, extending battery life when an external display was disconnected.
+    \end{highlights}
+\end{twocolentry}
+
+\vspace{5pt}
+
+\begin{twocolentry}{Spring 2024}
+    \textbf{C++ Maze Solver \& Search Algorithms}
+    \begin{highlights}
+        \item[\textbf{$\vartriangleright$}] Implemented BFS, DFS, and Greedy Best-First search; benchmarked runtime and memory tradeoffs; documented results against classical baselines.
+    \end{highlights}
+\end{twocolentry}
+
+\end{document}

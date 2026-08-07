@@ -1,0 +1,137 @@
+\documentclass[10pt,letterpaper]{article}
+
+% ------- Packages -------
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{parskip}
+\usepackage{amssymb} % <-- for triangle symbols
+
+% ------- Style -------
+\definecolor{blue}{RGB}{0,79,144}
+\titleformat{\section}{\large\bfseries\color{blue}}{}{0em}{}
+\titlespacing*{\section}{0pt}{0.4ex}{0.2ex}
+
+% Triangle bullets (global for all itemize lists)
+\setlist[itemize]{
+  noitemsep,
+  topsep=0pt,
+  left=1.2em,
+  label={$\vartriangleright$}, % filled triangle ▶
+  labelsep=0.55em
+}
+
+\urlstyle{same}
+\emergencystretch=1em
+\pagestyle{empty}
+
+% ------- Header -------
+\newcommand{\header}[5]{%
+  {\LARGE \textbf{#1}}\\[-1pt]
+  {\small #2 \,|\, \href{mailto:#3}{#3} \,|\, #4 \,|\, 
+  \href{https://linkedin.com/in/#5}{linkedin.com/in/#5} \,|\, 
+  \href{https://github.com/Clem085}{github.com/Clem085}}\\[6pt]
+  {\noindent\rule{\linewidth}{0.6pt}}\\[-8pt]
+}
+
+\begin{document}
+
+\header{\color{blue}Connor Savugot}{Murphy, NC}{consav04@gmail.com}{+1 (828) 541-9487}{connorsavugot}
+
+% ============================== OBJECTIVE ============================
+\section*{Objective}
+Seeking an entry-level role in embedded systems programming, firmware engineering, or software engineering. {\small Available May 2026 • Raleigh, NC (open to relocation) • Focus: low-level C/C++, firmware/BIOS, RTOS.}
+
+
+% ============================== EDUCATION ============================
+\section*{Education}
+\noindent\textbf{North Carolina State University}, Raleigh, NC — \textit{B.S. Computer Engineering}\hfill \textit{May 2026}\\
+{\small Selected: Embedded Systems, Digital Logic, C/C++, Microprocessor Architecture, Operating Systems}
+% ============================== SKILLS ===============================
+\section*{Technical Skills}
+\textbf{Languages:} C, C++, Python, Bash, Verilog, VBA, MATLAB, LC-3 Assembly \\
+\textbf{Embedded/Tools:} Code Composer Studio, PlatformIO, Git, KiCad, WaveForms, SSH, JTAG, Beagle Analyzer \\
+\textbf{Buses/Peripherals:} CAN, UART/RS232, SPI, I\textsuperscript{2}C, ADC, PWM, Timers \\
+\textbf{Systems:} FreeRTOS, Embedded Linux, Arch Linux, WSL2, UEFI/BIOS \\
+\textbf{Hardware:} Soldering, PCB/debug, oscilloscopes, logic/protocol analyzers
+
+% ============================ EXPERIENCE =============================
+\section*{Professional Experience}
+\textbf{Aegis Power Systems} -- Computer Science Intern \hfill May--Aug 2024 \& May--Aug 2025
+\begin{itemize}
+  \item Designed an SSH-controlled CLI; integrated RS232 and CAN; contributed to FreeRTOS-based firmware.
+  \item Built a remote firmware update path: file generation, checksum/packetized transfer, and SPI reflashing.
+  \item Created a TI TMS320 serial flasher (CLI) with usage docs; repaired legacy BDC code for internal use.
+  \item Standardized Git practice across teams: GUI-first workflow (GitLab + Git Extensions), GitFlow-style branches, and signed annotated tags; authored an 80+ page illustrated guide + handout + slides.
+  \item Developed PWM/ADC control in CCS: 12 PWM outputs with a config manager and ADC-driven duty cycle.
+\end{itemize}
+
+\textbf{TEAM Industries} -- Engineering Intern \hfill Jun--Aug 2022
+\begin{itemize}
+  \item Automated QC spreadsheets in VBA to flag out-of-spec parts; maintained spec sheets and documentation.
+\end{itemize}
+
+% ===================== EMBEDDED / FIRMWARE PROJECTS ==================
+\section*{Embedded \& Firmware Projects}
+\textbf{Embedded Systems Toy Car (ECE 306)} -- MSP430, C, CCS, custom PCB
+\begin{itemize}
+  \item Built and programmed a toy car using a TI MSP430 microcontroller and custom PCBs.
+  \item Integrated IoT Wi-Fi control, ADC-based line following, PWM motor control, and button/switch inputs with software debouncing.
+  \item Programmed an LCD to display essential system information in real time.
+\end{itemize}
+
+\textbf{Vending Machine Logic Circuit (ECE 212)} -- Sequential logic, WaveForms/Analog Discovery 2
+\begin{itemize}
+  \item Designed and built a sequential logic circuit on a breadboard.
+  \item Verified behavior on a WaveForms test bench using an Analog Discovery 2.
+  \item Reduced gate count and simplified state transitions for reliability.
+\end{itemize}
+
+\textbf{Variable Output Boost Converter (555 Timer)}
+\begin{itemize}
+  \item Prototyped and characterized with an oscilloscope; tuned frequency/duty cycle for target output.
+\end{itemize}
+
+% ======================= SOFTWARE / ALGO PROJECTS ====================
+\section*{Software Projects}
+\textbf{C++ Maze Solvers (ECE 309)} -- BFS, DFS, GBFS
+\begin{itemize}
+  \item Implemented and benchmarked search algorithms; compared time/memory across maze topologies.
+\end{itemize}
+
+\textbf{Quantum Search (ECE 469) -- Qiskit on WSL Arch}
+\begin{itemize}
+  \item Set up a reproducible Qiskit/Aer environment on WSL Arch; documented install and troubleshooting.
+  \item Implemented Grover’s algorithm; analyzed success vs.\ iteration count against a classical baseline.
+\end{itemize}
+
+% ====================== LEADERSHIP & COMMUNICATION ===================
+\section*{Leadership \& Communication}
+\textbf{OPS 2 Lead, IEEE @ NCSU} \hfill Fall 2025
+\begin{itemize}
+  \item Coordinated hands-on prototyping topics (KiCad, soldering, BOMs, custom PCBs, IoT/low-power).
+  \item Planned projects and distribution logistics; contributed to officer events.
+  \item Organized and ran a parts-kit fundraiser for ECE 306: sourced components in bulk, priced to save students, handled forms and high-volume email, scheduled distribution; raised \$2000 in two weeks and documented the process for future officers.
+\end{itemize}
+
+
+\textbf{Peer Support \& Mentoring (ECE 306)}
+\begin{itemize}
+  \item Assisted classmates with MCU bring-up, driver debugging, and CCS workflows; shared reproducible setups.
+\end{itemize}
+
+\textbf{Math Tutor, Tri-County Community College}
+\begin{itemize}
+  \item Taught pre-calculus, statistics, and quantitative literacy; adapted to each student’s needs.
+  \item Dedicated 2–3 hours per day supporting remote and in-person learners.
+\end{itemize}
+
+
+
+\end{document}
