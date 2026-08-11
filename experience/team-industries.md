@@ -47,7 +47,7 @@ Two summer internships provided early experience with manufacturing engineering,
 
 - Strong supporting evidence for test, validation, manufacturing, quality, applications, and hardware-integration roles.
 - Useful as a one-line proof of automation and engineering discipline on a general embedded résumé.
-- Less important than current firmware, power-conversion, Embedded Linux, BMS, or board-bring-up work, so it should not consume multiple résumé bullets.
+- Less important than current firmware/Embedded Linux work, the 2025 power-conversion internship, senior-design BMS work, or board bring-up, so it should not consume multiple résumé bullets.
 
 ## Details Requiring Confirmation
 

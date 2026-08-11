@@ -1,0 +1,141 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.52in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default,type1]{sourcesanspro}
+\usepackage[final]{microtype}
+\usepackage[explicit]{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{iftex}
+\usepackage[hidelinks]{hyperref}
+
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\hypersetup{
+  pdftitle={Connor Savugot Resume},
+  pdfauthor={Connor Savugot},
+  pdfsubject={Embedded Firmware and Embedded Linux Engineering},
+  pdfkeywords={embedded firmware, C, C++, Embedded Linux, Yocto, Arago, Linux kernel, device tree, systemd, Docker, DSP, PIC32, CAN, firmware update, power conversion, BMS}
+}
+
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\hfuzz=0.4pt
+
+\titleformat{\section}
+  {\fontsize{11.3}{11.9}\selectfont\bfseries\uppercase}
+  {}{0pt}{#1\hspace{0.12cm}\titlerule[0.65pt]}
+\titlespacing{\section}{0pt}{0.15cm}{0.055cm}
+
+\newlist{resumebullets}{itemize}{1}
+\setlist[resumebullets]{
+  label=\textbullet,
+  leftmargin=0.42cm,
+  topsep=0.005cm,
+  itemsep=0.005cm,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\newcommand{\companyheader}[1]{%
+  {\fontsize{10.4}{10.8}\selectfont\bfseries #1}\par\vspace{-0.03cm}
+}
+
+\newcommand{\resumeentry}[2]{%
+  \begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{2.40in}@{}}
+    \textbf{#1} & #2
+  \end{tabularx}\vspace{-0.075cm}
+}
+
+\newcommand{\roleentry}[2]{%
+  \begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{2.40in}@{}}
+    \textit{#1} & #2
+  \end{tabularx}\vspace{-0.075cm}
+}
+
+\begin{document}
+\fontsize{9.8}{10.72}\selectfont
+\setlength{\RaggedRightRightskip}{0pt plus 5em}
+\RaggedRight
+\emergencystretch=1em
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{center}
+  {\fontsize{21.5}{22.2}\selectfont\bfseries Connor Savugot}\\[1.5pt]
+  {\bfseries B.S. in Computer Engineering | North Carolina State University | Graduated May 2026}\\[1.5pt]
+  {\fontsize{9.6}{10.2}\selectfont
+    \href{mailto:consav04@gmail.com}{consav04@gmail.com}
+    \enspace|\enspace \href{tel:+18285419487}{+1-828-541-9487}
+    \enspace|\enspace Murphy, NC
+    \enspace|\enspace \href{https://linkedin.com/in/connorsavugot}{linkedin.com/in/connorsavugot}
+    \enspace|\enspace \href{https://github.com/Clem085}{github.com/Clem085}}
+\end{center}
+\vspace{-0.18cm}
+
+\section{Technical Profile}
+Embedded firmware engineer with experience in TI Embedded Linux platforms, a multi-controller firmware-update workflow, programmable power-conversion control, and CAN-connected battery systems. Experienced across C/C++, Linux services, board bring-up, bench debugging, and cross-platform Windows/Linux tooling.
+
+\section{Technical Skills}
+\textbf{Firmware \& OS:} Embedded C/C++, Python, Bash; TI Embedded Linux, Yocto/Arago, Linux kernel/device trees, systemd, Docker, FreeRTOS\\
+\textbf{Processors \& Interfaces:} TI AM62, TI TMS320 DSP, PIC32, MSP430FR2355; CAN/CAN FD/J1939, I2C, SPI, UART/RS-232, ADC, PWM, GPIO, IPMI/IPMB\\
+\textbf{Development \& Test:} Git/GitLab, Code Composer Studio, JTAG, KiCad, SocketCAN/PCAN; oscilloscopes, logic/protocol analyzers, through-hole/SMT soldering
+
+\section{Engineering Experience}
+\companyheader{AEGIS Power Systems}
+\roleentry{Embedded Firmware Engineer}{May 2026--Present}
+\begin{resumebullets}
+  \item Build and debug TI AM62-based Embedded Linux systems using Yocto/Arago images and toolchains; compile and integrate kernels and device trees, diagnose boot and service failures, and develop systemd services for external-watchdog monitoring and recovery.
+  \item Integrate and debug APU/EPU embedded power subsystems spanning battery hardware, CAN-connected devices, and Linux services; trace faults across power and wiring, bus traffic, Linux configuration, service logs, and application code.
+  \item Diagnose CAN/CAN FD, IPMI/IPMB, I2C, SPI, and UART behavior with logs, register reads, analyzers, scopes, schematics, datasheets, and controlled substitutions to isolate hardware, firmware, timing, and configuration faults.
+  \item Develop C/C++, Python, and Bash software, use Docker in development workflows, and improve code and tooling portability across Windows and Linux.
+\end{resumebullets}
+
+\roleentry{Embedded Systems Intern}{May--Aug 2025}
+\roleentry{Computer Science Intern}{May--Aug 2024}
+\roleentry{Selected engineering across both internships}{}
+\begin{resumebullets}
+  \item Developed TMS320 DSP firmware controlling transformer-coupled bidirectional buck--boost power stages through 12 PWM A/B pairs (24 physical outputs): independently configured each A output's period/frequency, duty cycle, and relative phase; paired B matched or inverted A.
+  \item Developed multiple connected stages of one PIC32/TMS320 product's firmware-update workflow: a user-facing C++ CLI accepted supplied HEX files, Python/TCP transport provided chunking and checksum validation, and the processors coordinated external SPI-flash/golden-image handling, UART DSP programming, verification, and boot control.
+  \item In 2024, built a restricted SSH/chroot CLI with Python/Bash for TI Yocto/Arago embedded power hardware; reverse-engineered RS-232 transactions and checksums; supported CAN/FreeRTOS debugging, schematic review, soldering, and burn-in-test hardware.
+\end{resumebullets}
+
+\resumeentry{TEAM Industries | Engineering Intern}{Jun--Aug 2021 \& Jun--Aug 2022}
+\begin{resumebullets}
+  \item Built an Excel/VBA tolerance checker for manufactured parts and organized a searchable 17,000+ record catalog connecting tooling, parts, vendors, operations, locations, and revisions.
+\end{resumebullets}
+
+\section{Senior Design}
+\resumeentry{EV Active Sensor Adapter | MSP430FR2355}{NC State University}
+\begin{resumebullets}
+  \item Defined end-to-end architecture, requirements, interface specifications, risks, and validation plans for sensing, BMS and power-management hardware, custom-PCB interfaces, embedded control, communications, and telemetry; coordinated decisions and documentation across the team.
+  \item Evaluated BMS/support ICs against electrical, protocol, package, and sourcing constraints using datasheets and reference designs; translated selections into integration plans, prototyped interrupt-driven SPI, and worked with ADC, UART, timer, GPIO, and LCD interfaces.
+\end{resumebullets}
+
+\section{Teaching \& Technical Leadership}
+\resumeentry{ECE 306 Embedded Systems Instruction | NC State University}{Spring 2025--Spring 2026}
+\begin{resumebullets}
+  \item Supported three semesters: two in an unofficial role at about 10 hr/week and one as the official TA at 20 hr/week; delivered supplemental lectures, test preparation, labs, code/PCB debugging, project guidance, and ECE-program support.
+  \item Added supplemental lectures and intensive, question-driven support as the class average rose from its typical C+ to A-.
+\end{resumebullets}
+
+\resumeentry{IEEE Open Project Space 2 | Lead Instructor}{Fall 2025 \& Spring 2026}
+\begin{resumebullets}
+  \item Ran two semesters of a project-based electronics course from idea through demonstration; taught firmware, PCB/BOM workflows, and through-hole/SMT assembly while coaching students to isolate and solve their own design problems.
+\end{resumebullets}
+
+\resumeentry{IEEE Soldering Workshops | Coordinator, Lecturer \& Lab Instructor}{}
+\begin{resumebullets}
+  \item Coordinated, lectured, and supervised standalone workshops using custom through-hole and surface-mount flashing-light PCB keepsakes; taught professional technique, safety, inspection, debugging, and rework.
+\end{resumebullets}
+
+\end{document}

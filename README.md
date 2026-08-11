@@ -6,6 +6,8 @@ The [`experience/`](experience/) folder is the detailed source library for futur
 
 The recovered resumes, cover letters, LaTeX sources, application packets, and supporting files are organized under [`history/`](history/). See its [archive guide](history/README.md) and [evidence inventory](history/INVENTORY.md) before relying on a historical claim; duplicates and conflicted drafts are intentionally preserved.
 
+Current attribution rules supersede wording in older revisions and archived prompts: BMS work belongs to senior design, not AEGIS; Connor's current AEGIS title is Embedded Firmware Engineer beginning May 2026; and the exact TI Linux work should be named instead of using the broader label “BSP.”
+
 ## Revisions
 
 | Revision | Description |
@@ -15,14 +17,15 @@ The recovered resumes, cover letters, LaTeX sources, application packets, and su
 | [`Rev2/`](Rev2/) | Previous content presented in the Rev0 visual style, with expanded AEGIS, BMS, senior-design, soldering-instructor, and teaching-assistant experience. |
 | [`Rev3/`](Rev3/) | Rewritten embedded firmware and hardware-integration résumé emphasizing power conversion, BMS integration, protocol debugging, Embedded Linux, IPMI, senior design, and technical teaching. |
 | [`Rev4/`](Rev4/) | General full-time embedded-firmware résumé using the reconciled 12-pair/24-output power-control architecture, stronger end-to-end engineering workflows, and a matching adaptable cover letter. |
+| [`Rev5/`](Rev5/) | Linux-forward embedded-firmware résumé and blanket cover letter with the exact AEGIS timeline, BMS confined to senior design, TI Yocto/Arago kernel and device-tree work, Docker, APU/EPU system integration, and the connected PIC32/TMS320 update workflow. |
 
-Rev4 is the newest résumé revision.
+Rev5 is the newest résumé revision.
 
 Each revision root contains:
 
 - `Resume.tex` — self-contained LaTeX source, including contact information
 - `Resume.pdf` — compiled résumé
-- `CoverLetter.tex` and `CoverLetter.pdf` — matching blanket cover-letter source and PDF in Rev4
+- `CoverLetter.tex` and `CoverLetter.pdf` — matching blanket cover-letter source and PDF in Rev4 and later
 - `.build/` — hidden directory for LaTeX intermediates such as `.aux`, `.log`, `.fls`, and SyncTeX files
 
 ## Building
@@ -32,7 +35,7 @@ VS Code's LaTeX Workshop is configured by [`.vscode/settings.json`](.vscode/sett
 For the same behavior from a terminal, run this from the desired revision directory:
 
 ```sh
-cd Rev4
+cd Rev5
 latexmk -pdf -synctex=0 -emulate-aux-dir -auxdir=.build -outdir=. Resume.tex
 latexmk -pdf -synctex=0 -emulate-aux-dir -auxdir=.build -outdir=. CoverLetter.tex
 ```

@@ -1,8 +1,8 @@
 # Teaching, Technical Leadership, Tutoring, and Lecturing
 
-## IEEE at NC State — OPS2 Lead Instructor and ECE 306 Parts Coordinator
+## IEEE at NC State — Open Project Space 2 Lead Instructor
 
-Newer résumé drafts use the combined title **ECE 306 Parts Distribution Coordinator & OPS2 Instructor** and also refer to **OPS 2 Lead**. They date the role Fall 2025–Present; Connor describes two semesters of lead-instructor responsibility. Confirm the exact end date and whether the staffing model should be called sole lead, co-lead, or one of two lead instructors.
+Connor served as an OPS2 instructor in **Fall 2025 and Spring 2026**, with lead-instructor responsibility across both semesters. Historical drafts also use **OPS 2 Lead** and the combined organizational title **ECE 306 Parts Distribution Coordinator & OPS2 Instructor**.
 
 ### Open Project Space 2 lead instruction
 
@@ -16,6 +16,16 @@ Newer résumé drafts use the combined title **ECE 306 Parts Distribution Coordi
 - Helped students debug their own project decisions and workmanship instead of taking over the build or supplying the answer.
 - Balanced lecture, demonstration, individual coaching, and open-ended project support across students with different electronics experience.
 
+## IEEE at NC State — Soldering Workshop Coordinator, Lecturer, and Lab Instructor
+
+This was a separate IEEE instructional role from OPS2, although OPS2 also included soldering instruction. Exact workshop dates and attendance totals still need confirmation.
+
+- Coordinated standalone soldering workshops, including lesson flow, equipment/material preparation, instructional hardware, and laboratory support.
+- Lectured on through-hole and surface-mount soldering theory, safety, component handling, heat/application technique, inspection, and common failure modes.
+- Demonstrated professional soldering practice and supervised hands-on laboratory work rather than presenting soldering only as a résumé skill.
+- Used two custom NCSU IEEE flashing-light PCB keepsakes: one through-hole design and one surface-mount design.
+- Helped participants diagnose bridges, insufficient wetting, component orientation, heat damage, and assembly/continuity problems while teaching them to inspect and correct their own work.
+
 ### ECE 306 parts-distribution program
 
 - Centralized parts sourcing for student projects through bulk purchasing, vetted substitutions, consolidated shipping, and on-campus distribution.
@@ -23,7 +33,15 @@ Newer résumé drafts use the combined title **ECE 306 Parts Distribution Coordi
 - Documented sourcing, substitution, and distribution procedures for future IEEE officers rather than leaving the program dependent on one person.
 - A recovered résumé claims the program raised **$2,000 for IEEE in two weeks while lowering student costs**. This is a strong lead, but the amount, time window, definition of “raised,” and cost comparison should be confirmed before résumé use.
 
-## Embedded Systems Teaching Assistant — NC State University
+## ECE 306 Embedded Systems Instruction — NC State University
+
+### Role progression and workload
+
+- Supported ECE 306 across **Spring 2025, Fall 2025, and Spring 2026**.
+- Provided approximately **10 hours per week** of unofficial course support during two semesters.
+- Served as the officially appointed teaching assistant for approximately **20 hours per week** during one semester.
+- Connor listed Spring 2025, Fall 2025, and Spring 2026 after describing the two-unofficial/one-official progression, which suggests Spring 2026 was official; keep public wording semester-neutral until that mapping is explicitly confirmed.
+- Future résumé wording should distinguish the two unofficial semesters from the one formal TA appointment instead of implying three semesters of official employment or that the unofficial work was necessarily unpaid.
 
 ### Instruction
 
@@ -44,7 +62,7 @@ Newer résumé drafts use the combined title **ECE 306 Parts Distribution Coordi
 
 - Connor reports that the course had typically averaged a C+ in the preceding semester and reached a flat A- during his semester after he added supplemental lectures and extensive problem-solving support.
 - Preserve the exact C+-to-A- description as a direct user-reported outcome. Do not convert it to “15 letter points” or a percentage without defining the calculation.
-- The result remains excluded from the public résumé until the relevant semesters, Connor's level of attribution, and grade records or instructor confirmation are available.
+- Rev5 uses cautious, non-exclusive wording that presents the instructional additions alongside the reported change rather than claiming sole causation. For a high-scrutiny application, confirm the relevant semester and retain grade records or instructor corroboration if available.
 
 ## Mathematics Tutor — Tri-County Community College, January–May 2022
 
@@ -72,6 +90,7 @@ Newer résumé drafts use the combined title **ECE 306 Parts Distribution Coordi
 - Technical instruction and supplemental lecturing
 - Embedded firmware and hardware debugging across many implementations
 - Through-hole and SMT soldering instruction
+- Standalone workshop coordination, lecturing, demonstrations, and laboratory supervision
 - Project scoping, integration, and final demonstration
 - Parts sourcing, vetted substitutions, logistics, and documented program handoff
 - PlatformIO, VS Code, GitHub, KiCad, BOMs, and custom-PCB project support
@@ -80,6 +99,6 @@ Newer résumé drafts use the combined title **ECE 306 Parts Distribution Coordi
 
 ## Resume Selection Guidance
 
-- Keep the embedded-systems TA and electronics-workshop leadership on the general embedded résumé because they reinforce technical depth, soldering, communication, and rapid diagnosis.
+- Keep the ECE 306 instruction, OPS2 leadership, and separate soldering-workshop role on the general embedded résumé when space permits because they reinforce technical depth, professional soldering, communication, and rapid diagnosis.
 - Use mathematics tutoring or earlier STEM leadership only for teaching, applications-engineering, field-support, customer-facing, or leadership-focused variants.
 - Do not include the unverified grade or IEEE fundraising outcomes—or old volunteer-hour totals—on the general engineering résumé until their definitions and evidence are confirmed.

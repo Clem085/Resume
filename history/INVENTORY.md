@@ -46,23 +46,26 @@ Files with matching extracted text but different bytes were kept because typogra
 
 - An official Tri-County record supports an Associate in Arts awarded August 1, 2023, with a 4.0 GPA and “Graduated Top of Class.” The record remains private; only the normalized fact belongs in the experience library.
 - Contemporaneous 2024 files support the AEGIS title `Computer Science Intern`, May–August 2024, plus the restricted SSH/Embedded Linux interface, RS232, CAN, Python, and Bash work.
-- Newer resume source describes a PIC32/TMS320 firmware-update architecture, J1939, a C++ flasher, a Python TCP/IP sender, checksum/chunking logic, SPI-flash image storage, a golden image, and extensive Git documentation. The exact topology and summer assignment need confirmation.
+- Newer resume source describes a PIC32/TMS320 firmware-update architecture, J1939, a C++ flasher, a Python TCP/IP sender, checksum/chunking logic, SPI-flash image storage, a golden image, and extensive Git documentation. Connor confirmed that these were connected stages of one product's update and boot-control workflow, not one monolithic program.
 - IEEE drafts add the ECE 306 parts-distribution program, a ten-week Open Project Space 2 sequence, PlatformIO/VS Code/GitHub, and a reported $2,000 raised in two weeks. Titles, dates, and the metric need confirmation.
 - ECE 306 sources add two programmable buttons, a rotary selector, mode selection, and software debouncing.
 - Project sources add Qiskit/Aer Grover search, Verilog/AMD Vivado work, a Kogge–Stone adder, and real-time scheduling theory. The lone VHDL claim conflicts with the repeated Verilog record.
 
 ## Conflicts to Resolve Before Publication
 
-- C++/UART DSP flashing plus PIC32 SPI storage versus the earlier summary of Python/Bash utilities with SPI reflashing. These may be separate tools or paths.
-- `Computer Science Intern` versus `Embedded Systems Firmware Intern` for one or both AEGIS summers.
 - Verilog in repeated project records versus one VHDL cover-letter claim.
 - Multiple historical NC State GPA values; omit GPA without a current transcript.
 - Whether OPS2 leadership was sole lead, co-lead, or one of two lead instructors.
 - Whether the reported $2,000/two-week IEEE result and C+-to-A- teaching outcome can be documented and publicly attributed.
 
-## Resolved Source Question
+## Resolved Source Questions
 
 - The twelve-versus-24 PWM discrepancy is resolved: the system had 24 physical outputs arranged as twelve A/B pairs. Each A output had independently configurable duty cycle, period/frequency, and relative phase; its B output could only match or exactly invert the paired A waveform.
+- The AEGIS timeline is resolved: Computer Science Intern from May--August 2024, Embedded Systems Intern from May--August 2025, and Embedded Firmware Engineer beginning May 2026.
+- The firmware-update descriptions are compatible: the C++ HEX-file programmer, Python/TCP transfer, PIC32 SPI-flash/golden-image handling, and TMS320 UART programming were multiple connected stages for one product.
+- BMS work belongs to the NC State senior-design project and must not be attributed to AEGIS employment.
+- The NC State B.S. in Computer Engineering was completed in May 2026.
+- ECE 306 support ran Spring 2025, Fall 2025, and Spring 2026: two semesters were unofficial support at about 10 hours per week and one was an official TA appointment at about 20 hours per week. The supplied order suggests the official appointment was Spring 2026, but that mapping remains to be explicitly confirmed.
 
 ## Privacy and Disclosure
 

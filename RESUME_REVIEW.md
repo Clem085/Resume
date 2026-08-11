@@ -1,4 +1,18 @@
-# Rev3 Resume Review
+# Resume Evidence Review
+
+## Rev5 Corrections — August 10, 2026
+
+The following direct corrections supersede conflicting language in Rev3, Rev4, archived cover letters, and older notes:
+
+- **BMS work is senior design only.** Do not attribute BMS research, selection, firmware, or integration to any AEGIS internship or full-time role.
+- Connor graduated from NC State in May 2026 with a B.S. in Computer Engineering.
+- The exact AEGIS timeline is Computer Science Intern (May--August 2024), Embedded Systems Intern (May--August 2025), and Embedded Firmware Engineer (May 2026--Present).
+- Do not use “BSP” as a claimed skill. Name the supported work instead: TI Embedded Linux, Yocto/Arago images and toolchains, kernel and device-tree compilation, systemd services, Docker, and boot/service diagnosis.
+- The C++ HEX-file programmer, Python/TCP transfer, PIC32 SPI-flash/golden-image handling, and TMS320 UART programming were multiple connected stages of one product's firmware-update and boot-control workflow.
+- ECE 306 support ran Spring 2025, Fall 2025, and Spring 2026: two semesters of unofficial support at about 10 hours per week and one formal TA appointment at about 20 hours per week. Do not call the unofficial work unpaid, and confirm the exact semester-to-status mapping before stating it in a targeted version.
+- OPS2 lead instruction ran Fall 2025 and Spring 2026. Standalone IEEE soldering-workshop coordination, lecturing, and laboratory instruction was a separate role, although OPS2 also taught soldering.
+
+Rev5 uses these corrected facts. The material below documents the earlier Rev3 audit and should be read in that historical context.
 
 ## Post-Rev3 Archive Import — August 2026
 
@@ -13,10 +27,10 @@ High-value additions include a possible PIC32/TMS320 two-processor update archit
 - Added archive-supported TEAM details: dimensional inspection, tolerance validation, a factory-facing Excel/VBA checker, manufacturing collaboration, and a 17,000+ record tooling/part catalog.
 - Added the archive-supported Fall 2024 date and system scope for the MSP430 ECE 306 vehicle.
 - Preserved earlier projects, plumbing, tutoring, robotics, outreach, credentials, and leadership in separate source files for targeted variants.
-- Rebuilt Rev3 around four current AEGIS workflows: programmable power conversion, BMS/component integration, protocol/board debugging, and Embedded Linux/platform management.
+- Rebuilt Rev3 around four then-understood AEGIS workflows; Rev5 corrects the record by moving BMS entirely to senior design and power-conversion control to the internship period.
 - Moved the NC State degree directly below the name and removed the duplicated Education section.
 - Reduced taxonomy-heavy bullets and retained ATS keywords within coherent engineering workflows.
-- Kept the general résumé focused on embedded firmware, power/BMS, hardware integration, Embedded Linux/BSP, platform management, and validation roles.
+- Kept the general résumé focused on embedded firmware, power electronics, senior-design BMS work, hardware integration, Embedded Linux/platform integration, platform management, and validation roles.
 
 ## History Material Used in Rev3
 
@@ -63,20 +77,17 @@ These facts may support a targeted variant, but they are weaker than current pro
 
 ## Facts Requiring User Confirmation
 
-- Whether the B.S. Computer Engineering degree was conferred in May 2026; the date has now passed.
-- Exact official title and start date for the current AEGIS role.
-- Official title for the May–August 2025 AEGIS internship and which deliverables belong to 2024 versus 2025.
 - Exact number/types of BMS, monitoring, protection, charger, and interface ICs evaluated, validated, or integrated.
 - Whether SocketCAN, PCAN, DBC interpretation, CAN signal mapping, and target-family names are safe to disclose.
 - Whether the confirmed 24 physical outputs/twelve A-B pair topology and transformer-coupled architecture are approved for public disclosure. Each A output was independently parameterized; each B output only matched or inverted its paired A waveform.
-- Whether the C++/UART DSP flasher, Python/TCP PIC32 sender, SPI-flash image store/golden image, and prior Python/Bash SPI-reflash summary are one update path or several tools.
+- What APU and EPU stand for, whether the acronyms are public, and whether they describe one system or related systems.
+- Exact battery/CAN ownership, external-watchdog failure and recovery behavior, Docker usage, and Windows/Linux portability changes in the current role.
 - Whether IPMB, FRU, and sensor access were investigated, validated, integrated, or implemented in deliverable code.
 - Exact senior-design team size, personally owned subsystems, final prototype state, and completed validation.
-- Exact TA semesters, official role/course title, sections, and student count.
-- Whether the workshop role should be described as co-lead or joint lead instructor and its exact dates/organization.
+- Exact standalone soldering-workshop dates and audience size.
 - Whether the C+ to A- class change is documented and public.
 - Whether the IEEE parts program's reported $2,000/two-week result and lower-student-cost outcome can be documented and precisely defined.
-- Whether OPS2 should be described as sole lead, co-lead, or one of two lead instructors, plus its exact dates.
+- Whether OPS2 should be described publicly as lead instructor, co-lead, or one of two lead instructors.
 - Whether repeated Verilog sources or the lone VHDL claim accurately names each HDL project.
 - Current validity of the Adobe and FAA drone credentials.
 
@@ -84,7 +95,7 @@ These facts may support a targeted variant, but they are weaker than current pro
 
 - **Embedded firmware:** emphasize C/C++, peripheral drivers, RTOS, register-level debugging, JTAG, automated validation, and board bring-up.
 - **Power electronics/BMS firmware:** expand bidirectional buck-boost control, ADC feedback, converter coordination, component trade studies, protection/monitoring ICs, and safe-operation constraints.
-- **Embedded Linux/BSP:** expand AM62, Yocto/Arago, device trees, boot/root filesystems, systemd/watchdog services, Python/Bash tooling, and IPMI platform management.
+- **Embedded Linux/platform integration:** expand AM62, Yocto/Arago, device trees, kernel compilation, boot/root filesystems, systemd/watchdog services, Docker, Python/Bash tooling, and IPMI platform management.
 - **Hardware integration/test:** expand schematic/datasheet review, breakout-board prototyping, scopes/analyzers, controlled substitutions, tolerance validation, and reproducible test procedures.
 - **Applications/field support/technical training:** expand teaching, soldering workshops, documentation, customer-style diagnosis, manufacturing collaboration, and cross-disciplinary communication.
 - **Digital/software:** selectively add the ECE 212 logic design, ECE 309 C++ algorithms, LC-3 parser, or automation projects from `experience/personal-projects.md`.

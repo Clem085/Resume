@@ -1,154 +1,124 @@
 # AEGIS Power Systems Experience
 
-This file is the detailed source for professional AEGIS work. It intentionally separates the current engineering role from the 2024 and 2025 internships and generalizes internal products, customer details, network data, register maps, and proprietary power-stage information.
+This file is the detailed source for Connor's current engineering role and his 2024 and 2025 internships. It generalizes internal products, customer details, network data, register maps, and proprietary power-stage information.
 
-## Current Embedded Firmware Role
+## Attribution Boundaries
 
-The official title and start date still need confirmation. The work itself spans embedded firmware, power electronics, component integration, communication buses, Embedded Linux, test automation, and system-level debugging.
+- **Embedded Firmware Engineer:** May 2026–Present
+- **Embedded Systems Intern:** May–August 2025
+- **Computer Science Intern:** May–August 2024
+- The BMS research, component evaluation, and integration work belongs to the NC State senior-design project, not to any AEGIS role. Do not place BMS under AEGIS in future résumés or cover letters.
+- Use exact task language for TI Embedded Linux work. Do not label it generically as “BSP work”; Connor's direct experience is with Yocto/Arago images and toolchains, kernel and device-tree compilation, boot/service integration, and board-level validation.
 
-### Programmable bidirectional power conversion
+## Embedded Firmware Engineer — May 2026–Present
 
-- Developed firmware control for custom programmable power supplies built around variable bidirectional buck-boost converter stages; PWM is the switching-control mechanism inside the power-conversion architecture, not the project by itself.
-- Coordinated 24 physical PWM outputs arranged as twelve A/B channel pairs across transformer-coupled input and output stages.
-- Independently configured each A output's duty cycle, period/frequency, and phase shift relative to another signal; each paired B output could either match its A waveform or produce its exact inverse.
-- Translated requested input/output voltage behavior into coordinated switching configuration for the associated converter channels.
-- Managed timing, duty-cycle relationships, paired-channel behavior, synchronization, ADC feedback, and safe-operating constraints through centralized configuration logic.
-- Built the control interface so converter behavior could be changed without rewriting low-level peripheral code for each power channel.
-- Verified that requested operating changes were translated to the intended input-side and output-side control settings.
+The current role is Linux-intensive and spans embedded software, system services, CAN-connected power hardware, board integration, cross-platform development, and root-cause debugging.
 
-### BMS, monitoring, protection, and component integration
+### TI Embedded Linux development and integration
 
-- Evaluated multiple battery-management, cell-monitoring, protection, interface, and supporting ICs rather than reducing the work to a single part search.
-- Compared voltage and cell-count support, sensing architecture, balancing, protection behavior, host protocol, package/footprint, tool support, reference designs, sourcing risk, availability, and integration constraints.
-- Reviewed datasheets, schematics, reference designs, evaluation hardware, and existing system interfaces to identify electrical, protocol, pinout, and software compatibility issues before integration.
-- Distinguished the stages of the workflow: candidate research, selection/recommendation, bench validation, peripheral bring-up, system integration, and fault diagnosis.
-- Converted component trade studies into firmware requirements, hardware-interface decisions, initialization plans, bring-up sequences, and focused validation tests.
-- Used breadboards and breakout/evaluation hardware to validate one peripheral or interface at a time before committing the design to a custom PCB.
+- Develop and maintain software for TI AM62-class Embedded Linux systems using Yocto images and the Arago toolchain.
+- Compile and integrate Linux kernels and device trees for board-specific configuration and peripheral support.
+- Work with DTS, DTSI, and DTB artifacts, boot configuration, Linux images/root filesystems, and serial-console diagnostics during system bring-up.
+- Prepare and flash images, verify boot behavior, and use Linux logs and service diagnostics to trace failures through startup and runtime.
+- Treat device trees, kernels, services, scripts, configuration, and test procedures as maintained parts of the embedded product rather than one-off setup tasks.
 
-### I2C implementation and root-cause debugging
+### APU/EPU battery, CAN, and watchdog integration
 
-- Debugged acknowledgement failures, device and register addressing, transaction format, timing, pull-up networks, open-drain pin configuration, voltage compatibility, bus state, and shared-bus behavior.
-- Checked firmware register transactions against device register maps and datasheet timing requirements instead of treating a missing acknowledgement as a purely software problem.
-- Correlated logic-analyzer/protocol-decoder captures with schematics, firmware configuration, and known-good hardware.
-- Wrote focused test routines that isolated one device, peripheral, or register transaction at a time.
-- Used breakout boards, single-device tests, controlled hardware substitutions, and direct measurements to separate firmware, wiring, configuration, physical-layer, and device faults.
-- Considered whether development boards already supplied pull-ups and whether logic levels and electrical configuration were compatible across the complete signal path.
+- Integrate and debug an APU/EPU embedded power subsystem spanning battery hardware, CAN-connected devices, a TI Embedded Linux controller, application software, and system services.
+- Trace faults across batteries and power, wiring, CAN traffic, Linux boot/service logs, configuration, and application behavior rather than assuming a failure belongs to only hardware or software.
+- Implemented an external-watchdog solution and supporting Linux service behavior to supervise the system and provide controlled recovery from failures.
+- Use SocketCAN/PCAN, known-good nodes, bus-state and acknowledgement testing, logs, scopes, logic/protocol analyzers, and controlled substitutions during validation.
+- The APU/EPU acronyms have not yet been expanded or reviewed for public disclosure; use them without expansion or describe the work generically as an embedded power subsystem.
 
-### CAN and CAN FD validation
+### Docker and Windows/Linux compatibility
 
-- Diagnosed classical CAN and CAN FD behavior with SocketCAN, PCAN hardware, known-good nodes, bit-timing analysis, acknowledgement-state testing, DBC interpretation, signal mapping, and frame validation.
-- Compared working and failing nodes/adapters to isolate configuration, wiring, physical-layer, timing, and target-device faults.
-- Checked bitrate and timing assumptions, frame content, signal packing, and acknowledgement state instead of stopping at successful frame transmission.
-- Used controlled substitutions among adapters, development hardware, and target devices to narrow failures to a specific layer of the system.
+- Use Docker in the current development workflow.
+- Improve shared code, build flows, and engineering tools so they behave consistently across Linux and Windows rather than depending on one developer's host environment.
+- Identify and remove operating-system-specific assumptions while preserving behavior on the embedded Linux target.
+- Do not claim a specific container architecture, CI system, build framework, or measured portability result until those details are confirmed.
+
+### CAN, interfaces, and board-level debugging
+
+- Diagnose classical CAN and CAN FD behavior with SocketCAN, PCAN hardware, known-good nodes, bit-timing analysis, acknowledgement-state testing, DBC interpretation, signal mapping, and frame validation.
+- Work across I2C, SPI, UART/RS232, ADC, GPIO, timers, PWM, and debug interfaces during component-level and board-level integration.
+- Bring up hardware one interface at a time using logs, register reads, JTAG, oscilloscopes, logic/protocol analyzers, serial diagnostics, schematics, and datasheets.
+- Use controlled substitutions and known-good hardware to separate firmware, timing, configuration, wiring, physical-layer, and target-device faults.
 - FDCAN clock correction and MCU-migration work should remain out of the public résumé until source support and disclosure approval are confirmed.
-
-### Other firmware and board bring-up
-
-- Worked across SPI, UART, RS232, ADC, GPIO, timers, PWM, and debug interfaces during component-level and board-level integration.
-- Brought up hardware one peripheral at a time, using logs, register reads, JTAG, oscilloscopes, logic/protocol analyzers, serial diagnostics, schematics, and datasheets.
-- Used known-good hardware, breadboards, breakout boards, and controlled substitutions to identify whether failures originated in firmware, wiring, configuration, timing, or the target IC.
-- Documented resolved faults and repeatable bring-up procedures so later testing did not depend on a one-off debugging session.
 
 ### IPMI and embedded platform management
 
-- Characterized IPMI 2.0 behavior on embedded power-management hardware, including IPMB addressing, sensor enumeration/data, FRU inventory capability, and chassis-management services.
+- Characterized IPMI 2.0 behavior on embedded power hardware, including IPMB addressing, sensor enumeration/data, FRU inventory capability, and chassis-management services.
 - Separated network reachability and transport availability from session establishment, authentication, protocol support, target addressing, and firmware compatibility.
-- Investigated network-accessible management services as possible embedded platform-management interfaces rather than presenting the work as generic network scanning.
 - Used Linux command-line tools, service discovery, logs, and protocol-level reasoning to create a reproducible platform-management diagnostic workflow.
 - Evidence supports investigation and validation of IPMI/IPMB/sensor/FRU capabilities; it does not support claiming authorship of the underlying IPMI stack.
 
-### Embedded Linux, BSP work, and system services
-
-- Supported TI AM62-class Embedded Linux systems using Yocto/Arago images, board-specific device trees, boot configuration, and peripheral integration.
-- Worked with device-tree source and compiled artifacts to maintain or restore board configuration for evaluation and derivative hardware.
-- Created systemd services and external-watchdog services, then used boot and service diagnostics to validate startup order, supervision, failure handling, and restart behavior.
-- Prepared and flashed Linux images/root filesystems, checked boot configuration, and used serial/service diagnostics during board bring-up.
-- Developed Python and Bash tools for hardware monitoring, firmware flashing, automated validation, repeatable bring-up, and field diagnostics.
-- Treated scripts and services as maintained system components with defined behavior, logging, reproducible setup, and engineering documentation.
-
 ### Engineering workflow, documentation, and teamwork
 
-- Connected component research, firmware implementation, board bring-up, protocol diagnosis, and validation rather than reporting each technology as an isolated task.
-- Worked from specifications, schematics, datasheets, reference designs, logs, measurements, and controlled tests when communicating root cause and recommended changes.
-- Created handoff documentation for build, flashing, validation, Git/GitLab, test, service, and toolchain workflows.
-- Communicated findings and integration constraints to firmware, electrical, and system engineers while coordinating dependencies across hardware and software.
+- Connect specifications, schematics, datasheets, implementation, Linux integration, board bring-up, protocol diagnosis, and validation instead of treating each technology as an isolated task.
+- Communicate root cause, constraints, and recommended changes across firmware, electrical, and system-level work.
+- Create handoff documentation for builds, flashing, validation, Git/GitLab, tests, services, and toolchains so resolved work remains reproducible.
 
-## AEGIS Internships — May–August 2024 and May–August 2025
+## Projects Recorded Across the 2024 and 2025 Internships
 
-Archived 2024 résumés identify the official role as **Computer Science Intern**. Newer drafts sometimes combine both summers under **Embedded Systems Firmware Intern** and sometimes under **Computer Science Intern**; the official 2025 title is not preserved. Until the two titles are confirmed, a public combined entry should use the neutral title **Intern**.
+The recovered sources group the projects below across both AEGIS summers. The exact role titles and dates are known, but the specific summer for each newer power-control and updater deliverable should be confirmed before a future résumé assigns it to only 2025.
 
-### TMS320 power-control firmware — topology reconciled
+### TMS320 DSP power-conversion control
 
-- Connor confirmed that the system exposed 24 physical PWM outputs as twelve A/B pairs.
-- Each A output supported independent duty-cycle, period/frequency, and relative phase-shift configuration.
-- Each B output was dependent on its paired A output and could be selected only as a matching or exactly inverted waveform; it was not independently parameterized.
-- A newer résumé source also describes an ADC-read potentiometer that adjusted PWM6 duty cycle live during test.
-- Resume wording should say **24 physical PWM outputs in twelve configurable A/B pairs**, not “24 independently configurable channels.”
+- Developed C firmware for custom programmable bidirectional buck-boost power supplies across transformer-coupled input and output stages.
+- Controlled 24 physical PWM outputs arranged as twelve A/B pairs.
+- Independently configured each A output's duty cycle, switching period/frequency, and phase shift relative to another signal.
+- Configured each dependent B output to match or exactly invert its paired A waveform; B was not independently parameterized.
+- Translated requested converter behavior into coordinated switching configuration and supported ADC/PWM validation in Code Composer Studio.
+- A newer source also describes an ADC-read potentiometer that adjusted PWM6 duty cycle live during test.
+
+### Connected PIC32/TMS320 firmware-update system
+
+- Developed connected stages of one PIC32/TMS320 DSP product's firmware-update and boot-control workflow.
+- Built a user-facing C++ command-line programmer that accepted a supplied firmware HEX image, making the flashing workflow easier to operate without rewriting the tool for each image.
+- Used Python/TCP packet transport with chunking and checksum validation to move firmware into the product.
+- Coordinated PIC32 and TMS320 communication for external SPI-flash staging, golden-image handling, UART DSP programming, verification, and boot control.
+- The tools and processor interactions belonged to the same product but represented multiple connected stages, not one monolithic program.
+- Supported FreeRTOS firmware, serial-interface validation, schematic review, soldering, and Code Composer Studio debugging.
+- One archived version mentions repair of legacy `BDC` code; keep that wording internal until the acronym and exact contribution are clarified.
+
+### CAN/J1939 and engineering handoff
+
+- Worked with the PIC32 across I2C, SPI, CAN/J1939, and UART orchestration while the TMS320 DSP executed power-control firmware.
+- Standardized a GitLab/Git Extensions workflow around GitFlow-style branches and signed annotated release tags.
+- A newer résumé reports an illustrated Git guide exceeding 80 pages plus a shorter handout and training slides. Confirm the exact page count and audience before using the metric publicly.
+- Documented firmware delivery, CLI usage, test procedures, and toolchain setup for engineering handoff.
+
+## Work Specifically Supported for the Computer Science Internship — May–August 2024
 
 ### Embedded Linux and remote-control interface
 
-- Built a secured chroot environment and restricted SSH command-line interface on a stripped TI Yocto/Arago system used with embedded power hardware.
+- Built a secured chroot environment and restricted SSH command-line interface on a resource-constrained TI Yocto/Arago system used with embedded power hardware.
 - Developed Bash and Python commands that exposed approved inspection and control operations without providing an unrestricted shell.
-- Worked with Linux, filesystem/tool availability, secure login, deployment constraints, and remote hardware control as one integrated workflow.
+- Worked with Linux filesystem/tool availability, secure login, deployment constraints, and remote hardware control as one integrated workflow.
 
-### Firmware update and embedded debugging
-
-- Created packetized Python/Bash firmware-flashing utilities with checksum validation and SPI reflashing support for TI TMS320 targets.
-- Supported FreeRTOS firmware, ADC/PWM testing, serial-interface validation, schematic review, and Code Composer Studio debugging.
-- Turned manual update and diagnostic steps into documented, repeatable engineering workflows; the measurable time/reliability effect still needs confirmation.
-
-#### Recovered two-processor update architecture — confirm before publication
-
-- A newer source describes a PIC32 and TMS320 division of responsibility: the PIC32 coordinated I2C, SPI, CAN/J1939, UART, and update transport while the TMS320 executed PWM control.
-- It separately names a C++ serial flasher for the DSP and a Python TCP/IP sender for the PIC32, using chunking and checksum validation during transfer.
-- The draft describes the PIC32 storing received firmware in external SPI flash, retaining a golden image, reflashing the DSP over UART, verifying the image, and committing it to DSP on-chip flash.
-- Another version summarizes file generation, packetized/checksummed transfer, and SPI reflashing without the same topology. These may be different tools or stages; do not collapse them into one implementation until the path is confirmed.
-- One version says legacy `BDC` code was repaired. The acronym, ownership, and actual change are not established well enough for public use.
-
-### Communication reverse engineering and validation
+### Communication, test hardware, and debugging
 
 - Reverse-engineered RS232 command transactions from limited documentation and generated the checksums required for valid messages.
 - Worked with RS232 and CAN communication between embedded devices and host/control systems.
-- Newer sources repeatedly name CAN/J1939 in the PIC32/TMS320 system; preserve J1939 as an archive-supported lead until the exact deliverable and summer are confirmed.
-- Compared documented behavior with observed responses and hardware state when validating commands.
-
-### Test hardware and engineering handoff
-
 - Helped construct a relay, resistive-load, and power-supply circuit for burn-in monitoring and test support.
-- Reviewed schematics and assisted with soldering, wiring, and hardware setup during validation.
-- Collaborated with electrical and mechanical engineers during hardware/firmware integration; archived cover letters also describe schematic review of a custom PCB controlling a Linux-based power supply.
-- Standardized a GitLab/Git Extensions workflow around GitFlow-style branches and signed annotated release tags.
-- A newer résumé reports an illustrated Git guide exceeding 80 pages plus a shorter handout and training slides. Confirm the exact page count and audience before using the metric publicly.
-- Documented firmware delivery, test procedures, CLI use, and toolchain setup for engineering handoff.
-
-### Lower-confidence internship leads
-
-The following appear primarily in tailored cover letters. They are retained for interview follow-up, not treated as established accomplishments without code, documentation, or Connor's confirmation:
-
-- TCP client/server implementation and Python/Bash automation used to manage embedded systems
-- C/C++ unit testing and timing-conscious use of print/LED diagnostics
-- The exact boundary between FreeRTOS application changes, test code, legacy-code repair, and production firmware
-- Customer/market language describing military or aerospace power supplies, which may also be inappropriate to disclose
+- Reviewed schematics and assisted with soldering, wiring, hardware setup, and cross-functional electrical/mechanical integration during validation.
 
 ## Best Resume Themes
 
-- Embedded C/C++, Python, and Bash across firmware and Linux
-- Programmable bidirectional buck-boost power conversion
-- BMS and power-management IC evaluation and integration
-- I2C, CAN/CAN FD, CAN/J1939, SPI, UART, RS232, IPMI, and IPMB debugging
-- PIC32/TMS320 distributed control and firmware-update architecture, once the update path is confirmed
-- TI AM62 Embedded Linux, Yocto/Arago, device trees, systemd, and watchdogs
-- Board bring-up, analyzers, scopes, JTAG, schematics, and datasheets
-- Firmware flashing, automated validation, field diagnostics, and documentation
+- TI Embedded Linux, Yocto/Arago, kernel and device-tree compilation, systemd, Docker, and external watchdogs
+- Cross-platform Windows/Linux code and tooling
+- APU/EPU battery/CAN/Linux system integration and cross-layer debugging
+- Embedded C/C++, Python, and Bash
+- TMS320 DSP bidirectional power-conversion control with twelve A/B PWM pairs
+- PIC32/TMS320 firmware-update, recovery, programming, and boot coordination
+- CAN/CAN FD/J1939, I2C, SPI, UART/RS232, IPMI, and IPMB debugging
+- Board bring-up, analyzers, scopes, JTAG, schematics, datasheets, validation, and documentation
 
 ## Details Requiring Confirmation or Disclosure Review
 
-- Official title and start date for the current role
-- Official title for the 2025 internship and which deliverables belong to each internship year
-- Whether the C++/UART DSP flasher, Python/TCP PIC32 sender, SPI-flash storage, golden image, and earlier Python/Bash SPI-reflash summary are one path or several tools
-- Meaning of `BDC` and the scope of any legacy-code repair
-- Whether CAN/J1939, PIC32/TMS320 names, Git tooling, and the 80+ page documentation metric may be disclosed
-- Exact number/types of BMS devices that were evaluated, validated, or fully integrated
-- Whether SocketCAN, PCAN, DBC/signal-mapping, and target-family names may be disclosed
-- Whether the 24-output count, transformer-coupled topology, A/B pairing behavior, and safe-operating details are approved for public disclosure
-- Which IPMI/IPMB/FRU/sensor capabilities were investigated, validated, or incorporated into deliverable firmware
+- What APU and EPU stand for, whether they describe one system or related systems, and whether the acronyms are public
+- Exact battery-interface work, owned CAN behavior, watchdog failure/recovery behavior, and public-safe product wording
+- Exact Docker usage and the code/build/tooling changes made for Windows/Linux compatibility
+- Meaning of `BDC` and the scope of the legacy-code repair
+- Whether CAN/J1939, PIC32/TMS320 names, Git tooling, golden-image behavior, and the 80+ page documentation metric may be disclosed
+- Whether SocketCAN, PCAN, DBC/signal-mapping, target-family names, the 24-output topology, transformer coupling, and IPMI/IPMB behavior are approved for public disclosure

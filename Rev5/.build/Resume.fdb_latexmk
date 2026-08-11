@@ -1,8 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1786135257.00831 "/home/connor/Downloads/Programming/Resume/Rev4/Resume.tex" "Resume.pdf" "Resume" 1786135258.28571 0
-  ".build/Resume.aux" 1786135258.13088 668 c073a7a2d690cb59e24aac277e6629eb "pdflatex"
-  ".build/Resume.out" 1786135258.13138 691 088323412c87b09a409a95df49251ebf "pdflatex"
-  "/home/connor/Downloads/Programming/Resume/Rev4/Resume.tex" 1786135256.41435 6337 448ea4b477ebda25770efd66d23999fd ""
+["pdflatex"] 1786422255.05719 "Resume.tex" "Resume.pdf" "Resume" 1786422256.08831 0
+  ".build/Resume.aux" 1786422255.92611 677 3f9cc16175cbfcb4e0566a09e0682e5f "pdflatex"
+  ".build/Resume.out" 1786422255.92711 739 7da93247ee4d0ddfdfe0f54743462e20 "pdflatex"
   "/usr/share/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5ponh6.enc" 1775415801 3344 37c976a8b2fa4b8f132a488735054f7d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc" 1775415801 3021 665788e9679767ade2a71155215d25e0 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1--base.tfm" 1775415801 1648 77a748afe0a406be1ac3f29e1cd365cb ""
@@ -78,7 +77,7 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1775415801 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1785902715 5380826 a3bfff71f433a54f017bc880f3b8ea78 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1785902685 2328178 74f572c7bb028aa92a9fc3b4c42b4e0e ""
-  "Resume.tex" 1786135256.41435 6337 448ea4b477ebda25770efd66d23999fd ""
+  "Resume.tex" 1786422249.6181 7674 e34cc93659c1cc394cba0b5a5d6a8e29 ""
   (generated)
   ".build/Resume.aux"
   ".build/Resume.log"

@@ -1,7 +1,7 @@
-PWD /home/connor/Downloads/Programming/Resume/Rev4
+PWD /home/connor/Downloads/Programming/Resume/Rev5
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/connor/Downloads/Programming/Resume/Rev4/Resume.tex
+INPUT Resume.tex
 OUTPUT .build/Resume.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
@@ -132,6 +132,7 @@ OUTPUT .build/Resume.pdf
 INPUT .build/Resume.out
 INPUT .build/Resume.out
 OUTPUT .build/Resume.out
+INPUT /usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Regular-tlf-t1.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Regular-tlf-t1.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1.tfm

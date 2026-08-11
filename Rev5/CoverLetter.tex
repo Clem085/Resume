@@ -1,0 +1,81 @@
+\documentclass[10pt,letterpaper]{article}
+
+% Customize these four lines for a specific application.
+% Escape LaTeX-reserved characters in company names (for example, use \&).
+\newcommand{\LetterDate}{August 10, 2026}
+\newcommand{\TargetRole}{Embedded Firmware Engineer}
+\newcommand{\TargetCompany}{your organization}
+\newcommand{\InterestSentence}{I am especially interested in teams building dependable embedded products where hardware, firmware, and system software must be validated together.}
+
+\usepackage[margin=0.72in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default,type1]{sourcesanspro}
+\usepackage[final]{microtype}
+\usepackage{ragged2e}
+\usepackage{iftex}
+\usepackage[hidelinks]{hyperref}
+
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\hypersetup{
+  pdftitle={Connor Savugot Cover Letter},
+  pdfauthor={Connor Savugot},
+  pdfsubject={Application for \TargetRole},
+  pdfkeywords={embedded firmware, C, C++, Embedded Linux, Yocto, device trees, systemd, Docker, CAN, DSP, board bring-up}
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.72em}
+\hfuzz=0.4pt
+
+\begin{document}
+\fontsize{10.35}{12.65}\selectfont
+\RaggedRight
+\setlength{\RaggedRightRightskip}{0pt plus 5em}
+\emergencystretch=1em
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{center}
+  {\fontsize{22}{23}\selectfont\bfseries Connor Savugot}\\[2pt]
+  {\bfseries B.S. in Computer Engineering | North Carolina State University | Graduated May 2026}\\[2pt]
+  {\fontsize{9.7}{10.5}\selectfont
+    \href{mailto:consav04@gmail.com}{consav04@gmail.com}
+    \enspace|\enspace \href{tel:+18285419487}{+1-828-541-9487}
+    \enspace|\enspace Murphy, NC
+    \enspace|\enspace \href{https://linkedin.com/in/connorsavugot}{linkedin.com/in/connorsavugot}
+    \enspace|\enspace \href{https://github.com/Clem085}{github.com/Clem085}}
+\end{center}
+
+\vspace{-0.15em}
+\hrule
+\vspace{0.8em}
+
+\LetterDate
+
+\textbf{Re: \TargetRole}
+
+Dear Hiring Manager,
+
+I am applying for the \TargetRole{} position at \TargetCompany. I graduated from North Carolina State University in May 2026 with a B.S. in Computer Engineering and joined AEGIS Power Systems that month as an Embedded Firmware Engineer after completing two summer internships there. I work where low-level firmware, electronics, Embedded Linux, and test hardware meet, and I am comfortable carrying a problem from a datasheet or schematic through implementation, bench diagnosis, and documented handoff.
+
+In my current role, I build and debug TI AM62-based Embedded Linux systems using Yocto/Arago images and toolchains, kernel and device-tree compilation, boot and service diagnostics, systemd services, and external-watchdog supervision. On APU/EPU embedded power subsystems integrating battery hardware, CAN-connected devices, and Linux services, I trace failures across power and wiring, bus traffic, Linux configuration, service logs, and application code. I develop in C/C++, Python, and Bash, use Docker in development workflows, and am improving shared code and tooling so it behaves consistently across Windows and Linux. I also diagnose CAN/CAN FD, IPMI/IPMB, I2C, SPI, and UART issues using logs, register reads, scopes, analyzers, schematics, datasheets, and controlled substitutions.
+
+I held two AEGIS internships: Computer Science Intern in 2024 and Embedded Systems Intern in 2025. Across those roles, I developed TMS320 DSP firmware for transformer-coupled bidirectional buck--boost power stages using twelve PWM A/B pairs, or 24 physical outputs, with independent control of each A signal and match/invert behavior for B. I also developed multiple connected stages of one PIC32/TMS320 product's update workflow: a C++ command-line programmer accepted supplied HEX files, Python/TCP transport handled packetization and checksum validation, and the processors coordinated external SPI-flash and golden-image handling, UART DSP programming, verification, and boot control. In 2024, I built a restricted SSH/chroot interface for TI Yocto/Arago hardware and worked with Python, Bash, RS-232, CAN, and system test hardware.
+
+Separately, my BMS experience comes from my NC State senior design project. I helped define the architecture and requirements, specify interfaces, track risks, and plan validation. The system spanned sensing, BMS and power hardware, MSP430 firmware, custom PCB interfaces, communications, and telemetry. I evaluated candidate ICs and translated component trade studies into firmware and hardware integration plans while coordinating design decisions and documentation with the team.
+
+Teaching has strengthened the same skills. I supported ECE 306 for three semesters: two in an unofficial teaching support role and one as the official teaching assistant. I delivered supplemental lectures, led laboratories, debugged code and PCBs, guided projects, and supported students. I also led two semesters of IEEE Open Project Space 2 and separately coordinated and taught through-hole and surface-mount soldering workshops. Guiding students to find their own root causes has made me a more methodical debugger and a clearer engineering teammate.
+
+I would bring hands-on embedded C/C++, Linux, hardware integration, and technical communication experience to \TargetCompany. \InterestSentence{} I would welcome the opportunity to discuss how I could contribute to your team.
+
+Sincerely,
+
+\textbf{Connor Savugot}
+
+\end{document}
