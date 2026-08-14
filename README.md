@@ -6,7 +6,7 @@ The [`experience/`](experience/) folder is the detailed source library for futur
 
 The recovered resumes, cover letters, LaTeX sources, application packets, and supporting files are organized under [`history/`](history/). See its [archive guide](history/README.md) and [evidence inventory](history/INVENTORY.md) before relying on a historical claim; duplicates and conflicted drafts are intentionally preserved.
 
-Current attribution rules supersede wording in older revisions and archived prompts: BMS work belongs to senior design, not AEGIS; Connor's current AEGIS title is Embedded Firmware Engineer beginning May 2026; and the exact TI Linux work should be named instead of using the broader label “BSP.”
+Current attribution rules supersede wording in older revisions and archived prompts: senior design used an STMicroelectronics controller, TI BQ-family battery-monitor/ADC, and external CAN transceivers; MSP430FR2355 belongs to ECE 306; BMS work belongs to senior design, not AEGIS; Connor's current AEGIS title is Embedded Firmware Engineer beginning May 2026; the current role includes dsPIC33CK and VITA 46.11 Tier 2 VPX/IPMI work; and the exact TI Linux work should be named instead of using the broader label “BSP.”
 
 ## Revisions
 
@@ -18,8 +18,9 @@ Current attribution rules supersede wording in older revisions and archived prom
 | [`Rev3/`](Rev3/) | Rewritten embedded firmware and hardware-integration résumé emphasizing power conversion, BMS integration, protocol debugging, Embedded Linux, IPMI, senior design, and technical teaching. |
 | [`Rev4/`](Rev4/) | General full-time embedded-firmware résumé using the reconciled 12-pair/24-output power-control architecture, stronger end-to-end engineering workflows, and a matching adaptable cover letter. |
 | [`Rev5/`](Rev5/) | Linux-forward embedded-firmware résumé and blanket cover letter with the exact AEGIS timeline, BMS confined to senior design, TI Yocto/Arago kernel and device-tree work, Docker, APU/EPU system integration, and the connected PIC32/TMS320 update workflow. |
+| [`Rev6/`](Rev6/) | Low-level-firmware-first résumé and cover letter emphasizing dsPIC33CK, PIC32/FreeRTOS, bare-metal TMS320 DSP control, communication interfaces, VPX/IPMI, and board bring-up; Embedded Linux remains supporting systems-integration breadth. |
 
-Rev5 is the newest résumé revision.
+Rev6 is the newest résumé revision.
 
 Each revision root contains:
 
@@ -35,7 +36,7 @@ VS Code's LaTeX Workshop is configured by [`.vscode/settings.json`](.vscode/sett
 For the same behavior from a terminal, run this from the desired revision directory:
 
 ```sh
-cd Rev5
+cd Rev6
 latexmk -pdf -synctex=0 -emulate-aux-dir -auxdir=.build -outdir=. Resume.tex
 latexmk -pdf -synctex=0 -emulate-aux-dir -auxdir=.build -outdir=. CoverLetter.tex
 ```
@@ -210,19 +211,15 @@ Preserve the EV Active Sensor Adapter project, but improve the system-level fram
 
 Emphasize:
 
-- MSP430FR2355
+- STMicroelectronics controller
+- TI BQ-family battery-monitor/ADC
+- external CAN transceivers
 - end-to-end architecture
 - BMS and power-management integration
 - component trade studies
 - custom PCB interfaces
 - sensing
 - telemetry
-- interrupt-driven SPI
-- ADC acquisition
-- UART diagnostics
-- timers
-- GPIO
-- LCD telemetry
 - subsystem validation
 - design reviews
 - requirements
@@ -236,14 +233,14 @@ Do not reduce this to a class project. Present it as cross-disciplinary system d
 
 Keep a clear distinction between:
 
-- Connor’s own MSP430 vehicle project
+- Connor’s own MSP430FR2355 vehicle project
 - later work as an embedded systems teaching assistant
 
 For the TA work, emphasize:
 
 - firmware and hardware debugging across many student implementations,
 - C,
-- MSP430,
+- MSP430FR2355,
 - ADC,
 - timers,
 - interrupts,
@@ -463,7 +460,7 @@ Suggested themes:
 - packetized firmware flashing with checksums and SPI reflashing
 - RS232 reverse engineering
 - FreeRTOS and serial-interface validation
-- burn-in monitoring hardware
+- relay/load and power-supply test circuitry (Connor did not perform burn-in tests)
 - engineering documentation
 
 SENIOR DESIGN BULLET STANDARD
@@ -473,8 +470,9 @@ Use three or four bullets.
 Emphasize:
 
 - architecture and interfaces,
+- ST MCU control, TI BQ battery measurement/ADC, and CAN physical-layer subsystems,
 - BMS and component selection,
-- interrupt-driven SPI and telemetry,
+- custom-PCB power, sensing, and telemetry integration,
 - subsystem validation,
 - requirements,
 - test plans,
@@ -489,7 +487,7 @@ Use one or two strong bullets.
 
 Possible structure:
 
-- Delivered supplemental instruction and supported MSP430 firmware, C, ADC, timers, interrupts, GPIO, LCD integration, serial diagnostics, and custom-PCB bring-up.
+- Delivered supplemental instruction and supported MSP430FR2355 firmware, C, ADC sensing, timer/PWM motor control, interrupts, GPIO, LCD/serial integration, and custom-PCB bring-up.
 - Diagnosed firmware, wiring, soldering, toolchain, and board-level failures across diverse student implementations while teaching students to isolate faults independently.
 
 The electronics workshop may use one bullet:

@@ -65,11 +65,16 @@ The archive is deliberately broader than this library. It preserves private reco
 
 Important facts recovered from the archive include:
 
+- Senior design used an STMicroelectronics controller, TI BQ-family battery-monitor/ADC, and external CAN transceivers; MSP430FR2355 belongs to ECE 306, not senior design. Exact senior-design part-number suffixes remain unconfirmed.
 - The 2024 AEGIS role was historically titled **Computer Science Intern** and ran May–August 2024.
 - The 2025 AEGIS role was **Embedded Systems Intern** and ran May–August 2025.
 - The current AEGIS role is **Embedded Firmware Engineer**, beginning May 2026.
+- Current professional work includes dsPIC33CK 16-bit firmware/toolchain bring-up and implementation of a VITA 46.11 Tier 2 IPMI management controller for a VPX power supply over I2C-based IPMB.
+- CAN experience spans Classical CAN (CAN 2.0), CAN FD, J1939, and DroneCAN; J1939 and DroneCAN are higher-layer protocols and should not be presented as link-layer CAN variants.
 - The 2024 work included a restricted SSH CLI for embedded power hardware, Linux/Bash/Python, RS232, and CAN.
+- The 2024 hardware contribution included constructing the relay/load/power-supply test circuit; Connor did not perform or run burn-in tests.
 - The C++ HEX-file programmer, Python/TCP transport, PIC32 SPI-flash/golden-image logic, and TMS320 UART programming were connected stages of one product's update and boot-control workflow, not one monolithic program.
+- In that product, the PIC32 ran FreeRTOS for communication/update coordination and the TMS320 DSP ran bare-metal C with TI hardware libraries for real-time control.
 - BMS research, selection, firmware prototyping, and integration belong exclusively to senior design; they must not be attributed to an AEGIS internship or job.
 - Connor graduated from NC State in May 2026 with a B.S. in Computer Engineering.
 - ECE 306 support covered Spring 2025, Fall 2025, and Spring 2026: two semesters of unofficial support at about 10 hours per week and one formal TA appointment at about 20 hours per week. The exact semester-to-status mapping should be confirmed before a targeted version states it.

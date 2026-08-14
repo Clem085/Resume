@@ -36,6 +36,7 @@ Two summer internships provided early experience with manufacturing engineering,
 
 ## Best Resume Themes
 
+- Creation of repeatable manufacturing-quality tests
 - Excel/VBA automation
 - Tolerance validation and out-of-spec part identification
 - Manufacturing quality data and dimensional inspection
@@ -48,6 +49,10 @@ Two summer internships provided early experience with manufacturing engineering,
 - Strong supporting evidence for test, validation, manufacturing, quality, applications, and hardware-integration roles.
 - Useful as a one-line proof of automation and engineering discipline on a general embedded résumé.
 - Less important than current firmware/Embedded Linux work, the 2025 power-conversion internship, senior-design BMS work, or board bring-up, so it should not consume multiple résumé bullets.
+
+### Compact general-résumé summary
+
+- Developed a repeatable Excel/VBA dimensional and spline-tolerance validation test that automatically flagged out-of-spec parts; built a searchable 17,000+ record tooling/part/vendor catalog with operation, location, and revision traceability.
 
 ## Details Requiring Confirmation
 

@@ -1,0 +1,80 @@
+\documentclass[10pt,letterpaper]{article}
+
+% Customize these three lines for a specific application.
+% Escape LaTeX-reserved characters in company names (for example, use \&).
+\newcommand{\TargetRole}{Embedded Firmware Engineer}
+\newcommand{\TargetCompany}{your organization}
+\newcommand{\InterestSentence}{I am especially interested in teams building dependable embedded products where hardware, firmware, and system software must be validated together.}
+
+\usepackage[margin=0.72in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default,type1]{sourcesanspro}
+\usepackage[final]{microtype}
+\usepackage{ragged2e}
+\usepackage{iftex}
+\usepackage[hidelinks]{hyperref}
+
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\hypersetup{
+  pdftitle={Connor Savugot Cover Letter},
+  pdfauthor={Connor Savugot},
+  pdfsubject={Application for \TargetRole},
+  pdfkeywords={low-level embedded firmware, embedded C, C++, bare metal, FreeRTOS, dsPIC33CK, PIC32, TMS320 DSP, peripheral bring-up, firmware update, power conversion, VPX, IPMI, CAN FD, J1939, DroneCAN, Embedded Linux, Yocto}
+}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.72em}
+\hfuzz=0.4pt
+
+\begin{document}
+\fontsize{10.35}{12.65}\selectfont
+\RaggedRight
+\setlength{\RaggedRightRightskip}{0pt plus 5em}
+\emergencystretch=1em
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{center}
+  {\fontsize{22}{23}\selectfont\bfseries Connor Savugot}\\[2pt]
+  {\bfseries B.S. in Computer Engineering | North Carolina State University | Graduated May 2026}\\[2pt]
+  {\fontsize{9.7}{10.5}\selectfont
+    \href{mailto:consav04@gmail.com}{consav04@gmail.com}
+    \enspace|\enspace \href{tel:+18285419487}{+1-828-541-9487}
+    \enspace|\enspace Murphy, NC
+    \enspace|\enspace \href{https://linkedin.com/in/connorsavugot}{linkedin.com/in/connorsavugot}
+    \enspace|\enspace \href{https://github.com/Clem085}{github.com/Clem085}}
+\end{center}
+
+\vspace{-0.15em}
+\hrule
+\vspace{0.8em}
+
+\today
+
+\textbf{Re: \TargetRole}
+
+Dear Hiring Manager,
+
+I am applying for the \TargetRole{} position at \TargetCompany. I graduated from North Carolina State University in May 2026 with a B.S. in Computer Engineering and joined AEGIS Power Systems that month as an Embedded Firmware Engineer after completing two summer internships there. My focus is low-level firmware and hardware integration: writing embedded C/C++ for microcontrollers and DSPs, bringing up peripherals, and carrying features from datasheets and schematics through bench validation and documented handoff.
+
+At AEGIS, I develop and bring up 16-bit dsPIC33CK firmware and board peripherals, isolating register, timing, hardware, and configuration faults with focused tests and bench instruments. I implemented and validated Tier 2 management firmware for a VPX power supply, following VITA 46.11/IPMI 2.0 over I2C-based IPMB for chassis sensor, inventory, and event reporting. I also integrate battery hardware and CAN-connected devices with application software. Where products include Embedded Linux, I support TI AM62 systems built with Yocto/Arago, including kernels, device trees, boot diagnostics, systemd services, Docker, and cross-platform tooling.
+
+Across my AEGIS internships, I built firmware for a PIC32 running FreeRTOS for communication and update coordination and a TMS320 DSP with bare-metal C firmware using TI peripheral libraries for programmable bidirectional power supplies. For one PIC32/TMS320 product, I built a verified firmware-update and recovery path spanning host-side C++/Python tools, external flash storage, processor-to-processor programming, and boot control. I also integrate and debug SPI, UART/RS-232, I2C, and CAN systems, including Classical CAN (CAN 2.0), CAN FD, J1939, and DroneCAN.
+
+For my NC State senior design project, I helped architect and validate a custom-PCB battery-management and CAN telemetry system. I translated component tradeoffs into subsystem interfaces and tests while coordinating design reviews, risk tracking, documentation, and bring-up across the team.
+
+Teaching has strengthened those same engineering skills. Across three semesters supporting ECE 306 and two semesters leading IEEE Open Project Space 2, I delivered supplemental lectures, led laboratories, debugged firmware and hardware, and coached students through open-ended projects. I also coordinated and taught through-hole and surface-mount soldering workshops. These roles made me a clearer technical communicator and a more disciplined debugger.
+
+I would bring low-level embedded C/C++, real-time control, and hardware-integration experience to \TargetCompany. \InterestSentence{} I would welcome the opportunity to discuss how I could contribute to your team.
+
+Sincerely,
+
+\textbf{Connor Savugot}
+
+\end{document}

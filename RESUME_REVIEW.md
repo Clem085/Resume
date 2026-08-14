@@ -1,9 +1,27 @@
 # Resume Evidence Review
 
+## Rev6 Additions — August 14, 2026
+
+Connor directly clarified the processor roles and current VPX work used in Rev6:
+
+- **Positioning correction:** low-level embedded firmware is Connor's primary discipline. Embedded Linux is valuable supporting systems-integration experience and must not be presented as the main professional identity.
+- **Burn-in correction:** Connor helped construct the relay/load/power-supply test circuit during the 2024 internship but did not perform, conduct, monitor, or run burn-in tests. Public wording must not imply otherwise.
+
+- Use **dsPIC33CK** for the 16-bit digital signal controller; do not shorten it to the nonexistent family name “PIC33.” The locally preserved source directly supports dsPIC33CK toolchain and device-pack bring-up.
+- The PIC32 ran FreeRTOS and handled communication/update coordination in the connected PIC32/TMS320 product.
+- The TMS320 DSP ran bare-metal C using TI hardware-abstraction/peripheral libraries for real-time power control.
+- Current work includes a VITA 46.11 Tier 2 IPMI management controller for a VPX power supply, using the I2C-based IPMB link. Tier 2 describes the management controller, not I2C or the entire power supply.
+- CAN experience includes Classical CAN (CAN 2.0), CAN FD, J1939, and DroneCAN. The public résumé keeps the full taxonomy in Skills and uses individual protocols in prose only when they explain a specific system.
+- The dsPIC33CK experience is not presented as part of the PIC32/TMS320 internship product because no source currently establishes that relationship.
+- The C+-to-A- ECE 306 class-average change is a direct user report included in Rev6 with non-exclusive wording; supporting grade documentation is not stored in this repository.
+
+Rev6 removes `APU/EPU` from the public summary and cover letter in favor of the clearer phrase “embedded power system.” It also replaces broad protocol lists in experience bullets with processor roles and system outcomes.
+
 ## Rev5 Corrections — August 10, 2026
 
 The following direct corrections supersede conflicting language in Rev3, Rev4, archived cover letters, and older notes:
 
+- **Senior design did not use the MSP430FR2355.** Its final architecture used an STMicroelectronics controller, TI BQ-family battery-monitor/ADC, and external CAN transceivers. The MSP430FR2355 belongs to ECE 306. Exact senior-design part-number suffixes remain unconfirmed.
 - **BMS work is senior design only.** Do not attribute BMS research, selection, firmware, or integration to any AEGIS internship or full-time role.
 - Connor graduated from NC State in May 2026 with a B.S. in Computer Engineering.
 - The exact AEGIS timeline is Computer Science Intern (May--August 2024), Embedded Systems Intern (May--August 2025), and Embedded Firmware Engineer (May 2026--Present).

@@ -1,7 +1,7 @@
-PWD /home/connor/Downloads/Programming/Resume/Rev5
+PWD /home/connor/Downloads/Programming/Resume/Rev6
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/connor/Downloads/Programming/Resume/Rev5/Resume.tex
+INPUT /home/connor/Downloads/Programming/Resume/Rev6/Resume.tex
 OUTPUT .build/Resume.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls

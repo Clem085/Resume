@@ -22,7 +22,7 @@
   pdftitle={Connor Savugot Resume},
   pdfauthor={Connor Savugot},
   pdfsubject={Embedded Firmware and Embedded Linux Engineering},
-  pdfkeywords={embedded firmware, C, C++, Embedded Linux, Yocto, Arago, Linux kernel, device tree, systemd, Docker, DSP, PIC32, CAN, firmware update, power conversion, BMS}
+  pdfkeywords={embedded firmware, C, C++, Embedded Linux, Yocto, Arago, Linux kernel, device tree, systemd, Docker, DSP, PIC32, ST microcontroller, MSP430FR2355, CAN, firmware update, power conversion, BMS}
 }
 
 \pagestyle{empty}
@@ -83,11 +83,11 @@
 \vspace{-0.18cm}
 
 \section{Technical Profile}
-Embedded firmware engineer with experience in TI Embedded Linux platforms, a multi-controller firmware-update workflow, programmable power-conversion control, and CAN-connected battery systems. Experienced across C/C++, Linux services, board bring-up, bench debugging, and cross-platform Windows/Linux tooling.
+Embedded firmware engineer with experience in multi-MCU firmware boot processes, TI Embedded Linux platforms, programmable power-conversion control, and CAN-connected battery systems. Experienced across C/C++, multi-chip communication solutions, Linux services, board bring-up, bench debugging, and cross-platform Windows/Linux tooling.
 
 \section{Technical Skills}
 \textbf{Firmware \& OS:} Embedded C/C++, Python, Bash; TI Embedded Linux, Yocto/Arago, Linux kernel/device trees, systemd, Docker, FreeRTOS\\
-\textbf{Processors \& Interfaces:} TI AM62, TI TMS320 DSP, PIC32, MSP430FR2355; CAN/CAN FD/J1939, I2C, SPI, UART/RS-232, ADC, PWM, GPIO, IPMI/IPMB\\
+\textbf{Processors \& Interfaces:} TI AM62, TI TMS320 DSP, PIC32, PIC33, STM32G474RE, MSP430FR2355; CAN J1939, I2C, SPI, UART, RS-232, ADC, PWM, GPIO, IPMI/IPMB\\
 \textbf{Development \& Test:} Git/GitLab, Code Composer Studio, JTAG, KiCad, SocketCAN/PCAN; oscilloscopes, logic/protocol analyzers, through-hole/SMT soldering
 
 \section{Engineering Experience}
@@ -111,21 +111,21 @@ Embedded firmware engineer with experience in TI Embedded Linux platforms, a mul
 
 \resumeentry{TEAM Industries | Engineering Intern}{Jun--Aug 2021 \& Jun--Aug 2022}
 \begin{resumebullets}
-  \item Built an Excel/VBA tolerance checker for manufactured parts and organized a searchable 17,000+ record catalog connecting tooling, parts, vendors, operations, locations, and revisions.
+  \item Developed a repeatable Excel/VBA dimensional and spline-tolerance validation test that automatically flagged out-of-spec parts; built a searchable 17,000+ record tooling/part/vendor catalog with operation, location, and revision traceability.
 \end{resumebullets}
 
 \section{Senior Design}
-\resumeentry{EV Active Sensor Adapter | MSP430FR2355}{NC State University}
+\resumeentry{EV Active Sensor Adapter | ST MCU, TI BQ ADC, CAN}{NC State University}
 \begin{resumebullets}
-  \item Defined end-to-end architecture, requirements, interface specifications, risks, and validation plans for sensing, BMS and power-management hardware, custom-PCB interfaces, embedded control, communications, and telemetry; coordinated decisions and documentation across the team.
-  \item Evaluated BMS/support ICs against electrical, protocol, package, and sourcing constraints using datasheets and reference designs; translated selections into integration plans, prototyped interrupt-driven SPI, and worked with ADC, UART, timer, GPIO, and LCD interfaces.
+  \item Defined architecture and interfaces linking an STMicroelectronics MCU control subsystem, TI BQ-family battery-monitor/ADC, external CAN transceivers, and custom-PCB power, sensing, and telemetry hardware.
+  \item Evaluated component and electrical/protocol tradeoffs; coordinated requirements, data paths, risk tracking, subsystem bring-up and validation, design reviews, and team documentation.
 \end{resumebullets}
 
 \section{Teaching \& Technical Leadership}
-\resumeentry{ECE 306 Embedded Systems Instruction | NC State University}{Spring 2025--Spring 2026}
+\resumeentry{ECE 306 Lead TA | NC State University}{Spring 2025--Spring 2026}
 \begin{resumebullets}
-  \item Supported three semesters: two in an unofficial role at about 10 hr/week and one as the official TA at 20 hr/week; delivered supplemental lectures, test preparation, labs, code/PCB debugging, project guidance, and ECE-program support.
-  \item Added supplemental lectures and intensive, question-driven support as the class average rose from its typical C+ to A-.
+  \item Supported three semesters: two in an unofficial role at about 10 hr/week and one as the official TA at 20 hr/week; delivered test preparation, labs, code/PCB debugging, project guidance, and ECE-program support.
+  \item Taught and debugged vehicle subsystems spanning MSP430FR2355 firmware, ADC line sensors, timer/PWM motor control, GPIO/interrupt inputs, Wi-Fi/serial links, LCDs, and custom PCBs; added supplemental lectures and question-driven support as the class average rose from its typical C+ to A-.
 \end{resumebullets}
 
 \resumeentry{IEEE Open Project Space 2 | Lead Instructor}{Fall 2025 \& Spring 2026}

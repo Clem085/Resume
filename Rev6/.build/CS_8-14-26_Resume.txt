@@ -1,0 +1,64 @@
+                                               Connor Savugot
+                   B.S. in Computer Engineering | North Carolina State University | Graduated May 2026
+         consav04@gmail.com | +1-828-541-9487 | Murphy, NC | linkedin.com/in/connorsavugot | github.com/Clem085
+
+TECHNICAL PROFILE
+Low-level embedded firmware engineer specializing in real-time power, control, and communications software for microcontrollers
+and DSPs. Develops C/C++ firmware from peripheral bring-up and hardware debugging through firmware updates, system
+integration, and validation, with Embedded Linux as a supporting integration platform.
+TECHNICAL SKILLS
+Low-Level Firmware: Embedded C/C++, bare-metal and FreeRTOS development; peripheral bring-up, boot and update control
+MCUs & DSPs: dsPIC33CK (16-bit DSC, Microchip HAL), PIC32 (32-bit MCU, FreeRTOS), TMS320 DSP (bare-metal C, TI HAL), STM32
+(bare-metal C, STM32 HAL), MSP430FR2355 (bare-metal C)
+Communications: CAN 2.0/CAN FD; J1939, DroneCAN; I2C, SPI, UART/RS-232; IPMI/IPMB
+Systems, Debug & Test: TI AM62 Embedded Linux, Yocto/Arago, kernel and device trees, systemd, Docker; Python, Bash, Git/GitLab,
+JTAG, KiCad, SocketCAN/PCAN, oscilloscopes, logic/protocol analyzers, professional through-hole/SMT soldering
+ENGINEERING EXPERIENCE
+AEGIS Power Systems
+Embedded Firmware Engineer                                                                                           May 2026–Present
+ • Develop 16-bit dsPIC33CK firmware and bring up peripherals one subsystem at a time; isolate register, timing, configuration, and
+   hardware faults with targeted tests, oscilloscopes, logic analyzers, schematics, and datasheets.
+ • Implemented and validated the VITA 46.11 Tier 2 management interface for a VPX power supply, providing IPMI 2.0 sensor,
+   inventory, and event reporting over an I2C-based IPMB link to the chassis manager.
+ • Integrate battery hardware, CAN-connected devices, and Linux applications in embedded power systems; trace failures from
+   power and wiring through bus traffic, services, configuration, and code.
+ • Support TI AM62 Embedded Linux integration: build Yocto/Arago images and kernels, update device trees, diagnose boot failures,
+   and develop systemd services for external-watchdog recovery; use Docker for Windows/Linux tooling.
+Embedded Systems Intern                                                                                                  May–Aug 2025
+Computer Science Intern                                                                                                  May–Aug 2024
+Selected work across both internships
+ • Developed firmware for a two-processor power system: a PIC32 running FreeRTOS managed I2C, SPI, CAN/J1939, and UART
+   communications, while a TMS320 DSP ran bare-metal C firmware with TI hardware libraries for real-time power control.
+ • Developed DSP control firmware for transformer-coupled bidirectional buck–boost supplies using 12 linked PWM A/B pairs (24
+   outputs); configured each A channel’s period/frequency, duty cycle, and relative phase while B followed or inverted A.
+ • Built host-side firmware-update tools for the same product: a C++ CLI accepted HEX files, while a Python TCP sender packetized
+   updates with chunking and checksum validation; documented the update and toolchain workflows for engineering handoff.
+ • Implemented device-side update and recovery: the PIC32 staged firmware and a golden image in external SPI flash, programmed
+   and verified the DSP over UART, and controlled the boot sequence.
+ • In 2024, created a restricted SSH/chroot interface with Bash and Python commands for secure remote inspection and control of TI
+   Yocto/Arago hardware.
+ • Reverse-engineered RS-232 commands and checksums for poorly documented programmable resistive loads and relay
+   controllers, then helped assemble the associated relay/load/power-supply test circuit.
+TEAM Industries | Engineering Intern                                                                    Jun–Aug 2021 & Jun–Aug 2022
+ • Developed a repeatable Excel/VBA dimensional and spline-tolerance validation tool that automatically flagged out-of-spec parts;
+   built a searchable catalog of 17,000+ tooling, part, and vendor records with operation, location, and revision traceability.
+SENIOR DESIGN
+EV Active Sensor Adapter | ST MCU, TI BQ ADC, CAN                                                            NC State University
+ • Helped architect an EV sensor adapter integrating an STMicroelectronics MCU, TI BQ-family battery monitor/ADC, CAN
+   transceivers, sensing, power, and telemetry on a custom PCB.
+ • Translated requirements and component trade studies into interface specifications and subsystem tests; coordinated design
+   reviews, risk tracking, documentation, and bring-up across the team.
+TEACHING & TECHNICAL LEADERSHIP
+ECE 306 Teaching Assistant & Course Mentor | NC State University                                            Spring 2025–Spring 2026
+ • Supported three semesters: two in an unofficial role at about 10 hr/week and one as the official TA at 20 hr/week; delivered test
+   preparation, labs, code/PCB debugging, project guidance, and ECE-program guidance.
+ • Taught students to build and debug MSP430FR2355-based vehicle subsystems spanning ADC sensing, motor control,
+   GPIO/interrupts, Wi-Fi/serial links, LCDs, and custom PCBs; added supplemental lectures and question-driven support as the
+   class average rose from C+ the prior semester to A-.
+IEEE Open Project Space 2 | Lead Instructor                                                                   Fall 2025 & Spring 2026
+ • Led two semesters of a project-based electronics course from idea through demonstration; taught firmware, PCB/BOM workflows,
+   and through-hole/SMT assembly while coaching students to solve their own design problems.
+IEEE Soldering Workshops | Coordinator, Lecturer & Lab Instructor
+ • Led standalone workshops using custom through-hole and surface-mount flashing-light PCB keepsakes; taught professional
+   soldering technique, safety, inspection, debugging, and rework.
+

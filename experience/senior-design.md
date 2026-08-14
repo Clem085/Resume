@@ -1,13 +1,20 @@
 # Senior Design — EV Active Sensor Adapter
 
-The project is best presented as a cross-disciplinary system-design and integration effort around an MSP430FR2355, sensing, BMS/power-management hardware, custom interfaces, firmware, communication, and telemetry. The detailed source supports system architecture and prototype work; the final level of integrated validation still needs confirmation.
+The final senior-design architecture used an **STMicroelectronics microcontroller**, a **TI BQ-family battery-monitor/ADC**, and **external CAN transceivers**. It did **not** use the MSP430FR2355; that device belongs to ECE 306. Exact ST, BQ, and CAN-transceiver part-number suffixes were not recovered from the current Markdown, archived résumés, project repository, or user-message history, so public wording should remain at the family/function level unless Connor supplies them.
 
 ## System Purpose and Architecture
 
-- Developed an EV active-sensor adapter concept around the MSP430FR2355.
-- Connected the microcontroller, sensing paths, BMS/power-management hardware, custom-PCB interfaces, embedded control, communication links, and telemetry in one end-to-end architecture.
+- Developed an EV active-sensor adapter around an STMicroelectronics MCU.
+- Connected the controller, TI BQ-family battery measurement, CAN physical-layer interfaces, sensing and power hardware, custom-PCB interfaces, embedded control, and telemetry in one end-to-end architecture.
 - Defined subsystem boundaries, data paths, power/control relationships, and electrical/firmware interfaces.
 - Considered how component behavior, firmware state, sensing, communications, and presentation of telemetry affected the complete system rather than treating each board or peripheral independently.
+
+### Short subsystem map
+
+- **Control and firmware:** STMicroelectronics MCU executing sensing, system-state/control, and communications logic.
+- **Battery measurement:** TI BQ-family ADC/battery-monitor device interfacing to the monitored battery signals.
+- **Vehicle/network interface:** external CAN transceivers connecting controller-side CAN to the physical bus.
+- **Board-level integration:** custom-PCB power and sensing interfaces tying together the controller, battery monitor, CAN physical layer, telemetry, and test points.
 
 ## Requirements, Interfaces, and Technical Risk
 
@@ -25,15 +32,15 @@ The project is best presented as a cross-disciplinary system-design and integrat
 
 ## Firmware and Peripheral Prototyping
 
-- Prototyped interrupt-driven SPI master/slave register transactions on the MSP430FR2355.
-- Worked with ADC acquisition, UART diagnostics, timers, GPIO, sensing paths, and LCD telemetry.
-- Structured peripheral work so interfaces could be exercised independently before attempting full-system integration.
-- Used diagnostic output and focused tests to surface mismatched expectations between devices, firmware, and custom interfaces.
+- Developed firmware around the STMicroelectronics controller and the defined sensing, battery-measurement, and CAN interfaces.
+- Structured subsystem work so the MCU control, BQ measurement, CAN physical layer, and board-level sensing/power interfaces could be exercised independently before full-system integration.
+- Used focused tests and diagnostic output to surface mismatched expectations between devices, firmware, and custom interfaces.
+- Earlier project material contains an MSP430 interrupt-driven SPI prototype, but that was preliminary work and is not evidence that the final senior-design architecture used the MSP430. Do not put it in the final-system résumé summary without additional context.
 
 ## Validation and Custom-Hardware Integration
 
 - Planned and performed subsystem-level validation before full-system/custom-PCB integration.
-- Checked communication behavior, acquired data, GPIO state, timing, and displayed telemetry at the interface level.
+- Checked communication behavior, acquired measurements, controller state, CAN connectivity, timing, and telemetry at the interface level.
 - Used test results to identify technical risk, refine interface definitions, and guide the next integration step.
 - Do not claim a fully completed production-ready or vehicle-deployed system until the final prototype and validation status are confirmed.
 
@@ -47,9 +54,11 @@ The project is best presented as a cross-disciplinary system-design and integrat
 ## Best Resume Themes
 
 - End-to-end embedded system architecture
-- MSP430FR2355 firmware and interrupt-driven SPI
+- STMicroelectronics MCU control and firmware
+- TI BQ-family battery measurement/ADC
+- CAN interfaces and external transceivers
 - BMS/power-management integration and component trade studies
-- ADC, UART, timers, GPIO, sensing, and LCD telemetry
+- Sensing, power, communications, and telemetry subsystems
 - Custom-PCB interfaces and subsystem validation
 - Requirements, specifications, risks, test plans, design reviews, and team coordination
 
@@ -57,5 +66,6 @@ The project is best presented as a cross-disciplinary system-design and integrat
 
 - Exact team size and Connor's individually owned subsystems
 - Final integrated-prototype status and highest completed level of validation
-- Exact BMS/power-management devices and which candidates reached hardware bring-up
-- Whether any CAN, I2C, vehicle-interface, or safety-monitoring details are part of this project and public
+- Exact ST MCU, TI BQ device, and CAN-transceiver part numbers
+- Exact final prototype state and which interfaces reached hardware bring-up
+- Whether additional I2C, vehicle-interface, or safety-monitoring details are public

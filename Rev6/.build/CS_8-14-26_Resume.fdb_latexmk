@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1786737484.27698 "/home/connor/Downloads/Programming/Resume/Rev5/Resume.tex" "Resume.pdf" "Resume" 1786737485.45461 0
-  ".build/Resume.aux" 1786737485.29789 677 3f9cc16175cbfcb4e0566a09e0682e5f "pdflatex"
-  ".build/Resume.out" 1786737485.29889 739 7da93247ee4d0ddfdfe0f54743462e20 "pdflatex"
-  "/home/connor/Downloads/Programming/Resume/Rev5/Resume.tex" 1786737483.89391 7782 240d506583e7cfd621ed98ee063d037e ""
+["pdflatex"] 1786740710.18587 "/home/connor/Downloads/Programming/Resume/Rev6/CS_8-14-26_Resume.tex" "CS_8-14-26_Resume.pdf" "CS_8-14-26_Resume" 1786740711.37387 0
+  ".build/CS_8-14-26_Resume.aux" 1786740711.25469 677 3f9cc16175cbfcb4e0566a09e0682e5f "pdflatex"
+  ".build/CS_8-14-26_Resume.out" 1786740711.25569 739 7da93247ee4d0ddfdfe0f54743462e20 "pdflatex"
+  "/home/connor/Downloads/Programming/Resume/Rev6/CS_8-14-26_Resume.tex" 1786740688.17509 8640 c8824735d4ccd455bc78b5b3b2a41e5e ""
   "/usr/share/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5ponh6.enc" 1775415801 3344 37c976a8b2fa4b8f132a488735054f7d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc" 1775415801 3021 665788e9679767ade2a71155215d25e0 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1--base.tfm" 1775415801 1648 77a748afe0a406be1ac3f29e1cd365cb ""
@@ -78,10 +78,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1775415801 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1785902715 5380826 a3bfff71f433a54f017bc880f3b8ea78 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1785902685 2328178 74f572c7bb028aa92a9fc3b4c42b4e0e ""
-  "Resume.tex" 1786737483.89391 7782 240d506583e7cfd621ed98ee063d037e ""
+  "CS_8-14-26_Resume.tex" 1786740688.17509 8640 c8824735d4ccd455bc78b5b3b2a41e5e ""
   (generated)
-  ".build/Resume.aux"
-  ".build/Resume.log"
-  ".build/Resume.out"
-  "Resume.pdf"
+  ".build/CS_8-14-26_Resume.aux"
+  ".build/CS_8-14-26_Resume.log"
+  ".build/CS_8-14-26_Resume.out"
+  "CS_8-14-26_Resume.pdf"
   (rewritten before read)

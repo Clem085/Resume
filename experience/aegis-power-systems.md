@@ -12,7 +12,7 @@ This file is the detailed source for Connor's current engineering role and his 2
 
 ## Embedded Firmware Engineer — May 2026–Present
 
-The current role is Linux-intensive and spans embedded software, system services, CAN-connected power hardware, board integration, cross-platform development, and root-cause debugging.
+The current role is Linux-intensive and spans embedded software, system services, CAN-connected power hardware, VPX platform management, 16-bit dsPIC33CK bring-up, board integration, cross-platform development, and root-cause debugging.
 
 ### TI Embedded Linux development and integration
 
@@ -37,20 +37,27 @@ The current role is Linux-intensive and spans embedded software, system services
 - Identify and remove operating-system-specific assumptions while preserving behavior on the embedded Linux target.
 - Do not claim a specific container architecture, CI system, build framework, or measured portability result until those details are confirmed.
 
+### dsPIC33CK firmware and board bring-up
+
+- Work with the dsPIC33CK family as a 16-bit digital signal controller rather than describing it as a generic microcontroller.
+- Bring up the firmware toolchain and device packs, then develop and debug board peripherals and communication interfaces one subsystem at a time.
+- Keep the dsPIC33CK separate from the PIC32/FreeRTOS and TMS320 DSP internship architecture unless a future source confirms that they belong to the same product.
+
 ### CAN, interfaces, and board-level debugging
 
-- Diagnose classical CAN and CAN FD behavior with SocketCAN, PCAN hardware, known-good nodes, bit-timing analysis, acknowledgement-state testing, DBC interpretation, signal mapping, and frame validation.
+- Diagnose Classical CAN (CAN 2.0) and CAN FD behavior with SocketCAN, PCAN hardware, known-good nodes, bit-timing analysis, acknowledgement-state testing, DBC interpretation, signal mapping, and frame validation.
 - Work across I2C, SPI, UART/RS232, ADC, GPIO, timers, PWM, and debug interfaces during component-level and board-level integration.
 - Bring up hardware one interface at a time using logs, register reads, JTAG, oscilloscopes, logic/protocol analyzers, serial diagnostics, schematics, and datasheets.
 - Use controlled substitutions and known-good hardware to separate firmware, timing, configuration, wiring, physical-layer, and target-device faults.
 - FDCAN clock correction and MCU-migration work should remain out of the public résumé until source support and disclosure approval are confirmed.
 
-### IPMI and embedded platform management
+### VPX, IPMI, and embedded platform management
 
+- Implemented and validated the VITA 46.11 Tier 2 management interface for a VPX power supply, using IPMI 2.0 over the I2C-based IPMB link for sensor, FRU/inventory, and event behavior.
 - Characterized IPMI 2.0 behavior on embedded power hardware, including IPMB addressing, sensor enumeration/data, FRU inventory capability, and chassis-management services.
 - Separated network reachability and transport availability from session establishment, authentication, protocol support, target addressing, and firmware compatibility.
 - Used Linux command-line tools, service discovery, logs, and protocol-level reasoning to create a reproducible platform-management diagnostic workflow.
-- Evidence supports investigation and validation of IPMI/IPMB/sensor/FRU capabilities; it does not support claiming authorship of the underlying IPMI stack.
+- Connor's August 2026 correction supports implementation of the VPX power supply's Tier 2 controller. It does not establish authorship of a general-purpose IPMI stack or unrelated chassis-management firmware.
 
 ### Engineering workflow, documentation, and teamwork
 
@@ -64,6 +71,7 @@ The recovered sources group the projects below across both AEGIS summers. The ex
 
 ### TMS320 DSP power-conversion control
 
+- Programmed the TMS320 DSP in bare-metal C using TI hardware-abstraction/peripheral libraries rather than an RTOS.
 - Developed C firmware for custom programmable bidirectional buck-boost power supplies across transformer-coupled input and output stages.
 - Controlled 24 physical PWM outputs arranged as twelve A/B pairs.
 - Independently configured each A output's duty cycle, switching period/frequency, and phase shift relative to another signal.
@@ -74,6 +82,7 @@ The recovered sources group the projects below across both AEGIS summers. The ex
 ### Connected PIC32/TMS320 firmware-update system
 
 - Developed connected stages of one PIC32/TMS320 DSP product's firmware-update and boot-control workflow.
+- The PIC32 ran FreeRTOS and coordinated communication and update behavior; the TMS320 DSP ran bare-metal control firmware using TI hardware libraries.
 - Built a user-facing C++ command-line programmer that accepted a supplied firmware HEX image, making the flashing workflow easier to operate without rewriting the tool for each image.
 - Used Python/TCP packet transport with chunking and checksum validation to move firmware into the product.
 - Coordinated PIC32 and TMS320 communication for external SPI-flash staging, golden-image handling, UART DSP programming, verification, and boot control.
@@ -83,7 +92,8 @@ The recovered sources group the projects below across both AEGIS summers. The ex
 
 ### CAN/J1939 and engineering handoff
 
-- Worked with the PIC32 across I2C, SPI, CAN/J1939, and UART orchestration while the TMS320 DSP executed power-control firmware.
+- Worked with the FreeRTOS-based PIC32 across I2C, SPI, CAN/J1939, and UART orchestration while the bare-metal TMS320 DSP executed power-control firmware.
+- DroneCAN is directly reported as professional protocol experience, but its exact role and product attribution remain unconfirmed. Keep it at skills level until that context is recorded.
 - Standardized a GitLab/Git Extensions workflow around GitFlow-style branches and signed annotated release tags.
 - A newer résumé reports an illustrated Git guide exceeding 80 pages plus a shorter handout and training slides. Confirm the exact page count and audience before using the metric publicly.
 - Documented firmware delivery, CLI usage, test procedures, and toolchain setup for engineering handoff.
@@ -100,18 +110,20 @@ The recovered sources group the projects below across both AEGIS summers. The ex
 
 - Reverse-engineered RS232 command transactions from limited documentation and generated the checksums required for valid messages.
 - Worked with RS232 and CAN communication between embedded devices and host/control systems.
-- Helped construct a relay, resistive-load, and power-supply circuit for burn-in monitoring and test support.
+- Reverse-engineered commands/checksums for programmable resistive loads and relay controllers, then helped construct the associated relay/load/power-supply test circuit; did not perform or run burn-in tests.
 - Reviewed schematics and assisted with soldering, wiring, hardware setup, and cross-functional electrical/mechanical integration during validation.
 
 ## Best Resume Themes
 
 - TI Embedded Linux, Yocto/Arago, kernel and device-tree compilation, systemd, Docker, and external watchdogs
+- VITA 46.11 Tier 2 VPX power-supply management using IPMI over I2C-based IPMB
+- dsPIC33CK 16-bit firmware and peripheral bring-up
 - Cross-platform Windows/Linux code and tooling
 - APU/EPU battery/CAN/Linux system integration and cross-layer debugging
 - Embedded C/C++, Python, and Bash
 - TMS320 DSP bidirectional power-conversion control with twelve A/B PWM pairs
 - PIC32/TMS320 firmware-update, recovery, programming, and boot coordination
-- CAN/CAN FD/J1939, I2C, SPI, UART/RS232, IPMI, and IPMB debugging
+- Classical CAN (CAN 2.0), CAN FD, J1939, DroneCAN, I2C/IPMB/IPMI, SPI, and UART/RS232 debugging
 - Board bring-up, analyzers, scopes, JTAG, schematics, datasheets, validation, and documentation
 
 ## Details Requiring Confirmation or Disclosure Review
@@ -120,5 +132,5 @@ The recovered sources group the projects below across both AEGIS summers. The ex
 - Exact battery-interface work, owned CAN behavior, watchdog failure/recovery behavior, and public-safe product wording
 - Exact Docker usage and the code/build/tooling changes made for Windows/Linux compatibility
 - Meaning of `BDC` and the scope of the legacy-code repair
-- Whether CAN/J1939, PIC32/TMS320 names, Git tooling, golden-image behavior, and the 80+ page documentation metric may be disclosed
-- Whether SocketCAN, PCAN, DBC/signal-mapping, target-family names, the 24-output topology, transformer coupling, and IPMI/IPMB behavior are approved for public disclosure
+- Whether Git tooling and the 80+ page documentation metric may be disclosed
+- Whether SocketCAN, PCAN, DBC/signal-mapping, and target-family names beyond those Connor directly approved are suitable for public disclosure
