@@ -4,17 +4,17 @@
 
 The recovered import originally contained 311 files in 41 directories (about 42 MiB). It included 53 PDFs, 11 Word documents, 16 ZIP archives, and four saved career-page bundles. It was audited together with the 36 documents already held in the former `experience/history/` directory.
 
-After preserving the originals and extracting the LaTeX archives for inspection, `history/` contains 411 archived payload files plus this inventory and the archive README (413 files total, about 47 MiB), including:
+After preserving the originals, extracting the LaTeX archives for inspection, and adding two MATLAB coursework artifacts in August 2026, `history/` contains 413 archived payload files plus this inventory and two archive README files (416 files total, about 53 MiB), including:
 
-- 79 PDFs
+- 81 PDFs
 - 21 Word documents
 - 16 original ZIP archives
 - 40 extracted TeX files, representing 33 distinct text hashes
 - 255 files belonging to saved pages or image assets, including the extracted signature assets
 
-Every distinct authored resume, cover letter, application essay, and extracted TeX body was read. Saved webpage scripts and assets were classified but were not treated as evidence of Connor's experience.
+Every distinct authored resume, cover letter, application essay, extracted TeX body, and newly added MATLAB assignment was read. Saved webpage scripts and assets were classified but were not treated as evidence of Connor's experience.
 
-The file accounting reconciles exactly: 311 newly recovered originals + 36 earlier archived documents = 347 originals; extracting 64 ZIP members produced 411 payload files; this inventory and the archive README bring the directory total to 413. No original file was discarded.
+The file accounting reconciles exactly: 311 newly recovered originals + 36 earlier archived documents + two later MATLAB assignments = 349 originals; extracting 64 ZIP members produced 413 payload files; this inventory and two archive README files bring the directory total to 416. No original file was discarded.
 
 ## Recovered-Import Classification
 
@@ -49,11 +49,12 @@ Files with matching extracted text but different bytes were kept because typogra
 - Newer resume source describes a PIC32/TMS320 firmware-update architecture, J1939, a C++ flasher, a Python TCP/IP sender, checksum/chunking logic, SPI-flash image storage, a golden image, and extensive Git documentation. Connor confirmed that these were connected stages of one product's update and boot-control workflow, not one monolithic program.
 - IEEE drafts add the ECE 306 parts-distribution program, a ten-week Open Project Space 2 sequence, PlatformIO/VS Code/GitHub, and a reported $2,000 raised in two weeks. Titles, dates, and the metric need confirmation.
 - ECE 306 sources add two programmable buttons, a rotary selector, mode selection, and software debouncing.
-- Project sources add Qiskit/Aer Grover search, Verilog/AMD Vivado work, a Kogge–Stone adder, and real-time scheduling theory. The lone VHDL claim conflicts with the repeated Verilog record.
+- Project sources add Qiskit/Aer Grover search, Verilog/AMD Vivado work, and real-time scheduling theory. An older Kogge--Stone claim and lone VHDL claim are not supported by the currently retained ECE 310 source, which instead supports a structural Wallace-tree multiplier and Verilog datapaths.
+- Added MATLAB artifacts support CNN training/evaluation, SqueezeNet transfer learning, PCA/KLT, least-squares visualization, and measured MOSFET data analysis with numerical fitting and model comparison.
 
 ## Conflicts to Resolve Before Publication
 
-- Verilog in repeated project records versus one VHDL cover-letter claim.
+- Whether a separate artifact exists for the older Kogge--Stone or VHDL claims; current ECE 310 artifacts support Verilog and a Wallace-tree multiplier instead.
 - Multiple historical NC State GPA values; omit GPA without a current transcript.
 - Whether OPS2 leadership was sole lead, co-lead, or one of two lead instructors.
 - Whether the reported $2,000/two-week IEEE result and C+-to-A- teaching outcome can be documented and publicly attributed.
@@ -66,6 +67,7 @@ Files with matching extracted text but different bytes were kept because typogra
 - BMS work belongs to the NC State senior-design project and must not be attributed to AEGIS employment.
 - The NC State B.S. in Computer Engineering was completed in May 2026.
 - ECE 306 support ran Spring 2025, Fall 2025, and Spring 2026: two semesters were unofficial support at about 10 hours per week and one was an official TA appointment at about 20 hours per week. The supplied order suggests the official appointment was Spring 2026, but that mapping remains to be explicitly confirmed.
+- Public-project review resolves Senior Design's active firmware to STM32G474, BQ79616, ten ADC thermistor channels, UART, and extended-identifier CAN telemetry in a timer-assisted service loop. The stale root README's FreeRTOS/DMA plan is not final-system evidence.
 
 ## Privacy and Disclosure
 

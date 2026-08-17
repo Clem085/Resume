@@ -1,0 +1,63 @@
+                                                 Connor Savugot
+                   B.S. in Computer Engineering | North Carolina State University | Graduated May 2026
+         consav04@gmail.com | +1-828-541-9487 | Murphy, NC | linkedin.com/in/connorsavugot | github.com/Clem085
+
+TECHNICAL PROFILE
+Embedded software engineer developing real-time C firmware for power, control, and communications systems across 16- and 32-bit
+microcontrollers, FreeRTOS, and bare-metal DSPs. Experience spans C++/Python engineering tools, multiprocessor hardware/software
+integration, datasheet-driven peripheral bring-up, JTAG/bench debugging, and Arm-based Embedded Linux systems.
+TECHNICAL SKILLS
+Languages: Embedded C, C++, Python, Bash
+Embedded & Real-Time: Bare-metal firmware, FreeRTOS, POSIX threads, interrupts/timers, peripheral/HAL bring-up,
+boot/update/recovery systems
+Processors: dsPIC33CK (16-bit DSC), PIC32, TMS320 DSP, STMicroelectronics MCU, MSP430FR2355; TI AM62 Arm-based SoC
+Debug & Build: JTAG, register inspection, Code Composer Studio, GCC/Make, compiler/toolchain configuration, Git/GitLab, Docker,
+oscilloscopes, logic/protocol analyzers
+Systems & Interfaces: Embedded Linux, Yocto/Arago, device trees, systemd; PWM, ADC, I2C, SPI, UART/RS-232, CAN 2.0/CAN FD/J1939,
+IPMI/IPMB
+ENGINEERING EXPERIENCE
+AEGIS Power Systems
+Embedded Firmware Engineer                                                                                            May 2026–Present
+ • Develop low-level C firmware for 16-bit dsPIC33CK DSCs and bring up peripherals one subsystem at a time from datasheets,
+   reference manuals, and schematics; isolate register, timing, configuration, and electrical faults using JTAG, targeted tests,
+   oscilloscopes, and logic analyzers.
+ • Implemented and validated VITA 46.11 Tier 2 management firmware for a VPX power supply, exposing IPMI 2.0 sensor,
+   FRU/inventory, and event data over an I2C-based IPMB link to the chassis manager.
+ • Integrate battery hardware and CAN-connected power devices with a TI AM62 Arm-based Embedded Linux controller; build
+   Yocto/Arago images and kernels, update device trees, develop external-watchdog services, and trace faults across power, wiring,
+   CAN, boot, configuration, and code.
+Embedded Systems Intern                                                                                                   May–Aug 2025
+Computer Science Intern                                                                                                   May–Aug 2024
+Selected work across both internships
+ • Developed bare-metal C power-control firmware on a TMS320 DSP for transformer-coupled bidirectional buck–boost supplies using
+   12 PWM A/B pairs (24 physical outputs); configured each A channel’s period/frequency, duty cycle, and relative phase while each B
+   output followed or inverted its paired A signal, then validated ADC/PWM behavior in Code Composer Studio.
+ • Developed embedded C firmware across a two-processor power system: a PIC32 running FreeRTOS coordinated I2C, SPI, CAN/J1939,
+   UART, and update behavior while the bare-metal TMS320 DSP executed real-time converter control.
+ • Built a resilient update/recovery workflow: a C++ CLI accepted HEX images, a Python TCP sender handled chunking and checksums,
+   and the PIC32 staged new firmware and a golden image in external SPI flash, programmed and verified the DSP over UART, and
+   controlled boot.
+ • In 2024, built a restricted SSH/chroot interface and Python/Bash commands for a resource-constrained TI Yocto/Arago power
+   system; reverse-engineered RS-232 commands/checksums for programmable loads and relay controllers and helped assemble the
+   associated test circuit.
+SELECTED POWER & REAL-TIME PROJECTS
+EV Active Sensor Adapter | Battery Monitoring & CAN                                                                NC State University
+ • Helped architect a custom-PCB system integrating an STMicroelectronics MCU, TI BQ-family battery monitor/ADC, CAN transceivers,
+   power/sensing interfaces, embedded control, and telemetry.
+ • Translated electrical and protocol constraints plus component trade studies into interface requirements, validation criteria, and
+   staged subsystem tests; coordinated risks, design reviews, and documentation across the team.
+Real-Time Systems & Formal Verification | C, Linux, Lustre                                                                 Spring 2026
+ • Implemented and instrumented periodic POSIX-thread tasks in C using CPU affinity, absolute-time releases, priority-inheritance
+   mutexes, and timestamp traces; analyzed EDF plus rate- and deadline-monotonic schedulability and plotted execution timelines.
+ • Modeled synchronous control logic in Lustre and used bounded model checking and counterexample traces to correct temporal
+   monitors and verify required system invariants.
+Software Performance & Machine Learning | C++, Python                                                            Selected Coursework
+ • Implemented BFS, DFS, and greedy best-first maze solvers in C++ and compared runtime and memory tradeoffs across maze
+   configurations.
+ • Developed a Python mentor-matching pipeline using sentence-transformer embeddings and configurable weighted scoring; added
+   CSV ingestion, persistent constraints/state, and explainable score output.
+TECHNICAL LEADERSHIP
+ECE 306 Embedded Systems | Teaching Assistant & Course Mentor                                                     Spring 2025–Spring 2026
+ • Delivered supplemental lectures and debugged embedded C/MSP430FR2355 firmware and custom-PCB projects across three
+   semesters, diagnosing register, timing, peripheral, toolchain, wiring, and soldering failures across diverse student implementations.
+

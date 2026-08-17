@@ -1,0 +1,66 @@
+                                                 Connor Savugot
+                   B.S. in Computer Engineering | North Carolina State University | Graduated May 2026
+         consav04@gmail.com | +1-828-541-9487 | Murphy, NC | linkedin.com/in/connorsavugot | github.com/Clem085
+
+TECHNICAL PROFILE
+Embedded firmware engineer developing real-time C for power, control, and communications systems across 16- and 32-bit MCUs,
+FreeRTOS, and bare-metal DSPs. Builds MATLAB/C++/Python engineering tools, brings up peripherals from hardware documentation,
+and collaborates with a distributed firmware team on hardware and embedded Linux integration.
+TECHNICAL SKILLS
+Languages: Embedded C, C++, MATLAB, Python, Bash
+Embedded & Real-Time: Bare-metal firmware, FreeRTOS, POSIX threads, interrupts/timers, peripheral/HAL bring-up,
+boot/update/recovery systems
+Processors: dsPIC33CK (16-bit DSC), PIC32, TMS320 DSP, STM32G474, MSP430FR2355; TI AM62 Arm-based SoC
+Analysis, Debug & Build: ADC scaling/filter analysis, MATLAB data analysis, CAN-log parsing, JTAG, register inspection, Code Composer
+Studio, GCC/Make, Git/GitLab, Docker, oscilloscopes, logic/protocol analyzers
+Systems & Interfaces: Embedded Linux, Yocto/Arago, device trees, systemd; PWM, ADC, I2C, SPI, UART/RS-232; CAN 2.0, CAN FD, J1939,
+DroneCAN; IPMI/IPMB
+ENGINEERING EXPERIENCE
+AEGIS Power Systems
+Embedded Firmware Engineer                                                                                            May 2026–Present
+ • Develop low-level C firmware for 16-bit dsPIC33CK DSCs and bring up peripherals one subsystem at a time from datasheets,
+   reference manuals, and schematics; isolate register, timing, configuration, and electrical faults using JTAG, targeted tests,
+   oscilloscopes, and logic analyzers.
+ • Parsed captured CAN output in MATLAB to determine per-channel ADC scaling and compare several filter functions by steady-input
+   variation and time to follow large electrical changes; selected rolling-average and exponential moving average (EMA) approaches
+   and implemented the rolling average in embedded C using a circular buffer and rolling sum.
+ • Implemented and validated VITA 46.11 Tier 2 management firmware for a VPX power supply, enabling the chassis manager to read
+   IPMI 2.0 sensor, FRU/inventory, and event data over an I2C-based IPMB link.
+ • Integrate battery hardware and CAN-connected power devices with a TI AM62 Arm-based embedded Linux controller; build
+   Yocto/Arago images and kernels, update device trees, develop external-watchdog services, and trace faults across power, wiring,
+   CAN, boot, configuration, and code.
+Embedded Systems Intern                                                                                                   May–Aug 2025
+Computer Science Intern                                                                                                   May–Aug 2024
+Selected work across both internships
+ • Developed bare-metal C power-control firmware on a TMS320 DSP for transformer-coupled bidirectional buck–boost supplies using
+   12 PWM A/B pairs (24 physical outputs); configured each A channel’s period/frequency, duty cycle, and relative phase while each B
+   output followed or inverted its paired A signal, then validated ADC/PWM behavior in Code Composer Studio.
+ • Developed embedded C firmware across a two-processor power system: a PIC32 running FreeRTOS coordinated I2C, SPI, CAN/J1939,
+   UART, and update behavior while the bare-metal TMS320 DSP executed real-time converter control.
+ • Built a resilient update/recovery workflow: a C++ CLI accepted HEX files, a Python TCP sender handled chunking and checksums,
+   and the PIC32 staged new firmware and a golden image in external SPI flash, programmed and verified the DSP over UART, and
+   controlled boot.
+ • In 2024, built a restricted SSH/chroot interface and Python/Bash commands for a resource-constrained TI Yocto/Arago power
+   system; reverse-engineered RS-232 commands/checksums for programmable loads and relay controllers and helped assemble the
+   associated test circuit.
+SELECTED ENGINEERING PROJECTS
+EV Active Sensor Adapter | Battery Monitoring & CAN                                                                 NC State University
+ • Developed STM32G474/BQ79616 bring-up and integration for a team-built EV sensor adapter spanning cell-voltage monitoring,
+   ten thermistors sampled by the STM32 ADC, UART, extended-ID CAN telemetry, subsystem-level fault isolation, and custom-PCB
+   hardware.
+ • Implemented BQ79616 wake/configuration, protocol framing, CRC validation, cell reads, and fault diagnostics; coordinated
+   requirements, staged validation, risk tracking, design reviews, and handoff documentation across the team.
+Real-Time Systems & Formal Verification | C, Linux, Lustre                                                                 Spring 2026
+ • Implemented periodic POSIX-thread tasks in C using CPU affinity, absolute-time releases, priority-inheritance mutexes, and
+   timestamp traces; analyzed schedulability, plotted execution timelines, and used bounded model checking on Lustre models to
+   correct temporal monitors and check invariants within configured bounds.
+MATLAB Engineering Analysis & Machine Learning                                                                    Selected Coursework
+ • Analyzed measured MOSFET CSV data in MATLAB using numerical gradients and polynomial fits to estimate transconductance,
+   threshold voltage, mobility, and channel-length modulation and compare measured and modeled I–V curves.
+ • Implemented MATLAB image-learning workflows: trained a CNN to 99.24% validation accuracy, adapted SqueezeNet through
+   transfer learning on a five-class coursework dataset, and applied PCA/KLT to visualize eigenfaces and reduce image dimensionality.
+TECHNICAL LEADERSHIP
+ECE 306 Embedded Systems | Teaching Assistant & Course Mentor                                                     Spring 2025–Spring 2026
+ • Delivered supplemental lectures and debugged embedded C/MSP430FR2355 firmware and custom-PCB projects across three
+   semesters, diagnosing register, timing, peripheral, toolchain, wiring, and soldering failures across diverse student implementations.
+

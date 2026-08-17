@@ -21,15 +21,21 @@ The strongest general positioning is for:
 3. Power-electronics firmware or BMS-focused embedded-system design
 4. Embedded Linux, platform-integration, and platform-management engineering
 5. Hardware validation, systems test, applications, or field-support engineering
+6. Embedded controls, model-based vehicle software, and autonomous-systems integration
+7. Engineering data analysis, signal validation, and MATLAB-assisted firmware development
 
 ## Source Files
 
 - `aegis-power-systems.md` — current professional work plus the 2024 and 2025 AEGIS internships
+- `adc-monitoring-card.md` — professional ADC scaling and data-driven filter selection using MATLAB/CAN captures, embedded-C rolling-average logic, and EMA tradeoffs
+- `matlab-data-analysis.md` — professional CAN/ADC filter analysis plus academic signals, MOSFET, numerical, PCA, and machine-learning work in MATLAB
+- `controls-and-autonomy.md` — MATLAB/Simulink mower controls, Python robotics control, Lustre PID, CARLA autonomous-driving simulation, and claim boundaries
 - `senior-design.md` — EV Active Sensor Adapter architecture, component evaluation, firmware, validation, documentation, and teamwork
 - `ece-306.md` — Fall 2024 MSP430 vehicle project and later embedded-systems TA work
 - `teaching-leadership.md` — electronics workshop instruction, TA work, mathematics tutoring, and earlier mentoring
 - `team-industries.md` — 2021/2022 manufacturing, tolerance validation, Excel/VBA automation, and reporting
-- `personal-projects.md` — earlier technical, academic, Linux, automation, circuit, and programming projects
+- `personal-projects.md` — detailed inventory of microarchitecture, real-time, formal-verification, RTL, controls, assembly, MATLAB, ML, quantum, Linux, and earlier programming projects
+- `github-projects.md` — repository-by-repository public-source audit, authorship boundaries, reproducible results, and safe résumé framing
 - `earlier-background.md` — plumbing, robotics, aquaponics, leadership, credentials, and archive-only background
 
 ## Resume Selection Priority
@@ -48,8 +54,10 @@ The strongest general positioning is for:
 - ECE 306 vehicle project for MSP430/student-project variants
 - Mathematics tutoring for instruction, applications, and customer-support roles
 - Logic/algorithm projects for digital-design or software variants
+- MATLAB data analysis, device characterization, and image-learning projects for controls, test, semiconductor, or data-oriented variants
 - Plumbing and early hands-on work for field/manufacturing variants
 - Robotics, outreach, and community leadership for leadership-focused applications
+- MATLAB/Simulink mower controls, robotics PID, Lustre, and CARLA for vehicle, controls, model-based-design, and autonomous-systems variants
 
 ### Archive only
 
@@ -59,17 +67,18 @@ The strongest general positioning is for:
 
 ## History Audit
 
-The full archive now lives under [`../history/`](../history/). The initial 36-document audit was expanded to include the newly recovered set: 79 PDFs, 21 Word documents, 16 ZIP archives, and four saved career-page bundles across both imports. All 40 extracted TeX files (33 distinct text hashes) and every distinct authored document body were read. Byte and normalized-text hashes identified exact copies, near-duplicate exports, color/layout variants, and mislabeled files.
+The full archive now lives under [`../history/`](../history/). The initial 36-document audit was expanded to include the recovered set and two later MATLAB assignments: 81 PDFs, 21 Word documents, 16 ZIP archives, and four saved career-page bundles. All 40 extracted TeX files (33 distinct text hashes) and every distinct authored document body were read. Byte and normalized-text hashes identified exact copies, near-duplicate exports, color/layout variants, and mislabeled files.
 
 The archive is deliberately broader than this library. It preserves private records, duplicate application packets, obsolete objectives, conflicted drafts, unrelated templates, and saved job pages, while these Markdown files retain only normalized experience facts and clearly labeled leads. See the archive [guide](../history/README.md) and [inventory](../history/INVENTORY.md) for classification, privacy restrictions, duplicate groups, and source anomalies.
 
 Important facts recovered from the archive include:
 
-- Senior design used an STMicroelectronics controller, TI BQ-family battery-monitor/ADC, and external CAN transceivers; MSP430FR2355 belongs to ECE 306, not senior design. Exact senior-design part-number suffixes remain unconfirmed.
+- The active senior-design firmware uses an STM32G474, TI BQ79616 battery monitor, ten STM32 ADC thermistor channels, UART, and extended-identifier CAN telemetry. It uses a timer-assisted service loop, not the stale root README's planned FreeRTOS/DMA architecture; MSP430FR2355 belongs to ECE 306.
 - The 2024 AEGIS role was historically titled **Computer Science Intern** and ran May–August 2024.
 - The 2025 AEGIS role was **Embedded Systems Intern** and ran May–August 2025.
 - The current AEGIS role is **Embedded Firmware Engineer**, beginning May 2026.
 - Current professional work includes dsPIC33CK 16-bit firmware/toolchain bring-up and implementation of a VITA 46.11 Tier 2 IPMI management controller for a VPX power supply over I2C-based IPMB.
+- Current full-time AEGIS work includes parsing captured CAN telemetry in MATLAB to determine ADC scaling factors and compare several filter functions by steady-input variation and time to follow large changes. Rolling-average and EMA approaches were selected; the rolling average used a fixed sample window, circular replacement, and a maintained sum in embedded C. This work does not belong to either internship.
 - CAN experience spans Classical CAN (CAN 2.0), CAN FD, J1939, and DroneCAN; J1939 and DroneCAN are higher-layer protocols and should not be presented as link-layer CAN variants.
 - The 2024 work included a restricted SSH CLI for embedded power hardware, Linux/Bash/Python, RS232, and CAN.
 - The 2024 hardware contribution included constructing the relay/load/power-supply test circuit; Connor did not perform or run burn-in tests.
@@ -84,6 +93,12 @@ Important facts recovered from the archive include:
 - Paid mathematics tutoring ran January–May 2022 and followed extensive volunteer tutoring.
 - Older records preserve early power-circuit, digital-logic, C++ search, assembly-parser, Linux, robotics, plumbing, and community-leadership experience.
 - Newer LaTeX sources preserve the PIC32/TMS320 two-processor update architecture, CAN/J1939, connected C++ and Python transfer stages, and extensive Git release-process documentation; disclosure boundaries and exact documentation metrics still require confirmation.
+- Spring 2026 project repositories add periodic POSIX-thread scheduling and execution tracing in C, Lustre formal verification with counterexample-guided fixes, and a Connor-authored portion of a collaborative Python/sentence-transformer mentor-matching system.
+- Newly recovered Spring 2026 files add a stateful Lustre PID cruise controller and CARLA Python agent integration/evaluation; this supersedes the older no-PID/CARLA-exploration boundary while remaining academic work.
+- Direct current context adds MATLAB/Simulink Model-in-the-Loop PID-tuning and logic-test work for an electric zero-turn mower, including comparison of simulated and real-vehicle test behavior. The model artifact, course/term, and quantitative results are not yet archived.
+- ECE 463 artifacts support Connor-authored C++ cache, branch-predictor, and out-of-order pipeline simulators plus automated Python design-space sweeps; the retained out-of-order quick-test suite passes all three cases.
+- ECE 310 artifacts support a structural Verilog Wallace-tree multiplier and serial/parallel arithmetic blocks. The current public repository does not support the older Kogge--Stone or VHDL claims.
+- Professional MATLAB work complements the monitoring-card firmware by comparing captured converter telemetry and the tradeoff between stable voltage/current readings and rapid transient response; Spring 2024–2025 coursework adds signals, transfer functions, MOSFET fitting/model comparison, CNN training, transfer learning, PCA/KLT, and least squares.
 - IEEE drafts preserve a ten-week OPS2 project sequence, parts-distribution operations, PlatformIO/VS Code/GitHub instruction, and a reported $2,000 raised in two weeks; the role title and metric still require confirmation.
 - An official Tri-County record resolves the Associate in Arts award date as August 1, 2023 and records a 4.0 GPA and “Graduated Top of Class.” The underlying transcript remains private.
 
@@ -96,4 +111,6 @@ Important facts recovered from the archive include:
 - What APU and EPU stand for, whether the acronyms are public, and the precise battery/CAN/watchdog ownership that may be described
 - Exact Docker usage and the specific build, code, and tooling changes made for Windows/Linux compatibility
 - Whether the IEEE $2,000/two-week result and the C+-to-A- teaching result can be documented and publicly attributed
-- Whether repeated Verilog records or the lone VHDL cover-letter claim accurately describes each digital-design project
+- Whether a separate artifact exists for the older Kogge--Stone or VHDL claims; they are not supported by the current ECE 310 repository
+- Professional ADC details beyond the confirmed rolling-average/EMA selection: other candidate functions, window and EMA parameters, acquisition cadence, calibration results, quantitative improvements, final deployment, and public-disclosure approval for exact ranges
+- Correct course number and individual/team scope for the Spring 2025 MATLAB machine-learning assignment

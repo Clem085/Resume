@@ -4,7 +4,7 @@ This file is the detailed source for Connor's current engineering role and his 2
 
 ## Attribution Boundaries
 
-- **Embedded Firmware Engineer:** May 2026–Present
+- **Embedded Firmware Engineer (full-time):** May 2026–Present
 - **Embedded Systems Intern:** May–August 2025
 - **Computer Science Intern:** May–August 2024
 - The BMS research, component evaluation, and integration work belongs to the NC State senior-design project, not to any AEGIS role. Do not place BMS under AEGIS in future résumés or cover letters.
@@ -12,7 +12,7 @@ This file is the detailed source for Connor's current engineering role and his 2
 
 ## Embedded Firmware Engineer — May 2026–Present
 
-The current role is Linux-intensive and spans embedded software, system services, CAN-connected power hardware, VPX platform management, 16-bit dsPIC33CK bring-up, board integration, cross-platform development, and root-cause debugging.
+The current role spans low-level embedded firmware, CAN-connected power hardware, MATLAB data analysis, VPX platform management, 16-bit dsPIC33CK bring-up, Embedded Linux integration, cross-platform development, and root-cause debugging.
 
 ### TI Embedded Linux development and integration
 
@@ -51,6 +51,25 @@ The current role is Linux-intensive and spans embedded software, system services
 - Use controlled substitutions and known-good hardware to separate firmware, timing, configuration, wiring, physical-layer, and target-device faults.
 - FDCAN clock correction and MCU-migration work should remain out of the public résumé until source support and disclosure approval are confirmed.
 
+### Power-converter monitoring card: data-driven filter selection and ADC scaling
+
+- This work was completed during the full-time Embedded Firmware Engineer role, not during either internship.
+- Parsed captured CAN output in MATLAB, applied several candidate filtering functions to the same telemetry, and used the comparisons to determine and check per-channel scaling factors.
+- Evaluated the filter characteristics that mattered for the product: reading variation under steady input and the time required to reflect genuine, large electrical changes.
+- Selected rolling-average and exponential moving average (EMA) approaches from the comparison.
+- Implemented the rolling average in embedded C by storing the last `N` samples, maintaining a rolling sum, replacing the oldest sample with the newest, and producing `sum / N`.
+- Defined the EMA as a single-state alternative that retained the previous filtered value and moved it toward each new sample by a fraction of their difference, without an `N`-sample history buffer.
+- Worked through the sensing and firmware architecture for a four-channel converter-monitoring card covering `VIN`, `IIN`, `VOUT`, and `IOUT` for slow telemetry rather than fast protection or control-loop feedback.
+- Designed around a four-channel MCP3428 architecture in 16-bit mode at PGA = 1, with target ranges of 0–1000 V input, 0–30 A input current, 0–300 V output, and 0–100 A output current.
+- Specified high-voltage-divider and current-sense front ends that mapped the electrical signals into nominal 0–2.000 V or 0–1.500 V ADC spans.
+- Derived ideal initial code scales and used separate slope/intercept calibration logic for each channel rather than relying only on nominal divider and sensor values.
+- Considered startup fill behavior, integer truncation/rounding, accumulator width, power-of-two shifts, fixed-divisor scaling, and independent filter state for each ADC channel.
+- Distinguished DC averaging from RMS diagnostics, median glitch rejection, and nonlinear transforms rather than treating all operations as interchangeable outlier filters.
+- The multiplexed MCP3428 channels are sequential, so voltage/current products are low-rate paired-sample power estimates—not simultaneous-sampling or switching-waveform measurements.
+- Rolling-average implementation and selection of rolling-average and EMA approaches are confirmed. Other candidate functions, window size, EMA coefficient, sample cadence, quantitative results, and whether both selected approaches were deployed remain unconfirmed.
+
+See [`adc-monitoring-card.md`](adc-monitoring-card.md) for the range/scale derivations, calibration and power math, cleaned rolling-average code, fixed-point considerations, and disclosure boundaries.
+
 ### VPX, IPMI, and embedded platform management
 
 - Implemented and validated the VITA 46.11 Tier 2 management interface for a VPX power supply, using IPMI 2.0 over the I2C-based IPMB link for sensor, FRU/inventory, and event behavior.
@@ -64,6 +83,8 @@ The current role is Linux-intensive and spans embedded software, system services
 - Connect specifications, schematics, datasheets, implementation, Linux integration, board bring-up, protocol diagnosis, and validation instead of treating each technology as an isolated task.
 - Communicate root cause, constraints, and recommended changes across firmware, electrical, and system-level work.
 - Create handoff documentation for builds, flashing, validation, Git/GitLab, tests, services, and toolchains so resolved work remains reproducible.
+- Participate in engineering standups and coordinate implementation/debugging with a geographically distributed firmware team.
+- Communicate progress, technical constraints, test observations, and integration needs clearly enough for remote teammates to continue work without relying on hallway context.
 
 ## Projects Recorded Across the 2024 and 2025 Internships
 
@@ -121,10 +142,12 @@ The recovered sources group the projects below across both AEGIS summers. The ex
 - Cross-platform Windows/Linux code and tooling
 - APU/EPU battery/CAN/Linux system integration and cross-layer debugging
 - Embedded C/C++, Python, and Bash
+- Data-driven ADC scaling and filter selection using MATLAB/CAN captures, with embedded-C rolling-average and EMA approaches
 - TMS320 DSP bidirectional power-conversion control with twelve A/B PWM pairs
 - PIC32/TMS320 firmware-update, recovery, programming, and boot coordination
 - Classical CAN (CAN 2.0), CAN FD, J1939, DroneCAN, I2C/IPMB/IPMI, SPI, and UART/RS232 debugging
 - Board bring-up, analyzers, scopes, JTAG, schematics, datasheets, validation, and documentation
+- Engineering standups, remote firmware-team collaboration, and reproducible technical handoffs
 
 ## Details Requiring Confirmation or Disclosure Review
 
@@ -134,3 +157,4 @@ The recovered sources group the projects below across both AEGIS summers. The ex
 - Meaning of `BDC` and the scope of the legacy-code repair
 - Whether Git tooling and the 80+ page documentation metric may be disclosed
 - Whether SocketCAN, PCAN, DBC/signal-mapping, and target-family names beyond those Connor directly approved are suitable for public disclosure
+- ADC details beyond the confirmed rolling-average/EMA selection: other candidate functions, sample cadence, window/EMA parameters, calibration results, final deployment, and quantitative improvements

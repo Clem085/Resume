@@ -1,0 +1,146 @@
+% Rev 8 -- Low-Level Embedded Firmware and Engineering Data Analysis
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.50in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default,type1]{sourcesanspro}
+\usepackage[final]{microtype}
+\usepackage[explicit]{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{iftex}
+\usepackage[hidelinks]{hyperref}
+
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\hypersetup{
+  pdftitle={Connor Savugot Resume},
+  pdfauthor={Connor Savugot},
+  pdfsubject={Low-Level Embedded Firmware and Engineering Data Analysis},
+  pdfkeywords={embedded software, embedded C, C++, MATLAB, Python, real-time systems, RTOS, FreeRTOS, bare metal, power control, ADC filtering, ADC scaling, MCP3428, fixed-point arithmetic, CAN data analysis, DSP, dsPIC33CK, PIC32, TMS320, JTAG, hardware software integration, multiprocessor systems, SoC, Arm, Embedded Linux, firmware validation, Git}
+}
+
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\hfuzz=0.4pt
+
+\titleformat{\section}
+  {\fontsize{11.3}{11.9}\selectfont\bfseries\uppercase}
+  {}{0pt}{#1\hspace{0.12cm}\titlerule[0.65pt]}
+\titlespacing{\section}{0pt}{0.14cm}{0.05cm}
+
+\newlist{resumebullets}{itemize}{1}
+\setlist[resumebullets]{
+  label=\textbullet,
+  leftmargin=0.42cm,
+  topsep=0.004cm,
+  itemsep=0.004cm,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\newcommand{\companyheader}[1]{%
+  {\fontsize{10.4}{10.8}\selectfont\bfseries #1}\par\vspace{-0.03cm}
+}
+
+\newcommand{\resumeentry}[2]{%
+  \begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{2.40in}@{}}
+    \textbf{#1} & #2
+  \end{tabularx}\vspace{-0.075cm}
+}
+
+\newcommand{\roleentry}[2]{%
+  \begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{2.40in}@{}}
+    \textbf{#1} & #2
+  \end{tabularx}\vspace{-0.075cm}
+}
+
+\newcommand{\descriptorentry}[1]{%
+  \begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{2.40in}@{}}
+    \textit{#1} &
+  \end{tabularx}\vspace{-0.075cm}
+}
+
+\begin{document}
+\fontsize{9.65}{10.50}\selectfont
+\setlength{\RaggedRightRightskip}{0pt plus 5em}
+\RaggedRight
+\emergencystretch=1em
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{center}
+  {\fontsize{21.5}{22.2}\selectfont\bfseries Connor Savugot}\\[1.5pt]
+  {\bfseries B.S. in Computer Engineering | North Carolina State University | Graduated May 2026}\\[1.5pt]
+  {\fontsize{9.6}{10.2}\selectfont
+    \href{mailto:consav04@gmail.com}{consav04@gmail.com}
+    \enspace|\enspace \href{tel:+18285419487}{+1-828-541-9487}
+    \enspace|\enspace Murphy, NC
+    \enspace|\enspace \href{https://linkedin.com/in/connorsavugot}{linkedin.com/in/connorsavugot}
+    \enspace|\enspace \href{https://github.com/Clem085}{github.com/Clem085}}
+\end{center}
+\vspace{-0.18cm}
+
+\section{Technical Profile}
+Embedded firmware engineer developing real-time C for power, control, and communications systems across 16- and 32-bit MCUs, FreeRTOS, and bare-metal DSPs. Builds MATLAB/C++/Python engineering tools, brings up peripherals from hardware documentation, and collaborates with a distributed firmware team on hardware and embedded Linux integration.
+
+\section{Technical Skills}
+\textbf{Languages:} Embedded C, C++, MATLAB, Python, Bash\\
+\textbf{Embedded \& Real-Time:} Bare-metal firmware, FreeRTOS, POSIX threads, interrupts/timers, peripheral/HAL bring-up, boot/update/recovery systems\\
+\textbf{Processors:} dsPIC33CK (16-bit DSC), PIC32, TMS320 DSP, STM32G474, MSP430FR2355; TI AM62 Arm-based SoC\\
+\textbf{Analysis, Debug \& Build:} ADC scaling/filter analysis, MATLAB data analysis, CAN-log parsing, JTAG, register inspection, Code Composer Studio, GCC/Make, Git/GitLab, Docker, oscilloscopes, logic/protocol analyzers\\
+\textbf{Systems \& Interfaces:} Embedded Linux, Yocto/Arago, device trees, systemd; PWM, ADC, I2C, SPI, UART/RS-232; CAN 2.0, CAN FD, J1939, DroneCAN; IPMI/IPMB
+
+\section{Engineering Experience}
+\companyheader{AEGIS Power Systems}
+\roleentry{Embedded Firmware Engineer}{May 2026--Present}
+\begin{resumebullets}
+  \item Develop low-level C firmware for 16-bit dsPIC33CK DSCs and bring up peripherals one subsystem at a time from datasheets, reference manuals, and schematics; isolate register, timing, configuration, and electrical faults using JTAG, targeted tests, oscilloscopes, and logic analyzers.
+  \item Parsed captured CAN output in MATLAB to determine per-channel ADC scaling and compare several filter functions by steady-input variation and time to follow large electrical changes; selected rolling-average and exponential moving average (EMA) approaches and implemented the rolling average in embedded C using a circular buffer and rolling sum.
+  \item Implemented and validated VITA 46.11 Tier 2 management firmware for a VPX power supply, enabling the chassis manager to read IPMI 2.0 sensor, FRU/inventory, and event data over an I2C-based IPMB link.
+  \item Integrate battery hardware and CAN-connected power devices with a TI AM62 Arm-based embedded Linux controller; build Yocto/Arago images and kernels, update device trees, develop external-watchdog services, and trace faults across power, wiring, CAN, boot, configuration, and code.
+\end{resumebullets}
+
+\roleentry{Embedded Systems Intern}{May--Aug 2025}
+\roleentry{Computer Science Intern}{May--Aug 2024}
+\descriptorentry{Selected work across both internships}
+\begin{resumebullets}
+  \item Developed bare-metal C power-control firmware on a TMS320 DSP for transformer-coupled bidirectional buck--boost supplies using 12 PWM A/B pairs (24 physical outputs); configured each A channel's period/frequency, duty cycle, and relative phase while each B output followed or inverted its paired A signal, then validated ADC/PWM behavior in Code Composer Studio.
+  \item Developed embedded C firmware across a two-processor power system: a PIC32 running FreeRTOS coordinated I2C, SPI, CAN/J1939, UART, and update behavior while the bare-metal TMS320 DSP executed real-time converter control.
+  \item Built a resilient update/recovery workflow: a C++ CLI accepted HEX files, a Python TCP sender handled chunking and checksums, and the PIC32 staged new firmware and a golden image in external SPI flash, programmed and verified the DSP over UART, and controlled boot.
+  \item In 2024, built a restricted SSH/chroot interface and Python/Bash commands for a resource-constrained TI Yocto/Arago power system; reverse-engineered RS-232 commands/checksums for programmable loads and relay controllers and helped assemble the associated test circuit.
+\end{resumebullets}
+
+\section{Selected Engineering Projects}
+\resumeentry{EV Active Sensor Adapter | Battery Monitoring \& CAN}{NC State University}
+\begin{resumebullets}
+  \item Developed STM32G474/BQ79616 bring-up and integration for a team-built EV sensor adapter spanning cell-voltage monitoring, ten thermistors sampled by the STM32 ADC, UART, extended-ID CAN telemetry, subsystem-level fault isolation, and custom-PCB hardware.
+  \item Implemented BQ79616 wake/configuration, protocol framing, CRC validation, cell reads, and fault diagnostics; coordinated requirements, staged validation, risk tracking, design reviews, and handoff documentation across the team.
+\end{resumebullets}
+
+\resumeentry{Real-Time Systems \& Formal Verification | C, Linux, Lustre}{Spring 2026}
+\begin{resumebullets}
+  \item Implemented periodic POSIX-thread tasks in C using CPU affinity, absolute-time releases, priority-inheritance mutexes, and timestamp traces; analyzed schedulability, plotted execution timelines, and used bounded model checking on Lustre models to correct temporal monitors and check invariants within configured bounds.
+\end{resumebullets}
+
+\resumeentry{MATLAB Engineering Analysis \& Machine Learning}{Selected Coursework}
+\begin{resumebullets}
+  \item Analyzed measured MOSFET CSV data in MATLAB using numerical gradients and polynomial fits to estimate transconductance, threshold voltage, mobility, and channel-length modulation and compare measured and modeled I--V curves.
+  \item Implemented MATLAB image-learning workflows: trained a CNN to 99.24\% validation accuracy, adapted SqueezeNet through transfer learning on a five-class coursework dataset, and applied PCA/KLT to visualize eigenfaces and reduce image dimensionality.
+\end{resumebullets}
+
+\section{Technical Leadership}
+\resumeentry{ECE 306 Embedded Systems | Teaching Assistant \& Course Mentor}{Spring 2025--Spring 2026}
+\begin{resumebullets}
+  \item Delivered supplemental lectures and debugged embedded C/MSP430FR2355 firmware and custom-PCB projects across three semesters, diagnosing register, timing, peripheral, toolchain, wiring, and soldering failures across diverse student implementations.
+\end{resumebullets}
+
+\end{document}

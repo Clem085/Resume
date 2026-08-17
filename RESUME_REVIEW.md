@@ -1,5 +1,52 @@
 # Resume Evidence Review
 
+## Rev9 Aditi Turf & Compact Utility Controls Variant — August 17, 2026
+
+Rev9 targets the Cary, North Carolina Software Engineer I contract shared by Aditi Consulting. It leads with MATLAB/Simulink, embedded C, controls, CAN/J1939, FreeRTOS, testing, and hardware integration while keeping the résumé to one page.
+
+- The full-time AEGIS MATLAB bullet is filter-first: captured CAN text was parsed to compare candidate functions using variation under steady input and time to follow large electrical changes. Rolling-average and EMA approaches were selected, channel scaling was derived, and rolling-sum averaging was implemented in embedded C. No live-MATLAB-CAN acquisition or quantified improvement is claimed.
+- Connor directly reports MATLAB/Simulink Model-in-the-Loop tooling for electric zero-turn-mower controls, including PID-gain adjustment, logic testing, and comparison of simulated response with real-vehicle behavior. The `.slx` artifact, exact course/term, team split, and numerical results are not retained, so Rev9 does not claim Stateflow, code generation, Hardware-in-the-Loop, production deployment, or sole architecture ownership.
+- The Python robotics work is source-backed within an NC State/BYU course framework and supports mass-spring-damper, planar-VTOL, and Hummingbird models; PD/PID/cascaded control; saturation; anti-windup; and PWM actuator mixing. It remains academic simulation, not deployed robotics firmware.
+- A recovered Connor-authored Spring 2026 commit supports the stateful Lustre PID cruise controller. Direct context adds tuning and comparison with an earlier controller. Luke artifacts separately support counterexample-guided temporal-monitor corrections and verification of four properties at induction depth 2.
+- The CARLA work was a three-person academic assignment. Source and direct context support Python agent/planner integration, PID-based longitudinal control, Town10HD testing, target-speed tuning, completion timing, collision counts, and lane-invasion counts. Rev9 does not claim production autonomous-driving work, a retained custom low-level PID equation, final gains, or a measured improvement.
+- The current dsPIC33CK entry is based on schematics, datasheets, reference manuals, protocol specifications, JTAG, and bench-debug evidence; it does not attach unsupported formal-requirements ownership to that work.
+- Explicit requirements, interface specifications, design reviews, staged integration, and seven passing host-side tests come from Senior Design. The adapter is described as team-built, and BMS remains confined to Senior Design.
+- The internship bullets preserve the single-TMS320, PIC32/FreeRTOS, and twelve-A/B-pair/twenty-four-output distinctions. Host C++/Python tools and embedded programming/recovery logic are presented as connected stages rather than one monolithic tool.
+- TEAM Industries remains as one compact entry because tolerance validation, manufacturing collaboration, and the 2021–2022 timeline are relevant to a factory-adjacent equipment role.
+- Rev9 intentionally omits unsupported Stateflow, Agile/Scrum, continuous integration, LIN, Ethernet, hydraulics, production-vehicle claims, and code-review ownership. It also cuts lower-priority VPX/IPMI, detailed Linux, teaching, MATLAB ML, and MOSFET content.
+- The posting says it seeks mid-career candidates and no recent graduates. Because the recruiter contacted Connor directly, the résumé accurately retains the May 2026 graduation date and foregrounds the continuous 2021–present engineering history.
+
+## Rev8 MATLAB and Programming-Project Expansion — August 14, 2026
+
+Rev8 keeps the low-level-firmware positioning of Rev7 while adding professional MATLAB data analysis and verified academic MATLAB depth.
+
+- Connor directly reports using captured converter telemetry to determine per-channel ADC scaling factors; the exact voltage/current ranges are supporting design context rather than the public résumé's main emphasis.
+- A rolling average implemented in embedded C is confirmed, including a fixed `N`-sample window, circular replacement, a maintained rolling sum, startup behavior, and integer/fixed-point considerations.
+- Connor directly reports building a MATLAB workflow in the full-time AEGIS role to parse captured CAN output and compare several filtering functions by steady-input variation and time to follow large electrical changes. Rolling-average and exponential moving average (EMA) approaches were selected; the EMA required only the previous filtered value rather than an `N`-sample history buffer.
+- Other candidate functions, rolling-window length, EMA coefficient, sample cadence, production deployment, calibration results, and quantitative improvements remain unconfirmed.
+- The MCP3428 channels are multiplexed rather than simultaneously sampled. Rev8 therefore presents voltage/current filtering and paired-sample slow telemetry without claiming switching-waveform power, true RMS, fast protection, or simultaneous power analysis.
+- Connor directly reports engineering standups and ongoing communication with a geographically distributed firmware team. Rev8 does not add unsupported team size, cadence, process framework, or review ownership.
+- A retained March 2025 ECE 302 report supports MATLAB ingestion of measured MOSFET data, numerical gradients and fits, parameter estimation, plots, and measured-versus-modeled analysis. Apparent placeholders/copy errors prevent claims of validated extraction accuracy.
+- A retained Spring 2025 assignment supports MATLAB CNN training with a reported 99.24% validation result, SqueezeNet transfer learning with an approximately 90% test result, pretrained GoogLeNet inference, PCA/KLT eigenface analysis, and least-squares visualization. These remain academic results, not production or embedded ML.
+- Retained Spring 2024 ECE 220 scripts/PDFs support repeated MATLAB work in vectorized programming, signals, transfer functions, complex arithmetic, matrices, plotting, and analytical transient-response models.
+- The Spring 2025 machine-learning PDF does not identify its course internally; the archive filename suggests ECE 301, so the public résumé uses `Selected Coursework` rather than asserting a course number.
+- The public senior-design repository resolves the active final architecture to STM32G474, BQ79616, ten STM32 ADC thermistor channels, UART, and extended-identifier CAN telemetry. Active source uses a timer-assisted service loop; the root README's FreeRTOS/DMA plan is stale and is not used as résumé evidence.
+- Public Git history supports attributable Connor contributions to BQ bring-up, CRC/fault handling, subsystem-state integration, thermistor/logging changes, shutdown behavior, diagnostics, and documentation while also showing meaningful teammate CAN/timing work. Rev8 therefore presents this as a collaborative system.
+- The public GitHub and local-project inventories are evidence-discovery aids. Repository ownership or possession alone is not treated as proof of personal implementation; public claims require source, report, or attributable-commit support.
+
+## Rev7 Qualcomm Power and Limits Variant — August 14, 2026
+
+Rev7 is a one-page targeted variant for Qualcomm's Power and Limits Software Engineer role. It preserves the Rev6 processor and attribution corrections while replacing lower-relevance general content with verified real-time, performance-analysis, and supporting machine-learning evidence.
+
+- A Spring 2026 Connor-authored Git repository supports periodic POSIX-thread work in C using CPU affinity, absolute-time releases, priority-inheritance mutexes, timestamp traces, GCC/Make, and execution plots, plus academic EDF/rate/deadline-monotonic schedulability analysis.
+- The same repository supports Lustre synchronous models and bounded model checking with counterexample-guided monitor corrections. This is academic formal verification, not pre-silicon evaluation or silicon sign-off.
+- The C++ maze project supports BFS, DFS, greedy best-first search, and an academic runtime/memory comparison; it does not establish production profiling or optimization outcomes.
+- A collaborative independent-study repository contains multiple Connor-authored Python commits covering parsing, configurable scoring, state/constraints, explanations, and semantic matching with pretrained sentence-transformer embeddings. Rev7 does not claim sole ownership, custom model training, embedded ML, or ML on power/silicon data.
+- TI AM62 is described as an Arm-based SoC only in the context of Embedded Linux/Yocto integration. Rev7 does not claim bare-metal Arm, Arm assembly, or CPU-microarchitecture expertise.
+- Compiler/toolchain configuration, GCC, and Make are supported; custom linker scripts, startup code, memory maps, and compiler optimization work remain unclaimed.
+- Rev7 does not claim pre-silicon work, silicon profiling, DVFS/thermal algorithms, hardware acceleration, DMA, Android, Agile/Kanban, or quantified CPU/memory/power improvements.
+- BMS remains confined to senior design, the 12-pair/24-output distinction is preserved, internship projects remain grouped across both summers, and no burn-in execution is implied.
+
 ## Rev6 Additions — August 14, 2026
 
 Connor directly clarified the processor roles and current VPX work used in Rev6:
@@ -21,7 +68,7 @@ Rev6 removes `APU/EPU` from the public summary and cover letter in favor of the 
 
 The following direct corrections supersede conflicting language in Rev3, Rev4, archived cover letters, and older notes:
 
-- **Senior design did not use the MSP430FR2355.** Its final architecture used an STMicroelectronics controller, TI BQ-family battery-monitor/ADC, and external CAN transceivers. The MSP430FR2355 belongs to ECE 306. Exact senior-design part-number suffixes remain unconfirmed.
+- **Senior design did not use the MSP430FR2355.** Later public-source review resolved the active architecture to STM32G474 and BQ79616 with ten ADC thermistor channels, UART, and CAN telemetry. The MSP430FR2355 belongs to ECE 306; the external CAN-transceiver part number remains unconfirmed.
 - **BMS work is senior design only.** Do not attribute BMS research, selection, firmware, or integration to any AEGIS internship or full-time role.
 - Connor graduated from NC State in May 2026 with a B.S. in Computer Engineering.
 - The exact AEGIS timeline is Computer Science Intern (May--August 2024), Embedded Systems Intern (May--August 2025), and Embedded Firmware Engineer (May 2026--Present).
@@ -34,7 +81,7 @@ Rev5 uses these corrected facts. The material below documents the earlier Rev3 a
 
 ## Post-Rev3 Archive Import — August 2026
 
-The complete recovered archive was organized under [`history/`](history/) after Rev3 was produced. Across the original and recovered sets, the audit covered 79 PDFs, 21 Word documents, 16 ZIP archives, all 40 extracted TeX files, and four saved career-page bundles. The newly recovered details were added to the `experience/` source library with evidence labels; **Rev3 itself was not silently rewritten from one-off or conflicted drafts**.
+The complete recovered archive was organized under [`history/`](history/) after Rev3 was produced. Across the original and recovered sets plus two later MATLAB assignments, the audit covered 81 PDFs, 21 Word documents, 16 ZIP archives, all 40 extracted TeX files, and four saved career-page bundles. The newly recovered details were added to the `experience/` source library with evidence labels; **Rev3 itself was not silently rewritten from one-off or conflicted drafts**.
 
 High-value additions include a possible PIC32/TMS320 two-processor update architecture, CAN/J1939, separate C++ and Python transfer tools, GitFlow/signed-tag documentation, the IEEE parts program and OPS2 toolchain, additional ECE 306 controls, Qiskit/Grover work, Verilog/Vivado artifacts, and richer TEAM validation context. See the archive [inventory](history/INVENTORY.md) for the exact conflicts and privacy boundaries.
 
@@ -100,13 +147,13 @@ These facts may support a targeted variant, but they are weaker than current pro
 - Whether the confirmed 24 physical outputs/twelve A-B pair topology and transformer-coupled architecture are approved for public disclosure. Each A output was independently parameterized; each B output only matched or inverted its paired A waveform.
 - What APU and EPU stand for, whether the acronyms are public, and whether they describe one system or related systems.
 - Exact battery/CAN ownership, external-watchdog failure and recovery behavior, Docker usage, and Windows/Linux portability changes in the current role.
-- Whether IPMB, FRU, and sensor access were investigated, validated, integrated, or implemented in deliverable code.
+- Which additional VITA 46.11/IPMI features beyond the confirmed Tier 2 sensor, FRU/inventory, and event behavior are safe to describe publicly.
 - Exact senior-design team size, personally owned subsystems, final prototype state, and completed validation.
 - Exact standalone soldering-workshop dates and audience size.
 - Whether the C+ to A- class change is documented and public.
 - Whether the IEEE parts program's reported $2,000/two-week result and lower-student-cost outcome can be documented and precisely defined.
 - Whether OPS2 should be described publicly as lead instructor, co-lead, or one of two lead instructors.
-- Whether repeated Verilog sources or the lone VHDL claim accurately names each HDL project.
+- Whether a separate artifact exists for the older Kogge--Stone or VHDL claims; current ECE 310 evidence supports Verilog and a Wallace-tree multiplier instead.
 - Current validity of the Adobe and FAA drone credentials.
 
 ## Recommended Role-Specific Variants

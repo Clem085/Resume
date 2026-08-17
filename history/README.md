@@ -9,6 +9,7 @@ No source files were deleted during organization. Empty import folders were remo
 - [`resumes/`](resumes/) — authored resumes, separated into LaTeX, PDF, and Word sources, then by supported date/application context
 - [`cover-letters/`](cover-letters/) — authored PDF and Word cover letters; many files named `CV` are actually cover letters
 - [`application-materials/`](application-materials/) — combined packets and the NVIDIA application questionnaire
+- [`academic-projects/`](academic-projects/) — retained coursework artifacts used to verify technical project claims, currently including MATLAB analysis and machine-learning assignments
 - `private/` — transcripts, signature images, signature-bearing LaTeX cover-letter packages, the transcript-bearing NAVSEA packet, and a sensitive M.C. Dean draft
 - `job-postings/` — saved AMD, Cirrus Logic, Dell, and Red Hat pages with their required asset directories
 - [`legacy/`](legacy/) — unrelated samples, placeholder templates, classroom writing, and non-resume material
