@@ -151,7 +151,7 @@ These facts may support a targeted variant, but they are weaker than current pro
 - Exact senior-design team size, personally owned subsystems, final prototype state, and completed validation.
 - Exact standalone soldering-workshop dates and audience size.
 - Whether the C+ to A- class change is documented and public.
-- Whether the IEEE parts program's reported $2,000/two-week result and lower-student-cost outcome can be documented and precisely defined.
+- The IEEE parts-program result was corrected to $10,000 raised in two weeks while lowering student costs and approved for résumé use on September 16, 2026; retain supporting documentation if available.
 - Whether OPS2 should be described publicly as lead instructor, co-lead, or one of two lead instructors.
 - Whether a separate artifact exists for the older Kogge--Stone or VHDL claims; current ECE 310 evidence supports Verilog and a Wallace-tree multiplier instead.
 - Current validity of the Adobe and FAA drone credentials.

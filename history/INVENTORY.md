@@ -47,7 +47,7 @@ Files with matching extracted text but different bytes were kept because typogra
 - An official Tri-County record supports an Associate in Arts awarded August 1, 2023, with a 4.0 GPA and “Graduated Top of Class.” The record remains private; only the normalized fact belongs in the experience library.
 - Contemporaneous 2024 files support the AEGIS title `Computer Science Intern`, May–August 2024, plus the restricted SSH/Embedded Linux interface, RS232, CAN, Python, and Bash work.
 - Newer resume source describes a PIC32/TMS320 firmware-update architecture, J1939, a C++ flasher, a Python TCP/IP sender, checksum/chunking logic, SPI-flash image storage, a golden image, and extensive Git documentation. Connor confirmed that these were connected stages of one product's update and boot-control workflow, not one monolithic program.
-- IEEE drafts add the ECE 306 parts-distribution program, a ten-week Open Project Space 2 sequence, PlatformIO/VS Code/GitHub, and a reported $2,000 raised in two weeks. Titles, dates, and the metric need confirmation.
+- IEEE drafts add the ECE 306 parts-distribution program, a ten-week Open Project Space 2 course designed to pair theory with hands-on electronics, PlatformIO/VS Code/GitHub, and $10,000 raised in two weeks while lowering student costs. Connor corrected and approved the fundraising result for résumé use on September 16, 2026.
 - ECE 306 sources add two programmable buttons, a rotary selector, mode selection, and software debouncing.
 - Project sources add Qiskit/Aer Grover search, Verilog/AMD Vivado work, and real-time scheduling theory. An older Kogge--Stone claim and lone VHDL claim are not supported by the currently retained ECE 310 source, which instead supports a structural Wallace-tree multiplier and Verilog datapaths.
 - Added MATLAB artifacts support CNN training/evaluation, SqueezeNet transfer learning, PCA/KLT, least-squares visualization, and measured MOSFET data analysis with numerical fitting and model comparison.
@@ -57,7 +57,7 @@ Files with matching extracted text but different bytes were kept because typogra
 - Whether a separate artifact exists for the older Kogge--Stone or VHDL claims; current ECE 310 artifacts support Verilog and a Wallace-tree multiplier instead.
 - Multiple historical NC State GPA values; omit GPA without a current transcript.
 - Whether OPS2 leadership was sole lead, co-lead, or one of two lead instructors.
-- Whether the reported $2,000/two-week IEEE result and C+-to-A- teaching outcome can be documented and publicly attributed.
+- Whether the C+-to-A- teaching outcome can be documented and publicly attributed.
 
 ## Resolved Source Questions
 

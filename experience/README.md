@@ -100,7 +100,7 @@ Important facts recovered from the archive include:
 - ECE 463 artifacts support Connor-authored C++ cache, branch-predictor, and out-of-order pipeline simulators plus automated Python design-space sweeps; the retained out-of-order quick-test suite passes all three cases.
 - ECE 310 artifacts support a structural Verilog Wallace-tree multiplier and serial/parallel arithmetic blocks. The current public repository does not support the older Kogge--Stone or VHDL claims.
 - Professional MATLAB work complements the monitoring-card firmware by comparing captured converter telemetry and the tradeoff between stable voltage/current readings and rapid transient response; Spring 2024–2025 coursework adds signals, transfer functions, MOSFET fitting/model comparison, CNN training, transfer learning, PCA/KLT, and least squares.
-- IEEE drafts preserve a ten-week OPS2 project sequence, parts-distribution operations, PlatformIO/VS Code/GitHub instruction, and a reported $2,000 raised in two weeks; the role title and metric still require confirmation.
+- IEEE work includes a ten-week applied OPS2 course designed to close gaps between classroom theory and hands-on electronics, parts-distribution operations, PlatformIO/VS Code/GitHub instruction, and $10,000 raised in two weeks through the ECE 306 parts program while lowering student costs. Connor corrected and approved the fundraising result for résumé use on September 16, 2026.
 - An official Tri-County record resolves the Associate in Arts award date as August 1, 2023 and records a 4.0 GPA and “Graduated Top of Class.” The underlying transcript remains private.
 
 ## Facts to Reconcile Before Future Variants
@@ -111,7 +111,7 @@ Important facts recovered from the archive include:
 - Public-disclosure boundaries for current AEGIS power topology and platform-management work
 - What APU and EPU stand for, whether the acronyms are public, and the precise battery/CAN/watchdog ownership that may be described
 - Exact Docker usage and the specific build, code, and tooling changes made for Windows/Linux compatibility
-- Whether the IEEE $2,000/two-week result and the C+-to-A- teaching result can be documented and publicly attributed
+- Whether the C+-to-A- teaching result can be documented and publicly attributed
 - Whether a separate artifact exists for the older Kogge--Stone or VHDL claims; they are not supported by the current ECE 310 repository
 - Professional ADC details beyond the confirmed rolling-average/EMA selection: other candidate functions, window and EMA parameters, acquisition cadence, calibration results, quantitative improvements, final deployment, and public-disclosure approval for exact ranges
 - Correct course number and individual/team scope for the Spring 2025 MATLAB machine-learning assignment

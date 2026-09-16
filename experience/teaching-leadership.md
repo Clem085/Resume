@@ -8,6 +8,7 @@ Connor served as an OPS2 instructor in **Fall 2025 and Spring 2026**, with lead-
 
 - Ran a project-based electronics class for two semesters with lead-instructor responsibility rather than serving only as a classroom helper.
 - Archived drafts expand OPS2 as **Open Project Space 2** and describe a ten-week project sequence.
+- Designed the course to address knowledge gaps left by theory-focused classes by pairing electronics concepts with hands-on design, assembly, programming, debugging, and project completion.
 - Guided students from concept selection and project scoping through design, implementation, debugging, completion, and final demonstration.
 - Developed and delivered instruction covering through-hole and surface-mount soldering theory, safety, component handling, inspection, and hands-on technique.
 - Used two custom NCSU IEEE flashing-light PCB keepsakes for instruction: one through-hole design and one surface-mount design.
@@ -31,7 +32,7 @@ This was a separate IEEE instructional role from OPS2, although OPS2 also includ
 - Centralized parts sourcing for student projects through bulk purchasing, vetted substitutions, consolidated shipping, and on-campus distribution.
 - Managed order forms, pricing, high-volume email/coordination, and parts handoff so students could obtain compatible components through one repeatable process.
 - Documented sourcing, substitution, and distribution procedures for future IEEE officers rather than leaving the program dependent on one person.
-- A recovered résumé claims the program raised **$2,000 for IEEE in two weeks while lowering student costs**. This is a strong lead, but the amount, time window, definition of “raised,” and cost comparison should be confirmed before résumé use.
+- Raised **$10,000 for IEEE in two weeks while lowering student costs** through the ECE 306 bulk-parts program. Connor corrected the amount and approved this result for résumé use on September 16, 2026.
 
 ## ECE 306 Embedded Systems Instruction — NC State University
 
@@ -101,4 +102,4 @@ This was a separate IEEE instructional role from OPS2, although OPS2 also includ
 
 - Keep the ECE 306 instruction, OPS2 leadership, and separate soldering-workshop role on the general embedded résumé when space permits because they reinforce technical depth, professional soldering, communication, and rapid diagnosis.
 - Use mathematics tutoring or earlier STEM leadership only for teaching, applications-engineering, field-support, customer-facing, or leadership-focused variants.
-- Do not include the unverified grade or IEEE fundraising outcomes—or old volunteer-hour totals—on the general engineering résumé until their definitions and evidence are confirmed.
+- The IEEE fundraising result is approved for résumé use. Keep the unverified grade outcome and old volunteer-hour totals out of general engineering résumés until their definitions and evidence are confirmed.

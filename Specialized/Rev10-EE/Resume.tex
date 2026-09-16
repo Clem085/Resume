@@ -23,8 +23,8 @@
 \hypersetup{
   pdftitle={Connor Savugot Resume},
   pdfauthor={Connor Savugot},
-  pdfsubject={Embedded Hardware Integration and Production Engineering},
-  pdfkeywords={embedded firmware, electrical engineering, hardware integration, board bring-up, C, C++, STM32, PIC32, dsPIC, TI C2000, TMS320F28379D, CAN, CAN FD, J1939, KiCad, P-CAD, Altium, production programming, SQL, VBA, Microsoft Access, Excel, manufacturing test}
+  pdfsubject={Electrical Engineering, Manufacturing Automation, and Production Support},
+  pdfkeywords={electrical engineering, manufacturing automation, production equipment, tooling, manufacturing processes, troubleshooting, C, C++, SQL, VBA, Microsoft Access, Excel, Altium, sensors, motor control, embedded firmware, STM32, PIC32, dsPIC, TI C2000, CAN, production programming, test automation, technical procedures}
 }
 
 \pagestyle{empty}
@@ -91,18 +91,20 @@
 \end{center}
 \vspace{-0.18cm}
 
+\textbf{Embedded firmware engineer and computer engineering graduate} with four internships spanning electrical systems and manufacturing. Developed C/C++ firmware, production tools, manufacturing databases, and plant-wide tooling records.
+
 \section{Skills}
-\textbf{Programming \& Data:} Embedded C, C++, Python, MATLAB, Bash, SQL, VBA, Microsoft Access, Excel\\
-\textbf{Embedded Systems:} STM32G474, dsPIC33CK, PIC32, TI C2000/TMS320, MSP430FR2355, TI AM62; bare-metal firmware, FreeRTOS, Embedded Linux, Yocto/Arago\\
-\textbf{Interfaces:} CAN 2.0, CAN FD, J1939, I2C, SPI, UART/RS-232, ADC, PWM\\
-\textbf{Hardware \& Debugging:} KiCad schematics; PCB review in KiCad, P-CAD, and Altium; JTAG, oscilloscopes, logic/protocol analyzers; Git/GitLab
+\textbf{Programming \& Data:} C, C++, SQL, VBA, Microsoft Access, Excel, Python, MATLAB, Bash\\
+\textbf{Embedded \& Controls:} STM32G474, dsPIC33CK, PIC32, TI C2000/TMS320, MSP430FR2355; bare-metal firmware, FreeRTOS, Embedded Linux, ADC sensing, PWM motor control, timers\\
+\textbf{Interfaces:} CAN 2.0, CAN FD, J1939, I2C, SPI, UART/RS-232, GPIO\\
+\textbf{Hardware \& Manufacturing:} Schematic interpretation; PCB review in Altium, KiCad, and P-CAD; JTAG, oscilloscopes, logic/protocol analyzers; production programming, test automation, tooling data
 
 \section{Experience}
 \resumeentry{AEGIS Power Systems | Embedded Firmware Engineer}{May 2026--Present}
 \begin{resumebullets}
-  \item Write and debug dsPIC33CK firmware for embedded power hardware, including CAN, ADC, PWM, I2C, SPI, UART, and timers; verify electrical signals and bus traffic with JTAG, oscilloscopes, and logic analyzers.
-  \item Use schematics and PCB layouts from KiCad, P-CAD, and Altium to trace system failures across wiring, power, firmware, CAN traffic, device settings, Linux services, and application software.
-  \item Integrate CAN-connected power devices with a TI AM62 Embedded Linux controller, including Yocto/Arago images, Linux kernels, device trees, boot troubleshooting, and an external-watchdog service.
+  \item Wrote and debugged C firmware for dsPIC33CK-based power hardware, including CAN, ADC, PWM, I2C, SPI, UART, and timers; verified electrical signals and bus traffic with JTAG, oscilloscopes, and logic analyzers.
+  \item Used schematics and PCB layouts from Altium, KiCad, and P-CAD to trace system failures across wiring, power, firmware, CAN traffic, device settings, Linux services, and application software.
+  \item Integrated CAN-connected power devices with a TI AM62 Embedded Linux controller, including Yocto/Arago images, Linux kernels, device trees, boot troubleshooting, and an external-watchdog service.
 \end{resumebullets}
 
 \resumeentry{AEGIS Power Systems | Embedded Systems Intern | Computer Science Intern}{Summers 2024 \& 2025}
@@ -116,12 +118,12 @@
 \descriptorentry{Production and engineering tools}
 \begin{resumebullets}
   \item Simplified TI's C++ serial flasher for the C2000 TMS320F28379D by removing unused device, CPU2, and dual-boot options, allowing production staff to program precompiled firmware without choosing engineering-only settings.
-  \item Wrote instructions for programming production units and building release images in CCS; also built internal device-discovery, programming, and diagnostic tools for engineers and production staff.
+  \item Wrote procedures for firmware programming, test setup, device configuration, and system commissioning; built device-discovery, programming, and diagnostic tools for engineers and production staff.
 \end{resumebullets}
 
 \resumeentry{TEAM Industries | Engineering Intern}{Summers 2021 \& 2022}
 \begin{resumebullets}
-  \item Built Excel/VBA tools that parsed inspection data and flagged parts outside dimensional and spline tolerances.
+  \item Built Excel/VBA tools that parsed inspection data, checked dimensional and spline tolerances, and flagged out-of-spec parts for engineering and manufacturing teams.
   \item Created and maintained a 17,000+ entry tooling where-used list for the Inrite plant, linking each tool to part numbers, operation numbers, storage locations, and vendors with custom lookup formulas and data-validation rules.
 \end{resumebullets}
 
@@ -133,19 +135,25 @@
 
 \resumeentry{EV Active Sensor Adapter | Battery Monitoring \& CAN}{NC State University}
 \begin{resumebullets}
-  \item Wrote STM32G474 firmware for a custom EV sensor board that read ten thermistors through the ADC, communicated with a BQ79616 battery monitor over UART, and sent measurements over extended-ID CAN.
-  \item Implemented the BQ79616 wake and setup sequence, message framing, CRC checks, cell-voltage reads, and fault reporting; documented board bring-up and troubleshooting for the project team.
+  \item Wrote STM32G474 firmware for a custom EV sensor board that read ten ADC thermistors, exchanged CRC-checked cell and fault data with a BQ79616 over UART, and transmitted measurements over CAN.
 \end{resumebullets}
 
 \resumeentry{C++ Microarchitecture Simulators}{NC State University}
 \begin{resumebullets}
-  \item Built configurable cache, branch-predictor, and out-of-order pipeline simulators in C++; processed instruction traces and measured cache misses, branch accuracy, memory traffic, and instructions per cycle.
+  \item Built C++ cache, branch-predictor, and out-of-order pipeline simulators; measured cache misses, branch accuracy, memory traffic, and instructions per cycle.
 \end{resumebullets}
 
 \section{Teaching Experience}
 \resumeentry{ECE 306 Embedded Systems | Teaching Assistant \& Course Mentor}{Spring 2025--Spring 2026}
 \begin{resumebullets}
-  \item Taught supplemental lessons and helped students debug MSP430FR2355 firmware and custom PCBs across three semesters, including register, timing, peripheral, toolchain, wiring, and soldering problems.
+  \item Taught supplemental lessons and helped students debug MSP430FR2355 firmware and custom PCBs across three semesters, including ADC sensors, PWM motor control, timers, wiring, soldering, and toolchain problems.
+\end{resumebullets}
+
+\section{IEEE Leadership}
+\resumeentry{IEEE at NC State | OPS2 Lead \& Parts Distribution Coordinator}{Fall 2025--Spring 2026}
+\begin{resumebullets}
+  \item Led two semesters of OPS2, IEEE's ten-week applied electronics course that paired classroom theory with hands-on soldering, PCB and BOM development, embedded programming, PlatformIO, and GitHub.
+  \item Built and managed an ECE 306 parts program that cut student costs and raised \$10,000 for IEEE in two weeks.
 \end{resumebullets}
 
 \end{document}

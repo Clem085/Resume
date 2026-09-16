@@ -10,8 +10,11 @@ The blue 2024 résumé is a visual reference only: use its color, spacing, and v
 - Added TI C2000 TMS320F28379D C++ serial-flasher customization and CCS build/image documentation, separately from the C++/Python/PIC32 updater.
 - Added KiCad schematic interpretation, PCB review in KiCad/P-CAD/Altium, and production diagnostic tools. The smart-battery interface-board bullet was removed at Connor's request.
 - Restored TEAM Industries inspection parsing/tolerance automation, the 17,000+ entry Inrite plant tooling where-used list, and the SQL/VBA/Access/Excel ATP project.
-- Kept the manufacturing automation and STM32 sensor-adapter projects from the pre-styling revision; removed the added C++ simulator entry.
+- Kept the manufacturing automation and STM32 sensor-adapter projects and restored the NC State C++ microarchitecture simulator entry.
 - Applied blue name and section rules, triangular bullets, and more section spacing while retaining separate AEGIS role titles and dates.
+- Tailored skills and wording to the Snap-on Electrical Engineer role, emphasizing manufacturing automation, production support, C/C++, SQL/VBA/Access data tools, Altium review, sensor and PWM experience, procedures, and cross-layer troubleshooting without claiming C#, SQL Server/MySQL, Creo, PLC, or production-equipment design experience.
+- Added IEEE leadership through OPS2, a ten-week applied electronics course designed to close gaps between theory and hands-on work, and the ECE 306 parts program that raised $10,000 in two weeks while lowering student costs.
+- Standardized every résumé bullet in past tense.
 - Retained MCU power-control firmware, Embedded Linux integration, senior-design hardware/firmware work, and embedded-systems teaching.
 
 ## Attribution
