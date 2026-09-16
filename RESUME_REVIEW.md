@@ -2,10 +2,10 @@
 
 ## Rev9 Aditi Turf & Compact Utility Controls Variant — August 17, 2026
 
-Rev9 targets the Cary, North Carolina Software Engineer I contract shared by Aditi Consulting. It leads with MATLAB/Simulink, embedded C, controls, CAN/J1939, FreeRTOS, testing, and hardware integration while keeping the résumé to one page.
+Rev9 targets the Cary, North Carolina Software Engineer I contract shared by Aditi Consulting. It leads with MATLAB, embedded C, controls, CAN/J1939, FreeRTOS, testing, and hardware integration while keeping the résumé to one page.
 
 - The full-time AEGIS MATLAB bullet is filter-first: captured CAN text was parsed to compare candidate functions using variation under steady input and time to follow large electrical changes. Rolling-average and EMA approaches were selected, channel scaling was derived, and rolling-sum averaging was implemented in embedded C. No live-MATLAB-CAN acquisition or quantified improvement is claimed.
-- Connor directly reports MATLAB/Simulink Model-in-the-Loop tooling for electric zero-turn-mower controls, including PID-gain adjustment, logic testing, and comparison of simulated response with real-vehicle behavior. The `.slx` artifact, exact course/term, team split, and numerical results are not retained, so Rev9 does not claim Stateflow, code generation, Hardware-in-the-Loop, production deployment, or sole architecture ownership.
+- Retained ECE 220 scripts and reports support MATLAB analysis of continuous/discrete signals, an RLC transfer function, and first-/second-order circuit and mechanical responses. Rev9 uses this artifact-backed dynamic-system work without claiming Simulink or production model-based development.
 - The Python robotics work is source-backed within an NC State/BYU course framework and supports mass-spring-damper, planar-VTOL, and Hummingbird models; PD/PID/cascaded control; saturation; anti-windup; and PWM actuator mixing. It remains academic simulation, not deployed robotics firmware.
 - A recovered Connor-authored Spring 2026 commit supports the stateful Lustre PID cruise controller. Direct context adds tuning and comparison with an earlier controller. Luke artifacts separately support counterexample-guided temporal-monitor corrections and verification of four properties at induction depth 2.
 - The CARLA work was a three-person academic assignment. Source and direct context support Python agent/planner integration, PID-based longitudinal control, Town10HD testing, target-speed tuning, completion timing, collision counts, and lane-invasion counts. Rev9 does not claim production autonomous-driving work, a retained custom low-level PID equation, final gains, or a measured improvement.
@@ -13,7 +13,7 @@ Rev9 targets the Cary, North Carolina Software Engineer I contract shared by Adi
 - Explicit requirements, interface specifications, design reviews, staged integration, and seven passing host-side tests come from Senior Design. The adapter is described as team-built, and BMS remains confined to Senior Design.
 - The internship bullets preserve the single-TMS320, PIC32/FreeRTOS, and twelve-A/B-pair/twenty-four-output distinctions. Host C++/Python tools and embedded programming/recovery logic are presented as connected stages rather than one monolithic tool.
 - TEAM Industries remains as one compact entry because tolerance validation, manufacturing collaboration, and the 2021–2022 timeline are relevant to a factory-adjacent equipment role.
-- Rev9 intentionally omits unsupported Stateflow, Agile/Scrum, continuous integration, LIN, Ethernet, hydraulics, production-vehicle claims, and code-review ownership. It also cuts lower-priority VPX/IPMI, detailed Linux, teaching, MATLAB ML, and MOSFET content.
+- Rev9 intentionally omits unsupported Simulink, Stateflow, Model-in-the-Loop, tool-specific Model-Based Design, Agile/Scrum, continuous integration, LIN, Ethernet, hydraulics, production-vehicle claims, and code-review ownership. It also cuts lower-priority VPX/IPMI, detailed Linux, teaching, MATLAB ML, and MOSFET content.
 - The posting says it seeks mid-career candidates and no recent graduates. Because the recruiter contacted Connor directly, the résumé accurately retains the May 2026 graduation date and foregrounds the continuous 2021–present engineering history.
 
 ## Rev8 MATLAB and Programming-Project Expansion — August 14, 2026

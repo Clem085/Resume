@@ -8,6 +8,7 @@ This file consolidates Connor's professional and academic MATLAB work. The items
 - **Artifact-supported:** retained Spring 2024 ECE 220 MATLAB scripts and submitted lab PDFs cover signals, complex functions, transfer functions, matrices, and differential equations.
 - **Artifact-supported:** the March 2025 ECE 302 MOSFET report contains measured datasets, MATLAB analysis code, plots, parameter extraction, and measured-versus-modeled comparisons.
 - **Artifact-supported:** the March 2025 `301_MATLAB_AI_LEARNING.pdf` assignment contains MATLAB image classification, CNN training/evaluation, transfer learning, PCA, least-squares projection, and visualization work. The PDF itself is titled only `HW8`; its archive filename suggests ECE 301, so confirm the course number before publishing it.
+- **Boundary:** current records establish MATLAB scripts and data analysis, but not Simulink, Model-in-the-Loop, or tool-specific Model-Based Design.
 
 ## AEGIS Power Systems — ADC Filter Analysis and CAN Data Visualization
 
@@ -51,24 +52,6 @@ This file consolidates Connor's professional and academic MATLAB work. The items
 - Do not claim a measured noise reduction, latency improvement, deployment result, production calibration accuracy, or production-performance metric until Connor provides it.
 - `Parsed CAN text output` means offline processing of captured textual CAN data; it does not by itself establish that MATLAB interfaced directly with the live CAN bus.
 - The evidence supports heuristic comparison and engineering judgment. Do not describe this as automated optimization, machine-learned filtering, formal signal-processing validation, or a closed-loop controller.
-
-## Electric Zero-Turn Mower Controls — MATLAB/Simulink
-
-**Setting:** NC State controls work; exact course and term not yet recorded  
-**Evidence:** Connor's direct August 2026 description; a retained `.slx` artifact has not yet been added to this résumé repository
-
-- Used MATLAB and Simulink for Model-in-the-Loop development of electric zero-turn-mower controls.
-- Developed tooling for PID tuning and control-logic testing.
-- Created a repeatable method for finding and adjusting PID values.
-- Compared simulated controller behavior with real-vehicle test behavior.
-- Used the work to connect model-based controls, controller tuning, and validation with later Lustre, CARLA, robotics, and embedded-firmware experience.
-
-### Evidence boundaries
-
-- `MATLAB/Simulink` and `Model-in-the-Loop` are directly confirmed.
-- Do not add Stateflow, automatic code generation, Hardware-in-the-Loop, production deployment, hydraulic controls, or quantitative results without additional evidence.
-- The exact plant model, controller structure, individual/team split, term, and test procedure remain unrecorded.
-- See [`controls-and-autonomy.md`](controls-and-autonomy.md) for the combined controls progression and targeted résumé guidance.
 
 ## ECE 302 — MOSFET Characterization and Parameter Extraction
 
@@ -175,7 +158,7 @@ Connor completed a MATLAB-based analytical foundations sequence. Retained `.m` f
 ### Evidence boundaries
 
 - The retained sequence establishes substantial undergraduate MATLAB use and supports listing MATLAB as a strong working language.
-- The retained ECE 220 sequence alone does not establish Simulink, code generation, fixed-point design, MATLAB Coder, App Designer, control-system toolbox work, or production deployment. Separate direct evidence above establishes Simulink Model-in-the-Loop mower controls, but not the other capabilities.
+- The retained ECE 220 sequence does not establish Simulink, Model-in-the-Loop, code generation, fixed-point design, MATLAB Coder, App Designer, control-system toolbox work, or production deployment.
 - Some loose `.m` files in the programming archive are drafts or incomplete experiments. Prefer the submitted lab PDFs and complete report artifacts when supporting public claims.
 
 ## Transferable MATLAB Capabilities
@@ -194,10 +177,6 @@ Connor completed a MATLAB-based analytical foundations sequence. Retained `.m` f
 ### Best professional bullet
 
 - Parsed captured CAN output in MATLAB to determine per-channel ADC scaling and compare several filter functions by steady-input variation and time to follow large electrical changes; selected rolling-average and EMA approaches and implemented the rolling average in embedded C using a circular buffer and rolling sum.
-
-### Best model-based controls bullet
-
-- Developed MATLAB/Simulink Model-in-the-Loop tooling for electric zero-turn-mower controls to tune PID gains, test control logic, and compare simulated response with real-vehicle test behavior.
 
 ### More implementation-focused professional option
 

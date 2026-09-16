@@ -21,7 +21,7 @@ The strongest general positioning is for:
 3. Power-electronics firmware or BMS-focused embedded-system design
 4. Embedded Linux, platform-integration, and platform-management engineering
 5. Hardware validation, systems test, applications, or field-support engineering
-6. Embedded controls, model-based vehicle software, and autonomous-systems integration
+6. Embedded controls, robotics, vehicle simulation, and autonomous-systems integration
 7. Engineering data analysis, signal validation, and MATLAB-assisted firmware development
 
 ## Source Files
@@ -29,7 +29,7 @@ The strongest general positioning is for:
 - `aegis-power-systems.md` — current professional work plus the 2024 and 2025 AEGIS internships
 - `adc-monitoring-card.md` — professional ADC scaling and data-driven filter selection using MATLAB/CAN captures, embedded-C rolling-average logic, and EMA tradeoffs
 - `matlab-data-analysis.md` — professional CAN/ADC filter analysis plus academic signals, MOSFET, numerical, PCA, and machine-learning work in MATLAB
-- `controls-and-autonomy.md` — MATLAB/Simulink mower controls, Python robotics control, Lustre PID, CARLA autonomous-driving simulation, and claim boundaries
+- `controls-and-autonomy.md` — Python robotics control, Lustre PID, CARLA autonomous-driving simulation, and claim boundaries
 - `senior-design.md` — EV Active Sensor Adapter architecture, component evaluation, firmware, validation, documentation, and teamwork
 - `ece-306.md` — Fall 2024 MSP430 vehicle project and later embedded-systems TA work
 - `teaching-leadership.md` — electronics workshop instruction, TA work, mathematics tutoring, and earlier mentoring
@@ -57,7 +57,7 @@ The strongest general positioning is for:
 - MATLAB data analysis, device characterization, and image-learning projects for controls, test, semiconductor, or data-oriented variants
 - Plumbing and early hands-on work for field/manufacturing variants
 - Robotics, outreach, and community leadership for leadership-focused applications
-- MATLAB/Simulink mower controls, robotics PID, Lustre, and CARLA for vehicle, controls, model-based-design, and autonomous-systems variants
+- Robotics PID, Lustre, and CARLA for vehicle, controls, real-time, and autonomous-systems variants
 
 ### Archive only
 
@@ -95,7 +95,7 @@ Important facts recovered from the archive include:
 - Newer LaTeX sources preserve the PIC32/TMS320 two-processor update architecture, CAN/J1939, connected C++ and Python transfer stages, and extensive Git release-process documentation; disclosure boundaries and exact documentation metrics still require confirmation.
 - Spring 2026 project repositories add periodic POSIX-thread scheduling and execution tracing in C, Lustre formal verification with counterexample-guided fixes, and a Connor-authored portion of a collaborative Python/sentence-transformer mentor-matching system.
 - Newly recovered Spring 2026 files add a stateful Lustre PID cruise controller and CARLA Python agent integration/evaluation; this supersedes the older no-PID/CARLA-exploration boundary while remaining academic work.
-- Direct current context adds MATLAB/Simulink Model-in-the-Loop PID-tuning and logic-test work for an electric zero-turn mower, including comparison of simulated and real-vehicle test behavior. The model artifact, course/term, and quantitative results are not yet archived.
+- Current records do not establish Simulink, Model-in-the-Loop, or tool-specific Model-Based Design experience; do not add those claims to future variants without new evidence.
 - ECE 463 artifacts support Connor-authored C++ cache, branch-predictor, and out-of-order pipeline simulators plus automated Python design-space sweeps; the retained out-of-order quick-test suite passes all three cases.
 - ECE 310 artifacts support a structural Verilog Wallace-tree multiplier and serial/parallel arithmetic blocks. The current public repository does not support the older Kogge--Stone or VHDL claims.
 - Professional MATLAB work complements the monitoring-card firmware by comparing captured converter telemetry and the tradeoff between stable voltage/current readings and rapid transient response; Spring 2024–2025 coursework adds signals, transfer functions, MOSFET fitting/model comparison, CNN training, transfer learning, PCA/KLT, and least squares.

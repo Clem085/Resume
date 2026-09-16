@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1786980441.90731 "/home/connor/Downloads/Programming/Resume/Rev9/Resume.tex" "Resume.pdf" "Resume" 1786980443.00061 0
-  ".build/Resume.aux" 1786980442.86443 593 5e4cc26f3ccba55dab17321eec921c86 "pdflatex"
-  ".build/Resume.out" 1786980442.86443 693 2f6543d51e97b2ce5fdfb6b123a7aa94 "pdflatex"
-  "/home/connor/Downloads/Programming/Resume/Rev9/Resume.tex" 1786976945.84284 8183 2889380453b11bd07c2f733a0472adfa ""
+["pdflatex"] 1786982799.03499 "/home/connor/Downloads/Programming/Resume/Rev9/Resume.tex" "Resume.pdf" "Resume" 1786982800.02497 0
+  ".build/Resume.aux" 1786982799.89933 593 5e4cc26f3ccba55dab17321eec921c86 "pdflatex"
+  ".build/Resume.out" 1786982799.90033 693 2f6543d51e97b2ce5fdfb6b123a7aa94 "pdflatex"
+  "/home/connor/Downloads/Programming/Resume/Rev9/Resume.tex" 1786982798.71334 8149 85e3155c28b3876200b9a5507e8436bc ""
   "/usr/share/texmf-dist/fonts/enc/dvips/sourcesanspro/a_5ponh6.enc" 1775415801 3344 37c976a8b2fa4b8f132a488735054f7d ""
   "/usr/share/texmf-dist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc" 1775415801 3021 665788e9679767ade2a71155215d25e0 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1--base.tfm" 1775415801 1648 77a748afe0a406be1ac3f29e1cd365cb ""
@@ -78,7 +78,7 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1775415801 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1785902715 5380826 a3bfff71f433a54f017bc880f3b8ea78 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1785902685 2328178 74f572c7bb028aa92a9fc3b4c42b4e0e ""
-  "Resume.tex" 1786976945.84284 8183 2889380453b11bd07c2f733a0472adfa ""
+  "Resume.tex" 1786982798.71334 8149 85e3155c28b3876200b9a5507e8436bc ""
   (generated)
   ".build/Resume.aux"
   ".build/Resume.log"

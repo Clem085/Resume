@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.8.5)  17 AUG 2026 11:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.8.5)  17 AUG 2026 12:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -534,15 +534,15 @@ Package rerunfilecheck Info: File `Resume.out' has not changed.
 (rerunfilecheck)             Checksum: 2F6543D51E97B2CE5FDFB6B123A7AA94;693.
  ) 
 Here is how much of TeX's memory you used:
- 11915 strings out of 469515
- 194025 string characters out of 5470808
- 665341 words of memory out of 5000000
+ 11912 strings out of 469515
+ 193926 string characters out of 5470808
+ 663948 words of memory out of 5000000
  40334 multiletter control sequences out of 15000+600000
- 732404 words of font info for 120 fonts, out of 8000000 for 9000
+ 732092 words of font info for 118 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,9n,79p,1050b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb></usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-It.pfb></usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb>
-Output written on .build/Resume.pdf (1 page, 179897 bytes).
+Output written on .build/Resume.pdf (1 page, 179501 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  43 compressed objects within 1 object stream

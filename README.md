@@ -27,7 +27,7 @@ Current attribution rules supersede wording in older revisions and archived prom
 | [`Rev6/`](Rev6/) | Low-level-firmware-first résumé and cover letter emphasizing dsPIC33CK, PIC32/FreeRTOS, bare-metal TMS320 DSP control, communication interfaces, VPX/IPMI, and board bring-up. |
 | [`Rev7/`](Rev7/) | Qualcomm Power and Limits targeted résumé emphasizing real-time C/C++, TMS320 power-conversion control, PIC32/FreeRTOS processor partitioning, JTAG-driven bring-up, execution analysis, formal verification, and Python tooling/ML. |
 | [`Rev8/`](Rev8/) | General low-level embedded-firmware résumé adding professional ADC scaling, embedded-C rolling-average/EMA selection, MATLAB/CAN analysis, distributed firmware-team collaboration, MOSFET modeling, and academic MATLAB machine learning. |
-| [`Rev9/`](Rev9/) | Aditi Turf & Compact Utility targeted résumé prioritizing professional MATLAB/CAN filter analysis, MATLAB/Simulink mower controls, embedded C, FreeRTOS, CAN/J1939, robotics PID, Lustre, CARLA, requirements, and validation. |
+| [`Rev9/`](Rev9/) | Aditi Turf & Compact Utility targeted résumé prioritizing professional MATLAB/CAN filter analysis, academic MATLAB dynamic-system analysis, embedded C, FreeRTOS, CAN/J1939, robotics PID, Lustre, CARLA, requirements, and validation. |
 
 Rev9 is the newest résumé revision.
 

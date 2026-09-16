@@ -126,10 +126,6 @@ Professional Aegis work, senior design, and ECE 306 should remain ahead of acade
 
 The Aegis ADC-filter comparison is professional experience and belongs in `aegis-power-systems.md` and `adc-monitoring-card.md`, not under a personal project. That work combined four-channel converter telemetry scaling/calibration, an embedded-C rolling average, parsed CAN captures, and MATLAB comparison of steady-state smoothing versus response to large voltage/current changes.
 
-### MATLAB/Simulink mower controls
-
-Connor directly reports separate MATLAB/Simulink Model-in-the-Loop work for electric zero-turn-mower controls, including PID-tuning/logic-test tooling and comparison of simulated response with real-vehicle test behavior. See [`controls-and-autonomy.md`](controls-and-autonomy.md) for the complete direct-evidence record and boundaries. No retained `.slx` model is currently stored in this résumé repository, so do not add Stateflow, code generation, Hardware-in-the-Loop, or quantitative performance claims.
-
 ## Real-Time Systems and Formal Verification — Spring 2026
 
 **Priority:** Core candidate for real-time firmware, RTOS, safety/validation, controls, or concurrency roles.

@@ -1,10 +1,9 @@
-# Controls, Model-Based Design, Robotics, and Autonomous-Vehicle Experience
+# Controls, Robotics, and Autonomous-Vehicle Experience
 
-This file consolidates Connor's controls work across MATLAB/Simulink, Python robotics simulation, synchronous Lustre software, CARLA autonomous-driving simulation, and related embedded systems. It is the source for controls-, vehicle-, robotics-, and model-based-development résumé variants.
+This file consolidates Connor's controls work across Python robotics simulation, synchronous Lustre software, CARLA autonomous-driving simulation, and related embedded systems. It is the source for controls-, vehicle-, robotics-, and autonomous-systems résumé variants.
 
 ## Evidence Summary
 
-- **Direct, current correction:** Connor reports MATLAB/Simulink Model-in-the-Loop work on an electric zero-turn mower, including PID-tuning and logic-test tooling plus simulation-to-vehicle comparison.
 - **Artifact-supported:** Connor-authored Spring 2026 files in [`Clem085/rtos-ml`](https://github.com/Clem085/rtos-ml) include a stateful Lustre PID cruise controller and Python CARLA agent integration.
 - **Direct plus artifact-supported:** Connor reports tuning/evaluating the Lustre and CARLA controls; retained source and documentation show the controller state, saturation, agent integration, target speed, route completion, collision, and lane-invasion instrumentation.
 - **Artifact-supported:** [`Clem085/RoboticsControls`](https://github.com/Clem085/RoboticsControls) contains Connor-attributable Python controller and simulation work within an NC State/BYU course framework.
@@ -16,35 +15,12 @@ The exact NC State course number for the Spring 2026 real-time/autonomous-drivin
 
 Connor's strongest controls story spans several abstraction levels:
 
-1. MATLAB/Simulink Model-in-the-Loop design and tuning for an electric mower.
-2. Python dynamics simulation and PD/PID/cascaded control for robotics plants.
-3. Deterministic, discrete-time PID implementation in Lustre.
-4. Python integration and tuning of PID-based longitudinal control in CARLA.
-5. Professional embedded-C filtering, PWM/ADC control, CAN/J1939, RTOS, and system validation.
+1. Python dynamics simulation and PD/PID/cascaded control for robotics plants.
+2. Deterministic, discrete-time PID implementation in Lustre.
+3. Python integration and tuning of PID-based longitudinal control in CARLA.
+4. Professional embedded-C filtering, PWM/ADC control, CAN/J1939, RTOS, and system validation.
 
 This supports presenting Connor as an embedded/computer engineer with hands-on controls implementation and validation—not only theoretical controls coursework.
-
-## Electric Zero-Turn Mower — MATLAB/Simulink Model-in-the-Loop
-
-**Setting:** NC State controls work; exact course and term not yet recorded  
-**Evidence:** Connor's direct August 2026 description; no retained `.slx` model is currently stored in this résumé repository
-
-- Used MATLAB and Simulink for Model-in-the-Loop development of electric zero-turn mower controls.
-- Developed tooling for PID tuning and control-logic testing.
-- Created a repeatable method for finding and adjusting PID gains instead of changing values without a structured comparison.
-- Evaluated controller response in simulation, including the tradeoff among responsiveness, overshoot/oscillation, and stable behavior.
-- Compared simulated behavior with real-vehicle testing to identify agreement and differences between the model and physical mower.
-- Connected model-based control development with later embedded, synchronous, and autonomous-vehicle software work.
-
-### Resume-ready wording
-
-- Developed MATLAB/Simulink Model-in-the-Loop tooling for electric zero-turn mower controls, creating a repeatable PID-tuning and logic-test workflow and comparing simulated response with real-vehicle test behavior.
-
-### Boundaries
-
-- This is direct self-reported project evidence; the model file, exact term, team/individual split, plant model, controller topology, test procedure, and quantitative results are not yet archived.
-- Do not claim Stateflow, automatic code generation, Hardware-in-the-Loop, production deployment, hydraulic control, safety certification, or ownership of the complete mower-control architecture without additional evidence.
-- `Model-in-the-Loop` and `MATLAB/Simulink` are confirmed. `Production model-based software development` is not.
 
 ## Robotics and Digital Controls — Python Simulation
 
@@ -70,7 +46,7 @@ This supports presenting Connor as an embedded/computer engineer with hands-on c
 
 ## Synchronous PID Cruise Control — Lustre
 
-**Setting:** NC State real-time/autonomous-driving coursework, Spring 2026; three-person academic team  
+**Setting:** NC State real-time/autonomous-driving coursework, Spring 2026
 **Evidence:** Connor-authored commit and retained `RTOS-ARC/hw3/p4/cruisectr2.lus`
 
 - Implemented PID cruise-control logic in Lustre, a deterministic synchronous dataflow language.
@@ -93,7 +69,7 @@ This supports presenting Connor as an embedded/computer engineer with hands-on c
 
 ## CARLA Autonomous-Vehicle Control — Python
 
-**Setting:** NC State real-time/autonomous-driving coursework, Spring 2026  
+**Setting:** NC State real-time/autonomous-driving coursework, Spring 2026; three-person academic team
 **Evidence:** Connor-authored repository commit, `MyPID.py`, `my_automatic_control.py`, retained documentation, and Connor's direct description
 
 - Integrated a Python `MyPID` agent into CARLA's autonomous-driving application flow.
@@ -118,19 +94,18 @@ This supports presenting Connor as an embedded/computer engineer with hands-on c
 
 ## Job-Relevant Combined Themes
 
-- MATLAB/Simulink and Model-in-the-Loop control development
 - Embedded C plus Python control and analysis tooling
 - PID/PI/PD, cascaded loops, tuning, saturation, anti-windup, and discrete-time state
 - Deterministic synchronous control and real-time scheduling concepts
-- Simulation, functional evaluation, and model-to-vehicle comparison
+- Dynamic-system modeling, controller simulation, tuning, and functional evaluation
 - CAN/J1939 and hardware/software integration from professional firmware work
 - Requirements, interface definitions, staged subsystem tests, and design reviews from senior design
 - Schematics, datasheets, JTAG, oscilloscopes, logic analyzers, and cross-layer fault isolation
 
 ## Claim Boundaries for Targeted Résumés
 
-- Keep mower, robotics, Lustre, and CARLA work visibly academic; do not blur it into AEGIS employment.
-- Do not add Stateflow, LIN, automotive Ethernet, hydraulic controls, Hardware-in-the-Loop, Simulink code generation, continuous integration, or production vehicle deployment without evidence.
+- Keep robotics, Lustre, and CARLA work visibly academic; do not blur it into AEGIS employment.
+- No retained evidence supports Simulink, Stateflow, Model-in-the-Loop, or tool-specific Model-Based Design. Do not add those claims, LIN, automotive Ethernet, hydraulic controls, Hardware-in-the-Loop, continuous integration, or production vehicle deployment without new evidence.
 - Do not label standups as Agile/Scrum unless Connor confirms that development process.
 - Do not claim universal controller optimality or unsupported quantitative improvement.
 - Keep professional FreeRTOS/PIC32 and TMS320 work separate from Linux/POSIX academic scheduling.
