@@ -33,6 +33,7 @@ The strongest general positioning is for:
 - `senior-design.md` — EV Active Sensor Adapter architecture, component evaluation, firmware, validation, documentation, and teamwork
 - `ece-306.md` — Fall 2024 MSP430 vehicle project and later embedded-systems TA work
 - `teaching-leadership.md` — electronics workshop instruction, TA work, mathematics tutoring, and earlier mentoring
+- `manufacturing-test-automation.md` — TEAM Industries SQL/VBA/Access/Excel ATP test-data parsing, validation, historical lookup, and database entry; exact internship year pending
 - `team-industries.md` — 2021/2022 manufacturing, tolerance validation, Excel/VBA automation, and reporting
 - `personal-projects.md` — detailed inventory of microarchitecture, real-time, formal-verification, RTL, controls, assembly, MATLAB, ML, quantum, Linux, and earlier programming projects
 - `github-projects.md` — repository-by-repository public-source audit, authorship boundaries, reproducible results, and safe résumé framing
@@ -84,11 +85,11 @@ Important facts recovered from the archive include:
 - The 2024 hardware contribution included constructing the relay/load/power-supply test circuit; Connor did not perform or run burn-in tests.
 - The C++ HEX-file programmer, Python/TCP transport, PIC32 SPI-flash/golden-image logic, and TMS320 UART programming were connected stages of one product's update and boot-control workflow, not one monolithic program.
 - In that product, the PIC32 ran FreeRTOS for communication/update coordination and the TMS320 DSP ran bare-metal C with TI hardware libraries for real-time control.
-- BMS research, selection, firmware prototyping, and integration belong exclusively to senior design; they must not be attributed to an AEGIS internship or job.
+- The STM32G474/BQ79616 EV sensor-adapter work belongs to NC State senior design; separate professional smart-battery CAN interface work belongs to AEGIS. MSP430FR2355 belongs to ECE 306.
 - Connor graduated from NC State in May 2026 with a B.S. in Computer Engineering.
 - ECE 306 support covered Spring 2025, Fall 2025, and Spring 2026: two semesters of unofficial support at about 10 hours per week and one formal TA appointment at about 20 hours per week. The exact semester-to-status mapping should be confirmed before a targeted version states it.
 - OPS2 lead instruction ran in Fall 2025 and Spring 2026; the standalone IEEE soldering-workshop role was separate from OPS2.
-- TEAM work included dimensional inspection, spline-tolerance checks, Excel/VBA out-of-spec logic, technical reports, and a catalog of more than 17,000 tooling/part records.
+- TEAM work included dimensional inspection, spline-tolerance checks, Excel/VBA out-of-spec logic, technical reports, a 17,000+ entry Inrite plant tooling where-used list built with custom lookup formulas and data validation, and ATP database automation using SQL/VBA/Access/Excel.
 - The ECE 306 MSP430 vehicle was completed in Fall 2024 and used custom PCBs, Wi-Fi control, ADC line following, motor PWM, and LCD output.
 - Paid mathematics tutoring ran January–May 2022 and followed extensive volunteer tutoring.
 - Older records preserve early power-circuit, digital-logic, C++ search, assembly-parser, Linux, robotics, plumbing, and community-leadership experience.
@@ -114,3 +115,9 @@ Important facts recovered from the archive include:
 - Whether a separate artifact exists for the older Kogge--Stone or VHDL claims; they are not supported by the current ECE 310 repository
 - Professional ADC details beyond the confirmed rolling-average/EMA selection: other candidate functions, window and EMA parameters, acquisition cadence, calibration results, quantitative improvements, final deployment, and public-disclosure approval for exact ranges
 - Correct course number and individual/team scope for the Spring 2025 MATLAB machine-learning assignment
+
+## September 2026 Direct Additions
+
+Connor's September 15 account adds the AEGIS C++ `serial_flasher.exe` customization for TMS320F28379D, CCS build/image-generation documentation, smart-battery CAN interface work, KiCad/P-CAD/Altium review, full-system fault isolation, and engineering/production diagnostic utilities. See [AEGIS](aegis-power-systems.md), [ATP automation](manufacturing-test-automation.md), and [TEAM Industries](team-industries.md). The serial-flasher customization is documented separately from the broader C++/Python/PIC32 update workflow; their exact relationship and production-tool dates remain open. On September 16, Connor confirmed that the ATP work belonged to TEAM Industries and expanded the Inrite plant tooling-inventory details.
+
+Connor confirmed experience with PlatformIO, STM32Cube, MPLAB, and Code Composer Studio on September 16, 2026. These may be selected for a targeted résumé when the development environment matters; a general résumé does not need to list every IDE.

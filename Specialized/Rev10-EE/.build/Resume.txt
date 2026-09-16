@@ -1,0 +1,56 @@
+                                           Connor Savugot
+                 B.S. in Computer Engineering | North Carolina State University | Graduated May 2026
+       consav04@gmail.com | +1-828-541-9487 | Murphy, NC | linkedin.com/in/connorsavugot | github.com/Clem085
+
+SKILLS
+Programming & Data: Embedded C, C++, Python, MATLAB, Bash, SQL, VBA, Microsoft Access, Excel
+Embedded Systems: STM32G474, dsPIC33CK, PIC32, TI C2000/TMS320, MSP430FR2355, TI AM62; bare-metal ﬁrmware, FreeRTOS,
+Embedded Linux, Yocto/Arago
+Interfaces: CAN 2.0, CAN FD, J1939, I2C, SPI, UART/RS-232, ADC, PWM
+Hardware & Debugging: KiCad schematics; PCB review in KiCad, P-CAD, and Altium; JTAG, oscilloscopes, logic/protocol
+analyzers; Git/GitLab
+
+EXPERIENCE
+AEGIS Power Systems
+Embedded Firmware Engineer                                                                                      May 2026–Present
+ ▷ Write and debug dsPIC33CK ﬁrmware for embedded power hardware, including CAN, ADC, PWM, I2C, SPI, UART, and timers;
+   verify electrical signals and bus traffic with JTAG, oscilloscopes, and logic analyzers.
+ ▷ Use schematics and PCB layouts from KiCad, P-CAD, and Altium to trace system failures across wiring, power, ﬁrmware, CAN
+   traffic, device settings, Linux services, and application software.
+ ▷ Integrate CAN-connected power devices with a TI AM62 Embedded Linux controller, including Yocto/Arago images, Linux
+   kernels, device trees, boot troubleshooting, and an external-watchdog service.
+Embedded Systems Intern                                                                                             May–Aug 2025
+Computer Science Intern                                                                                             May–Aug 2024
+Selected work across both internships
+ ▷ Wrote bare-metal C ﬁrmware for a TMS320-controlled bidirectional power converter with 12 PWM A/B pairs (24 outputs);
+   conﬁgured frequency, duty cycle, and phase for each A output and set its paired B output to follow or invert it.
+ ▷ Worked on a two-processor power system in which a FreeRTOS PIC32 handled I2C, SPI, CAN/J1939, UART, and ﬁrmware
+   updates while a bare-metal TMS320 ran the real-time converter controls.
+ ▷ Built a ﬁrmware update and recovery workﬂow that transferred checked image chunks over TCP, stored new and golden
+   images in PIC32 SPI ﬂash, and programmed and veriﬁed the TMS320 over UART.
+Production and engineering tools
+ ▷ Simpliﬁed TI’s C++ serial ﬂasher for the C2000 TMS320F28379D by removing unused device, CPU2, and dual-boot options,
+   allowing production staff to program precompiled ﬁrmware without choosing engineering-only settings.
+ ▷ Wrote instructions for programming production units and building release images in CCS; also built internal device-discovery,
+   programming, and diagnostic tools for engineers and production staff.
+TEAM Industries
+Engineering Intern                                                                                            Summers 2021 & 2022
+ ▷ Built Excel/VBA tools that parsed inspection data and ﬂagged parts outside dimensional and spline tolerances.
+ ▷ Created and maintained a 17,000+ entry tooling where-used list for the Inrite plant, linking each tool to part numbers,
+   operation numbers, storage locations, and vendors with custom lookup formulas and data-validation rules.
+
+PROJECTS
+Manufacturing Test Automation | SQL, VBA, Access, Excel                                                            TEAM Industries
+ ▷ Built tools for an Acceptance Test Procedure database that parsed and checked test results, retrieved earlier records, and
+   entered new results automatically.
+EV Active Sensor Adapter | Battery Monitoring & CAN                                                            NC State University
+ ▷ Wrote STM32G474 ﬁrmware for a custom EV sensor board that read ten thermistors through the ADC, communicated with a
+   BQ79616 battery monitor over UART, and sent measurements over extended-ID CAN.
+ ▷ Implemented the BQ79616 wake and setup sequence, message framing, CRC checks, cell-voltage reads, and fault reporting;
+   documented board bring-up and troubleshooting for the project team.
+
+TEACHING EXPERIENCE
+ECE 306 Embedded Systems | Teaching Assistant & Course Mentor                                Spring 2025–Spring 2026
+ ▷ Taught supplemental lessons and helped students debug MSP430FR2355 ﬁrmware and custom PCBs across three semesters,
+   including register, timing, peripheral, toolchain, wiring, and soldering problems.
+

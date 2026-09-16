@@ -46,3 +46,13 @@ These files are preserved as historical evidence but must not be copied into a n
 3. Prefer facts repeated across contemporaneous resumes or confirmed by an official record.
 4. Treat one-off cover-letter claims as leads until Connor confirms them; cover letters also contain aspirational job-alignment language that is not prior experience.
 5. Resolve every conflict listed in the experience source and [`INVENTORY.md`](INVENTORY.md) before publishing a targeted resume.
+
+## September 15, 2026 Experience Update
+
+Connor directly supplied additional project details for [Rev10-EE](../Specialized/Rev10-EE/Resume.tex). These are new source statements, not recovered archive artifacts; historical originals and the recovered-import counts above remain unchanged.
+
+- [AEGIS experience](../experience/aegis-power-systems.md): added C++ customization of TI `serial_flasher.exe` for TMS320F28379D, removal of unused device/CPU2/dual-boot options, production programming for non-firmware engineers, and CCS build/image-generation instructions. This is not established as the same tool as the archived C++ HEX-file programmer or PIC32 golden-image workflow.
+- Clarified professional smart-battery CAN interface work versus the separate senior-design battery-monitor project; expanded board-review tools, datasheet/electrical-specification use, CAN configuration diagnostics, full-system troubleshooting, and reusable engineering/production procedures.
+- [ATP automation](../experience/manufacturing-test-automation.md): newly recorded SQL/VBA/Access/Excel test-data parsing, validation, historical-record retrieval, and automated database entry. Connor confirmed TEAM Industries as the employer on September 16; the exact internship year remains unknown.
+- [TEAM Industries](../experience/team-industries.md): expanded the existing tolerance-checker record with directly confirmed inspection-data parsing and automatic part verification, plus a 17,000+ entry Inrite plant tooling where-used list using custom lookup formulas and data validation. Kept the where-used list and tolerance checker distinct from ATP automation.
+- Exact dates for the C++ production tool and network-discovery utilities remain unconfirmed; Rev10 groups them at AEGIS employer level.

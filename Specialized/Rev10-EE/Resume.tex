@@ -1,0 +1,151 @@
+% Rev 10 -- Embedded Hardware Integration and Production Engineering
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.58in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default,type1]{sourcesanspro}
+\usepackage[final]{microtype}
+\usepackage[explicit]{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{iftex}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\hypersetup{
+  pdftitle={Connor Savugot Resume},
+  pdfauthor={Connor Savugot},
+  pdfsubject={Embedded Hardware Integration and Production Engineering},
+  pdfkeywords={embedded firmware, electrical engineering, hardware integration, board bring-up, C, C++, STM32, PIC32, dsPIC, TI C2000, TMS320F28379D, CAN, CAN FD, J1939, KiCad, P-CAD, Altium, production programming, SQL, VBA, Microsoft Access, Excel, manufacturing test}
+}
+
+\pagestyle{empty}
+\definecolor{resumeBlue}{HTML}{0065A8}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\hfuzz=0.4pt
+
+\titleformat{\section}
+  {\color{resumeBlue}\fontsize{11.8}{12.4}\selectfont\bfseries\uppercase}
+  {}{0pt}{#1\hspace{0.12cm}\titlerule[0.65pt]}
+\titlespacing{\section}{0pt}{0.36cm}{0.12cm}
+
+\newlist{resumebullets}{itemize}{1}
+\setlist[resumebullets]{
+  label=$\triangleright$,
+  leftmargin=0.50cm,
+  topsep=0.025cm,
+  itemsep=0.025cm,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\newcommand{\companyheader}[1]{%
+  {\fontsize{10.4}{10.8}\selectfont\bfseries #1}\par\vspace{-0.03cm}
+}
+
+\newcommand{\resumeentry}[2]{%
+  \begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{2.40in}@{}}
+    \textbf{#1} & \textbf{\textit{#2}}
+  \end{tabularx}\vspace{-0.075cm}
+}
+
+\newcommand{\roleentry}[2]{%
+  \begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{2.40in}@{}}
+    \textbf{#1} & \textbf{\textit{#2}}
+  \end{tabularx}\vspace{-0.075cm}
+}
+
+\newcommand{\descriptorentry}[1]{%
+  \begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{2.40in}@{}}
+    \textit{#1} &
+  \end{tabularx}\vspace{-0.075cm}
+}
+
+\begin{document}
+\fontsize{9.85}{10.85}\selectfont
+\setlength{\RaggedRightRightskip}{0pt plus 5em}
+\RaggedRight
+\emergencystretch=1em
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{center}
+  {\color{resumeBlue}\fontsize{24.5}{25.2}\selectfont\bfseries Connor Savugot}\\[2.5pt]
+  {\bfseries B.S. in Computer Engineering | North Carolina State University | Graduated May 2026}\\[1.5pt]
+  {\fontsize{9.6}{10.2}\selectfont
+    \href{mailto:consav04@gmail.com}{consav04@gmail.com}
+    \enspace|\enspace \href{tel:+18285419487}{+1-828-541-9487}
+    \enspace|\enspace Murphy, NC
+    \enspace|\enspace \href{https://linkedin.com/in/connorsavugot}{linkedin.com/in/connorsavugot}
+    \enspace|\enspace \href{https://github.com/Clem085}{github.com/Clem085}}
+\end{center}
+\vspace{-0.18cm}
+
+\section{Skills}
+\textbf{Programming \& Data:} Embedded C, C++, Python, MATLAB, Bash, SQL, VBA, Microsoft Access, Excel\\
+\textbf{Embedded Systems:} STM32G474, dsPIC33CK, PIC32, TI C2000/TMS320, MSP430FR2355, TI AM62; bare-metal firmware, FreeRTOS, Embedded Linux, Yocto/Arago\\
+\textbf{Interfaces:} CAN 2.0, CAN FD, J1939, I2C, SPI, UART/RS-232, ADC, PWM\\
+\textbf{Hardware \& Debugging:} KiCad schematics; PCB review in KiCad, P-CAD, and Altium; JTAG, oscilloscopes, logic/protocol analyzers; Git/GitLab
+
+\section{Experience}
+\resumeentry{AEGIS Power Systems | Embedded Firmware Engineer}{May 2026--Present}
+\begin{resumebullets}
+  \item Write and debug dsPIC33CK firmware for embedded power hardware, including CAN, ADC, PWM, I2C, SPI, UART, and timers; verify electrical signals and bus traffic with JTAG, oscilloscopes, and logic analyzers.
+  \item Use schematics and PCB layouts from KiCad, P-CAD, and Altium to trace system failures across wiring, power, firmware, CAN traffic, device settings, Linux services, and application software.
+  \item Integrate CAN-connected power devices with a TI AM62 Embedded Linux controller, including Yocto/Arago images, Linux kernels, device trees, boot troubleshooting, and an external-watchdog service.
+\end{resumebullets}
+
+\resumeentry{AEGIS Power Systems | Embedded Systems Intern | Computer Science Intern}{Summers 2024 \& 2025}
+\descriptorentry{Selected work across both internships}
+\begin{resumebullets}
+  \item Wrote bare-metal C firmware for a TMS320-controlled bidirectional power converter with 12 PWM A/B pairs (24 outputs); configured frequency, duty cycle, and phase for each A output and set its paired B output to follow or invert it.
+  \item Worked on a two-processor power system in which a FreeRTOS PIC32 handled I2C, SPI, CAN/J1939, UART, and firmware updates while a bare-metal TMS320 ran the real-time converter controls.
+  \item Built a firmware update and recovery workflow that transferred checked image chunks over TCP, stored new and golden images in PIC32 SPI flash, and programmed and verified the TMS320 over UART.
+\end{resumebullets}
+
+\descriptorentry{Production and engineering tools}
+\begin{resumebullets}
+  \item Simplified TI's C++ serial flasher for the C2000 TMS320F28379D by removing unused device, CPU2, and dual-boot options, allowing production staff to program precompiled firmware without choosing engineering-only settings.
+  \item Wrote instructions for programming production units and building release images in CCS; also built internal device-discovery, programming, and diagnostic tools for engineers and production staff.
+\end{resumebullets}
+
+\resumeentry{TEAM Industries | Engineering Intern}{Summers 2021 \& 2022}
+\begin{resumebullets}
+  \item Built Excel/VBA tools that parsed inspection data and flagged parts outside dimensional and spline tolerances.
+  \item Created and maintained a 17,000+ entry tooling where-used list for the Inrite plant, linking each tool to part numbers, operation numbers, storage locations, and vendors with custom lookup formulas and data-validation rules.
+\end{resumebullets}
+
+\section{Projects}
+\resumeentry{Manufacturing Test Automation | SQL, VBA, Access, Excel}{TEAM Industries}
+\begin{resumebullets}
+  \item Built tools for an Acceptance Test Procedure database that parsed and checked test results, retrieved earlier records, and entered new results automatically.
+\end{resumebullets}
+
+\resumeentry{EV Active Sensor Adapter | Battery Monitoring \& CAN}{NC State University}
+\begin{resumebullets}
+  \item Wrote STM32G474 firmware for a custom EV sensor board that read ten thermistors through the ADC, communicated with a BQ79616 battery monitor over UART, and sent measurements over extended-ID CAN.
+  \item Implemented the BQ79616 wake and setup sequence, message framing, CRC checks, cell-voltage reads, and fault reporting; documented board bring-up and troubleshooting for the project team.
+\end{resumebullets}
+
+\resumeentry{C++ Microarchitecture Simulators}{NC State University}
+\begin{resumebullets}
+  \item Built configurable cache, branch-predictor, and out-of-order pipeline simulators in C++; processed instruction traces and measured cache misses, branch accuracy, memory traffic, and instructions per cycle.
+\end{resumebullets}
+
+\section{Teaching Experience}
+\resumeentry{ECE 306 Embedded Systems | Teaching Assistant \& Course Mentor}{Spring 2025--Spring 2026}
+\begin{resumebullets}
+  \item Taught supplemental lessons and helped students debug MSP430FR2355 firmware and custom PCBs across three semesters, including register, timing, peripheral, toolchain, wiring, and soldering problems.
+\end{resumebullets}
+
+\end{document}

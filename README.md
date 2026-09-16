@@ -9,7 +9,7 @@ The recovered résumés, cover letters, LaTeX sources, application packets, and 
 Current attribution rules supersede wording in older revisions and archived prompts:
 
 - Active senior-design firmware uses an STM32G474, BQ79616 battery monitor, ten ADC thermistor channels, UART, and extended-identifier CAN telemetry in a timer-assisted service loop.
-- MSP430FR2355 belongs to ECE 306; BMS work belongs to Senior Design, not AEGIS.
+- The STM32G474/BQ79616 EV sensor-adapter work belongs to NC State senior design; separate professional smart-battery CAN interface work belongs to AEGIS. MSP430FR2355 belongs to ECE 306.
 - Connor's current AEGIS title is Embedded Firmware Engineer beginning May 2026.
 - Current professional work includes dsPIC33CK firmware, VITA 46.11 Tier 2 VPX/IPMI management, data-driven ADC scaling/filter selection using MATLAB/CAN captures and embedded C, and TI AM62 embedded Linux integration.
 - Name the supported TI Linux work directly instead of using the broader label “BSP.”
@@ -29,7 +29,7 @@ Current attribution rules supersede wording in older revisions and archived prom
 | [`Rev8/`](Rev8/) | General low-level embedded-firmware résumé adding professional ADC scaling, embedded-C rolling-average/EMA selection, MATLAB/CAN analysis, distributed firmware-team collaboration, MOSFET modeling, and academic MATLAB machine learning. |
 | [`Rev9/`](Rev9/) | Aditi Turf & Compact Utility targeted résumé prioritizing professional MATLAB/CAN filter analysis, academic MATLAB dynamic-system analysis, embedded C, FreeRTOS, CAN/J1939, robotics PID, Lustre, CARLA, requirements, and validation. |
 
-Rev9 is the newest résumé revision.
+[Rev10-EE](Specialized/Rev10-EE/) is the newest résumé revision, emphasizing embedded hardware integration, production programming, and manufacturing automation.
 
 ## Revision Layout
 

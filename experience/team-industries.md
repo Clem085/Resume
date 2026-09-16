@@ -7,7 +7,7 @@ Two summer internships provided early experience with manufacturing engineering,
 ### Quality and tolerance automation
 
 - Learned to use a micrometer and worked with measured manufacturing-part dimensions and spline tolerances.
-- Developed Excel/VBA logic that allowed users to enter measurements and identify parts that fell outside specification limits.
+- Developed Excel/VBA tools that parsed inspection data and automatically checked manufactured parts against specified dimensional and spline tolerances, identifying out-of-spec parts. Connor directly confirmed parsing and automated tolerance verification on September 15, 2026; earlier records also describe user-entered measurements.
 - Used formulas, conditional formatting, and structured data validation to make the acceptance logic visible and reduce inconsistent manual entry.
 - Later résumé wording mentions pivot-table summaries for review. Confirm how they were used and whether Connor created the summaries before presenting this as an accomplishment.
 - Structured the tolerance-checking workflow so factory or engineering users could apply the same decision logic consistently.
@@ -15,10 +15,17 @@ Two summer internships provided early experience with manufacturing engineering,
 
 ### Manufacturing and engineering data
 
-- Created and maintained a catalog with more than 17,000 entries connecting tooling, parts, vendors, tool locations, operation numbers, and part numbers.
-- Built structured engineering worksheets, custom Excel formulas, searchable records, and maintainable revision histories.
+- Created and maintained a tooling where-used list with more than 17,000 entries covering the tooling used at TEAM Industries' Inrite plant and connecting tools with part numbers, operation numbers, vendors, and storage locations.
+- Used substantial custom Excel lookup formulas and data-validation rules to keep the plant inventory consistent, searchable, and maintainable. Connor directly confirmed the plant scope and importance of this work on September 16, 2026.
+- Built structured engineering worksheets, searchable records, and maintainable revision histories.
 - Organized manufacturing and quality data so engineers could review part status, tooling relationships, and project changes.
 - Created additional inventory/pricing records for company merchandise and raw-material tracking when those processes needed a maintainable source of truth.
+
+### Acceptance Test Procedure database
+
+- Developed SQL/VBA automation with Microsoft Access and Excel for an Acceptance Test Procedure database.
+- Parsed and validated test data, retrieved historical records, and automated database entry.
+- Connor confirmed TEAM Industries as the employer on September 16, 2026. The exact internship year and quantitative impact remain unrecorded.
 
 ### Manufacturing collaboration
 
@@ -40,7 +47,8 @@ Two summer internships provided early experience with manufacturing engineering,
 - Excel/VBA automation
 - Tolerance validation and out-of-spec part identification
 - Manufacturing quality data and dimensional inspection
-- 17,000+ record tool/part/vendor catalog
+- 17,000+ entry Inrite plant tooling where-used list with custom lookup formulas and data validation
+- SQL/VBA/Access/Excel Acceptance Test Procedure database automation
 - Engineering worksheets, data validation, revision control, and technical reporting
 - Cross-functional manufacturing collaboration
 
@@ -52,11 +60,11 @@ Two summer internships provided early experience with manufacturing engineering,
 
 ### Compact general-résumé summary
 
-- Developed a repeatable Excel/VBA dimensional and spline-tolerance validation test that automatically flagged out-of-spec parts; built a searchable 17,000+ record tooling/part/vendor catalog with operation, location, and revision traceability.
+- Developed a repeatable Excel/VBA dimensional and spline-tolerance validation test that automatically flagged out-of-spec parts; built a searchable 17,000+ entry Inrite plant tooling where-used list with custom lookup formulas, data validation, and operation/location/vendor details.
 
 ## Details Requiring Confirmation
 
-- Which internship year contained the tolerance checker, 17,000-record catalog, and each reporting workflow
+- Which internship year contained the tolerance checker, Inrite plant inventory, ATP database, and each reporting workflow
 - Whether pivot summaries and the described before/after change-report format were personally created
 - Approximate inspection volume and the parts/process terms that are safe to disclose
 - Connor's specific role in the heat-treatment investigation and whether the stated root cause was formally validated

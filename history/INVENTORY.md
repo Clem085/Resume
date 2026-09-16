@@ -64,7 +64,7 @@ Files with matching extracted text but different bytes were kept because typogra
 - The twelve-versus-24 PWM discrepancy is resolved: the system had 24 physical outputs arranged as twelve A/B pairs. Each A output had independently configurable duty cycle, period/frequency, and relative phase; its B output could only match or exactly invert the paired A waveform.
 - The AEGIS timeline is resolved: Computer Science Intern from May--August 2024, Embedded Systems Intern from May--August 2025, and Embedded Firmware Engineer beginning May 2026.
 - The firmware-update descriptions are compatible: the C++ HEX-file programmer, Python/TCP transfer, PIC32 SPI-flash/golden-image handling, and TMS320 UART programming were multiple connected stages for one product.
-- BMS work belongs to the NC State senior-design project and must not be attributed to AEGIS employment.
+- The STM32G474/BQ79616 EV sensor-adapter work belongs to NC State senior design; separate professional smart-battery CAN interface work belongs to AEGIS. MSP430FR2355 belongs to ECE 306.
 - The NC State B.S. in Computer Engineering was completed in May 2026.
 - ECE 306 support ran Spring 2025, Fall 2025, and Spring 2026: two semesters were unofficial support at about 10 hours per week and one was an official TA appointment at about 20 hours per week. The supplied order suggests the official appointment was Spring 2026, but that mapping remains to be explicitly confirmed.
 - Public-project review resolves Senior Design's active firmware to STM32G474, BQ79616, ten ADC thermistor channels, UART, and extended-identifier CAN telemetry in a timer-assisted service loop. The stale root README's FreeRTOS/DMA plan is not final-system evidence.
@@ -74,3 +74,13 @@ Files with matching extracted text but different bytes were kept because typogra
 All twelve LaTeX cover-letter ZIPs contain two embedded handwritten-signature images as well as contact information. Academic records include student identifiers, birth information, address data, and grade histories. Some older resumes contain street addresses and GPAs, and saved career pages may retain tracking identifiers. A M.C. Dean draft includes personal health/GPA narrative. These sources are retained for local history, not for publication.
 
 AEGIS descriptions also require a disclosure review before using customer names, internal identifiers, detailed power topology, raw frames, register maps, schematics, or product-specific behavior.
+
+## September 15, 2026 Experience Update
+
+Connor directly supplied additional project details for [Rev10-EE](../Specialized/Rev10-EE/Resume.tex). These are new source statements, not recovered archive artifacts; historical originals and the recovered-import counts above remain unchanged.
+
+- [AEGIS experience](../experience/aegis-power-systems.md): added C++ customization of TI `serial_flasher.exe` for TMS320F28379D, removal of unused device/CPU2/dual-boot options, production programming for non-firmware engineers, and CCS build/image-generation instructions. This is not established as the same tool as the archived C++ HEX-file programmer or PIC32 golden-image workflow.
+- Clarified professional smart-battery CAN interface work versus the separate senior-design battery-monitor project; expanded board-review tools, datasheet/electrical-specification use, CAN configuration diagnostics, full-system troubleshooting, and reusable engineering/production procedures.
+- [ATP automation](../experience/manufacturing-test-automation.md): newly recorded SQL/VBA/Access/Excel test-data parsing, validation, historical-record retrieval, and automated database entry. Connor confirmed TEAM Industries as the employer on September 16; the exact internship year remains unknown.
+- [TEAM Industries](../experience/team-industries.md): expanded the existing tolerance-checker record with directly confirmed inspection-data parsing and automatic part verification, plus a 17,000+ entry Inrite plant tooling where-used list using custom lookup formulas and data validation. Kept the where-used list and tolerance checker distinct from ATP automation.
+- Exact dates for the C++ production tool and network-discovery utilities remain unconfirmed; Rev10 groups them at AEGIS employer level.

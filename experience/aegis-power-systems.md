@@ -7,7 +7,7 @@ This file is the detailed source for Connor's current engineering role and his 2
 - **Embedded Firmware Engineer (full-time):** May 2026–Present
 - **Embedded Systems Intern:** May–August 2025
 - **Computer Science Intern:** May–August 2024
-- The BMS research, component evaluation, and integration work belongs to the NC State senior-design project, not to any AEGIS role. Do not place BMS under AEGIS in future résumés or cover letters.
+- The STM32G474/BQ79616 EV sensor-adapter BMS research, component evaluation, and integration belongs to NC State senior design. Separate professional smart-battery CAN interface and power-system integration work belongs to AEGIS; do not merge the projects or describe either as a complete production BMS.
 - Use exact task language for TI Embedded Linux work. Do not label it generically as “BSP work”; Connor's direct experience is with Yocto/Arago images and toolchains, kernel and device-tree compilation, boot/service integration, and board-level validation.
 
 ## Embedded Firmware Engineer — May 2026–Present
@@ -29,6 +29,15 @@ The current role spans low-level embedded firmware, CAN-connected power hardware
 - Implemented an external-watchdog solution and supporting Linux service behavior to supervise the system and provide controlled recovery from failures.
 - Use SocketCAN/PCAN, known-good nodes, bus-state and acknowledgement testing, logs, scopes, logic/protocol analyzers, and controlled substitutions during validation.
 - The APU/EPU acronyms have not yet been expanded or reviewed for public disclosure; use them without expansion or describe the work generically as an embedded power subsystem.
+
+### Smart-battery CAN interface and hardware review
+
+- **Direct — September 15, 2026:** Develop a CAN-based interface board to configure and control smart batteries and communicate between the battery system and an external MCU.
+- This professional work is separate from the NC State STM32G474/BQ79616 sensor adapter. Its relationship to the APU/EPU subsystem, exact MCU, board-design ownership, and completion status are not yet recorded.
+- Diagnose CAN 2.0, CAN FD, and J1939-related systems across controllers, smart batteries, wiring harnesses, bitrate/address configuration, and communication diagnostics; this does not establish that the battery interface uses all three protocols.
+- Read and interpret KiCad schematics and review PCB designs in KiCad, P-CAD, and Altium for troubleshooting, validation, firmware development, and integration. Review experience alone does not establish sole schematic or PCB-layout authorship.
+- Interpret component/MCU datasheets, reference manuals, and electrical specifications to validate hardware implementation, determine interface requirements, and implement peripheral firmware.
+- Isolate faults across PCBs, wiring, power, firmware, networks, sensors/interfaces, device configuration, test processes, engineering tooling, and application software.
 
 ### Docker and Windows/Linux compatibility
 
@@ -85,6 +94,25 @@ See [`adc-monitoring-card.md`](adc-monitoring-card.md) for the range/scale deriv
 - Create handoff documentation for builds, flashing, validation, Git/GitLab, tests, services, and toolchains so resolved work remains reproducible.
 - Participate in engineering standups and coordinate implementation/debugging with a geographically distributed firmware team.
 - Communicate progress, technical constraints, test observations, and integration needs clearly enough for remote teammates to continue work without relying on hallway context.
+
+## Production Programming and Engineering Tools — Exact Role Dates Unconfirmed
+
+**Direct — September 15, 2026:** Connor supplied these details for AEGIS production and engineering work; the specific internship/current-role dates are not yet established.
+
+### TI C2000 production serial flasher
+
+- Customized Texas Instruments' C++-based `serial_flasher.exe` utility for the C2000 TMS320F28379D MCU.
+- Removed unused device, CPU2, and dual-boot functionality and simplified the interface for AEGIS production use.
+- Enabled non-firmware engineers to reliably program precompiled firmware images without unnecessary device-specific configuration choices.
+- Authored both the simplified production flashing procedure and instructions for building source projects in Code Composer Studio and generating the firmware image for release to production.
+- Document this C++ serial-flasher customization separately from the broader HEX-file CLI/Python/PIC32 update chain until their relationship is confirmed. The new account does not establish that they are the same tool, or that every older TMS320 reference identifies the TMS320F28379D.
+- Removal of CPU2/dual-boot options from this utility does not imply removal of the separate product's golden-image recovery workflow.
+
+### Repeatable diagnostic workflows and documentation
+
+- Develop internal diagnostic and engineering tools, including embedded network-discovery and programming utilities, that turn complex or repetitive troubleshooting into repeatable workflows for engineers and production personnel.
+- Create procedures for firmware programming, hardware troubleshooting, embedded development, test setup, device configuration, and system commissioning to improve repeatability and knowledge transfer.
+- Tool names, discovery protocols, dates, and quantitative improvements are not yet recorded.
 
 ## Projects Recorded Across the 2024 and 2025 Internships
 
@@ -152,7 +180,7 @@ The recovered sources group the projects below across both AEGIS summers. The ex
 ## Details Requiring Confirmation or Disclosure Review
 
 - What APU and EPU stand for, whether they describe one system or related systems, and whether the acronyms are public
-- Exact battery-interface work, owned CAN behavior, watchdog failure/recovery behavior, and public-safe product wording
+- Exact battery-interface MCU, board-design ownership, relationship to the APU/EPU subsystem, owned CAN behavior, and watchdog failure/recovery behavior
 - Exact Docker usage and the code/build/tooling changes made for Windows/Linux compatibility
 - Meaning of `BDC` and the scope of the legacy-code repair
 - Whether Git tooling and the 80+ page documentation metric may be disclosed
