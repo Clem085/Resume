@@ -1,8 +1,8 @@
 # Fdb version 4
-["pdflatex"] 1789622259.05519 "/home/connor/code/Resume/Specialized/Rev10-EE/Resume.tex" "Resume.pdf" "Resume" 1789622259.29772 0
-  ".build/Resume.aux" 1789622259.26641 635 3fd09bb1ab8e029c00d539009570f801 "pdflatex"
-  ".build/Resume.out" 1789622259.26641 516 c8a31c74811dd45032d7948ba630bd7c "pdflatex"
-  "/home/connor/code/Resume/Specialized/Rev10-EE/Resume.tex" 1789622258.6534 8528 2e03f91f85d1e0e1e5bdf269d877fcfb ""
+["pdflatex"] 1789622059.07876 "/home/connor/code/Resume/Specialized/Rev10-EE/Resume copy.tex" "Resume copy.pdf" "Resume copy" 1789622059.3267 0
+  ".build/Resume copy.aux" 1789622059.29307 635 3fd09bb1ab8e029c00d539009570f801 "pdflatex"
+  ".build/Resume copy.out" 1789622059.29407 516 c8a31c74811dd45032d7948ba630bd7c "pdflatex"
+  "/home/connor/code/Resume/Specialized/Rev10-EE/Resume copy.tex" 1789622058.67174 8528 2e03f91f85d1e0e1e5bdf269d877fcfb ""
   "/usr/share/texmf-dist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc" 1775415801 3021 665788e9679767ade2a71155215d25e0 ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1--base.tfm" 1775415801 1648 77a748afe0a406be1ac3f29e1cd365cb ""
   "/usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1.tfm" 1775415801 37016 442637758ed935c1c5c22443691f4bf5 ""
@@ -83,10 +83,10 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1775415801 43569 fd570f2fa160877d211e859f687312ba ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1789530464 5380826 a3bfff71f433a54f017bc880f3b8ea78 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1789530458 2328190 ecbd37fe380573c5e737105b568662ce ""
-  "Resume.tex" 1789622258.6534 8528 2e03f91f85d1e0e1e5bdf269d877fcfb ""
+  "Resume copy.tex" 1789622058.67174 8528 2e03f91f85d1e0e1e5bdf269d877fcfb ""
   (generated)
-  ".build/Resume.aux"
-  ".build/Resume.log"
-  ".build/Resume.out"
-  "Resume.pdf"
+  ".build/Resume copy.aux"
+  ".build/Resume copy.log"
+  ".build/Resume copy.out"
+  "Resume copy.pdf"
   (rewritten before read)
