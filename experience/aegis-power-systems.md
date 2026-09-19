@@ -95,12 +95,12 @@ See [`adc-monitoring-card.md`](adc-monitoring-card.md) for the range/scale deriv
 - Participate in engineering standups and coordinate implementation/debugging with a geographically distributed firmware team.
 - Communicate progress, technical constraints, test observations, and integration needs clearly enough for remote teammates to continue work without relying on hallway context.
 
-## Production Programming and Engineering Tools — Exact Role Dates Unconfirmed
+## Production Programming and Engineering Tools
 
-**Direct — September 15, 2026:** Connor supplied these details for AEGIS production and engineering work; the specific internship/current-role dates are not yet established.
+**Direct — September 15, 2026:** Connor supplied these details for AEGIS production and engineering work; the serial flasher is now confirmed as summer 2025; dates for other tools remain unconfirmed.
 
 ### TI C2000 production serial flasher
-Comeplted during Summer 2025 Internship
+Completed during the summer 2025 Embedded Systems Internship (confirmed September 19, 2026).
 - Customized Texas Instruments' C++-based `serial_flasher.exe` utility for the C2000 TMS320F28379D MCU.
 - Removed unused device, CPU2, and dual-boot functionality and simplified the interface for AEGIS production use.
 - Enabled non-firmware engineers to reliably program precompiled firmware images without unnecessary device-specific configuration choices.
@@ -186,3 +186,16 @@ The recovered sources group the projects below across both AEGIS summers. The ex
 - Whether Git tooling and the 80+ page documentation metric may be disclosed
 - Whether SocketCAN, PCAN, DBC/signal-mapping, and target-family names beyond those Connor directly approved are suitable for public disclosure
 - ADC details beyond the confirmed rolling-average/EMA selection: other candidate functions, sample cadence, window/EMA parameters, calibration results, final deployment, and quantitative improvements
+
+## Acceptance Test Procedure (ATP) Database — Summer 2025 Internship
+
+- Developed SQL/VBA automation with Microsoft Access and Excel for an Acceptance Test Procedure database, parsing and validating test data, retrieving historical records, and automating database entry.
+- Connor confirms this work belongs to AEGIS, superseding the earlier TEAM Industries attribution. Completed during the summer 2025 Embedded Systems Internship, confirmed by Connor on September 19, 2026.
+- See [manufacturing test-data automation](manufacturing-test-automation.md).
+
+## Confirmed Skill Boundaries — September 19, 2026
+
+- Altium/KiCad/P-CAD experience supports PCB review and firmware programming/integration, not schematic or PCB-layout design ownership.
+- Professional PWM experience includes buck/boost power converters; academic motor experience involves small 3.3 V motors, not large industrial motors or drives.
+- No PLC experience. Equipment commissioning and fixture-design experience remain unestablished.
+- No established SQL Server, MySQL, C#, or Creo experience; do not infer these from SQL/Access or C/C++.

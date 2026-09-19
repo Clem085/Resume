@@ -1,7 +1,7 @@
 % Rev 10 -- Embedded Hardware Integration and Production Engineering
 \documentclass[10pt,letterpaper]{article}
 
-\usepackage[margin=0.58in]{geometry}
+\usepackage[hmargin=0.58in,vmargin=0.50in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage[default,type1]{sourcesanspro}
@@ -37,7 +37,7 @@
 \titleformat{\section}
   {\color{resumeBlue}\fontsize{11.8}{12.4}\selectfont\bfseries\uppercase}
   {}{0pt}{#1\hspace{0.12cm}\titlerule[0.65pt]}
-\titlespacing{\section}{0pt}{0.36cm}{0.12cm}
+\titlespacing{\section}{0pt}{0.18cm}{0.12cm}
 
 \newlist{resumebullets}{itemize}{1}
 \setlist[resumebullets]{
@@ -91,20 +91,20 @@
 \end{center}
 \vspace{-0.18cm}
 
-\textbf{Embedded firmware} engineer and \textbf{NCSU computer engineering} graduate. Four internships and full-time experience spanning embedded systems, electrical engineering, and manufacturing automation. Experienced in system-level troubleshooting across hardware, firmware, and software. Developed C/C++ firmware, test automation tools, and manufacturing databases.
+Computer engineering graduate with four internships and full-time engineering experience spanning embedded firmware, production support, and manufacturing-data automation. Develops C/C++ software, troubleshoots electrical and embedded systems, and builds tools and procedures for engineering and production users.
 
 \section{Skills}
 \textbf{Programming \& Data:} C, C++, SQL, VBA, Microsoft Access, Excel, Python, MATLAB, Bash\\
-\textbf{Architectures:} STM32, dsPIC33, PIC32, TI AM62, TMS320, MSP430; bare-metal firmware, FreeRTOS, Embedded Linux\\
+\textbf{Embedded Platforms:} STM32, dsPIC33, PIC32, TI AM62, TMS320, MSP430; bare-metal firmware, FreeRTOS, Embedded Linux\\
 \textbf{Peripherals:} GPIO, DAC control, ADC sensing and filtering, PWM control, timers, interrupts, watchdogs, and communications\\
 \textbf{Interfaces:} CAN 2.0, CAN FD, DroneCAN, J1939, I2C, IPMI, SPI, UART/RS-232, Ethernet, TCP/IP\\
-\textbf{Hardware \& Manufacturing:} Schematic interpretation; datasheet validation, PCB review in Altium, KiCad, and P-CAD; MCU programming/debug interfaces, oscilloscopes, logic/protocol analyzers; production programming, test automation, tooling data
+\textbf{Hardware \& Manufacturing:} Schematic interpretation; hardware validation against datasheet specifications, PCB review in Altium, KiCad, and P-CAD; MCU programming/debug interfaces, oscilloscopes, logic/protocol analyzers; production programming, test automation, tooling data
 \section{Experience}
 \resumeentry{AEGIS Power Systems | Embedded Firmware Engineer}{May 2026--Present}
 \begin{resumebullets}
   \item Develop and debug C firmware; perform system testing using software logs, protocol analyzers, oscilloscopes, and multimeter measurements to validate hardware and software behavior.
   \item Isolate root causes and verify corrective actions by assessing system-level failures across PCBs, wiring, power, firmware, CAN/Ethernet, Linux services, and application software using schematics, datasheets, and diagnostic tools.
-  \item Support firmware development, hardware integration, and documentation for VPX/IPMI power systems, TI AM62 Embedded Linux controllers; troubleshoot Yocto/Arago images, device trees, boot issues, CAN power devices, and watchdogs.
+  \item Support firmware development, hardware integration, and documentation for VPX/IPMI power systems and TI AM62 Embedded Linux controllers; troubleshoot Yocto/Arago images, device trees, boot issues, CAN power devices, and watchdogs.
 \end{resumebullets}
 
 \resumeentry{AEGIS Power Systems | Embedded Systems Intern | Computer Science Intern}{Summers 2024 \& 2025}
@@ -116,6 +116,7 @@
 
 % \descriptorentry{Production and engineering tools}
 \begin{resumebullets}
+  \item Developed SQL/VBA automation with Microsoft Access and Excel for an Acceptance Test Procedure (ATP) database, parsing and validating test data, retrieving historical records, and automating database entry.
   \item Simplified TI's C++ CLI serial flasher for C2000 devices by removing unused device, CPU2, and dual-boot options, allowing production staff to program precompiled firmware with the click of a single button.
   \item Established Git-based development and release processes to maintain firmware-to-hardware traceability, preserve defect and revision history, support multi-engineer development, and provide production with controlled software releases and documentation.
 \end{resumebullets}
@@ -128,9 +129,10 @@
 
 \section{Projects}
 
+
 \resumeentry{EV Active Sensor Adapter | Battery Monitoring \& CAN}{NC State University}
 \begin{resumebullets}
-  \item Wrote STM32G474 firmware for a custom EV sensor board that read ten ADC thermistors, exchanged CRC-checked cell and fault data with a BQ79616 BMS Chip over UART, and transmitted measurements over CAN.
+  \item Developed STM32G474 firmware for voltage and temperature sensing, LED indicators, state-machine logic, and error logging on a team-built EV sensor board; supported CAN integration.
 \end{resumebullets}
 
 \resumeentry{C++ Maze Solver}{NC State University}
@@ -140,7 +142,7 @@
 
 \resumeentry{C++ Microarchitecture Simulators}{NC State University}
 \begin{resumebullets}
-  \item Developed modular C++ simulators for cpu processor subsystems using classes and objects to model system state, component interactions, and configurable behavior; validated results across multiple test configurations.
+  \item Developed modular C++ simulators for processor subsystems using classes and objects to model system state, component interactions, and configurable behavior; validated results across multiple test configurations.
 \end{resumebullets}
 
 

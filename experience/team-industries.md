@@ -20,11 +20,9 @@ Two summer internships provided early experience with manufacturing engineering,
 - Created supporting manufacturing-analysis tools for **dimensional part sorting and tolerance verification**, automatically determining whether measurements met engineering limits and quantifying out-of-tolerance conditions.
 - Developed Excel-based **finished-goods and raw-material cost verification** tools that analyzed component and where-used data alongside labor, burden, material, surcharge, and other manufacturing-cost information.
 
-### Acceptance Test Procedure database
+### Attribution correction — September 19, 2026
 
-- Developed SQL/VBA automation with Microsoft Access and Excel for an Acceptance Test Procedure database.
-- Parsed and validated test data, retrieved historical records, and automated database entry.
-- Connor confirmed TEAM Industries as the employer on September 16, 2026. The exact internship year and quantitative impact remain unrecorded.
+The SQL/VBA/Access/Excel ATP database work belongs to the summer 2025 Embedded Systems Internship at AEGIS Power Systems, not TEAM Industries. See [manufacturing test-data automation](manufacturing-test-automation.md).
 
 ### Manufacturing collaboration
 
@@ -47,7 +45,6 @@ Two summer internships provided early experience with manufacturing engineering,
 - Tolerance validation and out-of-spec part identification
 - Manufacturing quality data and dimensional inspection
 - 17,000+ entry Inrite plant tooling where-used list with custom lookup formulas and data validation
-- SQL/VBA/Access/Excel Acceptance Test Procedure database automation
 - Engineering worksheets, data validation, revision control, and technical reporting
 - Cross-functional manufacturing collaboration
 
@@ -63,7 +60,7 @@ Two summer internships provided early experience with manufacturing engineering,
 
 ## Details Requiring Confirmation
 
-- Which internship year contained the tolerance checker, Inrite plant inventory, ATP database, and each reporting workflow
+- Which internship year contained the tolerance checker, Inrite plant inventory, and each reporting workflow
 - Whether pivot summaries and the described before/after change-report format were personally created
 - Approximate inspection volume and the parts/process terms that are safe to disclose
 - Connor's specific role in the heat-treatment investigation and whether the stated root cause was formally validated

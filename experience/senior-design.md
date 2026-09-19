@@ -106,3 +106,7 @@ The MSP430FR2355 belongs to ECE 306. MSP430 examples retained beside this reposi
 - Final integrated-prototype and vehicle-deployment status
 - Highest completed hardware-validation level outside the retained repository evidence
 - Whether additional vehicle-interface or safety-monitoring details are public
+
+## Personal Contribution Clarification — September 19, 2026
+
+Connor confirms ownership of voltage and temperature sensing firmware, LED indicators, state-machine logic, and error logging. He did not author the CAN middleware or CAN messaging subsystem. His CAN integration work included adjusting timers used by CAN, validating and modifying CAN-port GPIO configuration, and programming the associated interrupts. Public résumé wording should mention CAN integration without detailing that subsystem or implying CAN middleware/message ownership.

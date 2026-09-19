@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.9.15)  19 SEP 2026 19:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.9.15)  19 SEP 2026 19:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -445,14 +445,14 @@ LaTeX Font Info:    ... okay on input line 74.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(41.91672pt, 530.46156pt, 41.91672pt)
-* v-part:(T,H,B)=(41.91672pt, 711.13655pt, 41.91672pt)
+* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=530.46156pt
-* \textheight=711.13655pt
+* \textheight=722.7pt
 * \oddsidemargin=-30.35327pt
 * \evensidemargin=-30.35327pt
-* \topmargin=-67.35327pt
+* \topmargin=-73.135pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -550,14 +550,14 @@ Package rerunfilecheck Info: File `Resume.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  12749 strings out of 469515
- 203853 string characters out of 5470807
- 686595 words of memory out of 5000000
+ 203859 string characters out of 5470807
+ 688112 words of memory out of 5000000
  41177 multiletter control sequences out of 15000+600000
- 720490 words of font info for 104 fonts, out of 8000000 for 9000
+ 720497 words of font info for 104 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  75i,8n,79p,1049b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb></usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-BoldIt.pfb></usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-Output written on .build/Resume.pdf (1 page, 196906 bytes).
+Output written on .build/Resume.pdf (1 page, 196634 bytes).
 PDF statistics:
  61 PDF objects out of 1000 (max. 8388607)
  49 compressed objects within 1 object stream
