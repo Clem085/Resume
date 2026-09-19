@@ -157,7 +157,6 @@ INPUT /usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-BoldIt-tlf-t1.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-It-tlf-t1.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1--base.tfm
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
@@ -172,13 +171,10 @@ INPUT /usr/share/texmf-dist/fonts/vf/adobe/sourcesanspro/SourceSansPro-Bold-tlf-
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-Bold-tlf-t1--base.tfm
 INPUT /usr/share/texmf-dist/fonts/vf/adobe/sourcesanspro/SourceSansPro-BoldIt-tlf-t1.vf
 INPUT /usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-BoldIt-tlf-t1--base.tfm
-INPUT /usr/share/texmf-dist/fonts/vf/adobe/sourcesanspro/SourceSansPro-It-tlf-t1.vf
-INPUT /usr/share/texmf-dist/fonts/tfm/adobe/sourcesanspro/SourceSansPro-It-tlf-t1--base.tfm
 INPUT .build/Resume.aux
 INPUT .build/Resume.out
 INPUT .build/Resume.out
 INPUT /usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-BoldIt.pfb
-INPUT /usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-It.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb

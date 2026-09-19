@@ -100,7 +100,7 @@ See [`adc-monitoring-card.md`](adc-monitoring-card.md) for the range/scale deriv
 **Direct — September 15, 2026:** Connor supplied these details for AEGIS production and engineering work; the specific internship/current-role dates are not yet established.
 
 ### TI C2000 production serial flasher
-
+Comeplted during Summer 2025 Internship
 - Customized Texas Instruments' C++-based `serial_flasher.exe` utility for the C2000 TMS320F28379D MCU.
 - Removed unused device, CPU2, and dual-boot functionality and simplified the interface for AEGIS production use.
 - Enabled non-firmware engineers to reliably program precompiled firmware images without unnecessary device-specific configuration choices.

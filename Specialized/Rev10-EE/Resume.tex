@@ -91,7 +91,7 @@
 \end{center}
 \vspace{-0.18cm}
 
-\textbf{Embedded firmware engineer and NCSU computer engineering graduate}. Four internships and full-time experience spanning embedded systems, electrical engineering, and manufacturing automation. Experienced in system-level troubleshooting across hardware, firmware, and software. Developed C/C++ firmware, test automation tools, and manufacturing databases.
+\textbf{Embedded firmware} engineer and \textbf{NCSU computer engineering} graduate. Four internships and full-time experience spanning embedded systems, electrical engineering, and manufacturing automation. Experienced in system-level troubleshooting across hardware, firmware, and software. Developed C/C++ firmware, test automation tools, and manufacturing databases.
 
 \section{Skills}
 \textbf{Programming \& Data:} C, C++, SQL, VBA, Microsoft Access, Excel, Python, MATLAB, Bash\\
@@ -104,45 +104,46 @@
 \begin{resumebullets}
   \item Develop and debug C firmware; perform system testing using software logs, protocol analyzers, oscilloscopes, and multimeter measurements to validate hardware and software behavior.
   \item Isolate root causes and verify corrective actions by assessing system-level failures across PCBs, wiring, power, firmware, CAN/Ethernet, Linux services, and application software using schematics, datasheets, and diagnostic tools.
-  \item Support VPX/IPMI power systems and TI AM62 Embedded Linux controllers; troubleshoot Yocto/Arago images, device trees, boot issues, CAN power devices, and watchdogs.
+  \item Support firmware development, hardware integration, and documentation for VPX/IPMI power systems, TI AM62 Embedded Linux controllers; troubleshoot Yocto/Arago images, device trees, boot issues, CAN power devices, and watchdogs.
 \end{resumebullets}
 
-% TODO: Start Here
 \resumeentry{AEGIS Power Systems | Embedded Systems Intern | Computer Science Intern}{Summers 2024 \& 2025}
-\descriptorentry{Selected work across both internships}
+% \descriptorentry{Selected work across both internships}
 \begin{resumebullets}
-  \item Wrote bare-metal C firmware for a TMS320-controlled bidirectional power converter with 12 PWM A/B pairs (24 outputs); configured frequency, duty cycle, and phase for each A output and set its paired B output to follow or invert it.
-  \item Worked on a two-processor power system in which a FreeRTOS PIC32 handled I2C, SPI, CAN/J1939, UART, and firmware updates while a bare-metal TMS320 ran the real-time converter controls.
-  \item Built a firmware update and recovery workflow that transferred checked image chunks over TCP, stored new and golden images in PIC32 SPI flash, and programmed and verified the TMS320 over UART.
+  \item Wrote bare-metal C firmware for a TMS320-controlled bidirectional power converter with 12 PWM A/B pairs (24 outputs); configured frequency, period, duty cycle, and phase shift for each A output and set its paired B output to follow or invert it.
+  \item Worked on a multi-processor power system where a FreeRTOS PIC32 managed communications and DSP firmware updates over TCP/IP, SPI, UART, and CAN/J1939, while a C2000 TI DSP executed real-time converter controls.
 \end{resumebullets}
 
-\descriptorentry{Production and engineering tools}
+% \descriptorentry{Production and engineering tools}
 \begin{resumebullets}
-  \item Simplified TI's C++ serial flasher for the C2000 TMS320F28379D by removing unused device, CPU2, and dual-boot options, allowing production staff to program precompiled firmware without choosing engineering-only settings.
-  \item Wrote procedures for firmware programming, test setup, device configuration, and system commissioning; built device-discovery, programming, and diagnostic tools for engineers and production staff.
+  \item Simplified TI's C++ CLI serial flasher for C2000 devices by removing unused device, CPU2, and dual-boot options, allowing production staff to program precompiled firmware with the click of a single button.
+  \item Established Git-based development and release processes to maintain firmware-to-hardware traceability, preserve defect and revision history, support multi-engineer development, and provide production with controlled software releases and documentation.
 \end{resumebullets}
 
 \resumeentry{TEAM Industries | Engineering Intern}{Summers 2021 \& 2022}
 \begin{resumebullets}
-  \item Built Excel/VBA tools that parsed inspection data, checked dimensional and spline tolerances, and flagged out-of-spec parts for engineering and manufacturing teams.
-  \item Created and maintained a 17,000+ entry tooling where-used list for the Inrite plant, linking each tool to part numbers, operation numbers, storage locations, and vendors with custom lookup formulas and data-validation rules.
+  \item Built a configurable validation and duplicate-detection system for a 17,000+ record plant-wide tooling database, allowing users to select comparison criteria while automatically identifying, locating, and highlighting duplicate or inconsistent manufacturing records.
+  \item Developed VBA-driven inspection tools that validated production measurements against engineering tolerances, enforced data-entry rules, and automatically classified inspected parts as ACCEPT, REJECT, or INCOMPLETE.  
 \end{resumebullets}
 
 \section{Projects}
-\resumeentry{Manufacturing Test Automation | SQL, VBA, Access, Excel}{TEAM Industries}
-\begin{resumebullets}
-  \item Built tools for an Acceptance Test Procedure database that parsed and checked test results, retrieved earlier records, and entered new results automatically.
-\end{resumebullets}
 
 \resumeentry{EV Active Sensor Adapter | Battery Monitoring \& CAN}{NC State University}
 \begin{resumebullets}
   \item Wrote STM32G474 firmware for a custom EV sensor board that read ten ADC thermistors, exchanged CRC-checked cell and fault data with a BQ79616 BMS Chip over UART, and transmitted measurements over CAN.
 \end{resumebullets}
-BQ
+
+\resumeentry{C++ Maze Solver}{NC State University}
+\begin{resumebullets}
+  \item Developed an object-oriented C++ maze-solving application using reusable classes, dynamic data structures, and multiple search strategies; debugged and compared implementations for correctness, memory use, and execution performance.
+\end{resumebullets}
+
 \resumeentry{C++ Microarchitecture Simulators}{NC State University}
 \begin{resumebullets}
-  \item Built C++ cache, branch-predictor, and out-of-order pipeline simulators; measured cache misses, branch accuracy, memory traffic, and instructions per cycle.
+  \item Developed modular C++ simulators for cpu processor subsystems using classes and objects to model system state, component interactions, and configurable behavior; validated results across multiple test configurations.
 \end{resumebullets}
+
+
 
 \section{Teaching Experience}
 \resumeentry{ECE 306 Embedded Systems | Teaching Assistant \& Course Mentor}{Spring 2025--Spring 2026}

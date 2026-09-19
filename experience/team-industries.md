@@ -14,12 +14,11 @@ Two summer internships provided early experience with manufacturing engineering,
 - Automated parts of quality reporting and revision tracking rather than relying only on manual spreadsheet review.
 
 ### Manufacturing and engineering data
-
-- Created and maintained a tooling where-used list with more than 17,000 entries covering the tooling used at TEAM Industries' Inrite plant and connecting tools with part numbers, operation numbers, vendors, and storage locations.
-- Used substantial custom Excel lookup formulas and data-validation rules to keep the plant inventory consistent, searchable, and maintainable. Connor directly confirmed the plant scope and importance of this work on September 16, 2026.
-- Built structured engineering worksheets, searchable records, and maintainable revision histories.
-- Organized manufacturing and quality data so engineers could review part status, tooling relationships, and project changes.
-- Created additional inventory/pricing records for company merchandise and raw-material tracking when those processes needed a maintainable source of truth.
+- Developed a configurable validation system for TEAM Industries' **17,000+ record plant-wide Tooling Where-Used List (TWUL)**, which associated tooling with customers, part numbers, manufacturing operations, tool numbers, components, notes, and storage locations.
+- Built custom Excel formulas and conditional-formatting logic to **identify and locate duplicate tooling records**, compare working data against the plant TWUL, and allow users to choose which fields defined a duplicate through an ON/OFF control panel.
+- Developed **VBA-driven inspection and gauging tools** that evaluated production measurements against upper and lower specification limits, validated operator input, highlighted passing and failing measurements, and automatically classified inspected parts as **ACCEPT, REJECT, or INCOMPLETE**.
+- Created supporting manufacturing-analysis tools for **dimensional part sorting and tolerance verification**, automatically determining whether measurements met engineering limits and quantifying out-of-tolerance conditions.
+- Developed Excel-based **finished-goods and raw-material cost verification** tools that analyzed component and where-used data alongside labor, burden, material, surcharge, and other manufacturing-cost information.
 
 ### Acceptance Test Procedure database
 
