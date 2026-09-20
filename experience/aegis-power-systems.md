@@ -114,9 +114,9 @@ Completed during the summer 2025 Embedded Systems Internship (confirmed Septembe
 - Create procedures for firmware programming, hardware troubleshooting, embedded development, test setup, device configuration, and system commissioning to improve repeatability and knowledge transfer.
 - Tool names, discovery protocols, dates, and quantitative improvements are not yet recorded.
 
-## Other Internship Projects — Exact Summer Unresolved
+## Embedded Systems Internship — Summer 2025: Converter Control
 
-The recovered sources grouped the projects below across both internships, but did not establish each exact summer. They are not supported as 2024 work by the reviewed presentation or latest clarification. Keep them unassigned pending confirmation rather than moving them into 2024 or guessing 2025. Any separately established 2025 dates remain unchanged.
+**Current résumé update — September 20, 2026:** The active bullet is explicitly grouped under the 2025 internship. This resolves the previously unassigned summer for converter control.
 
 ### TMS320 DSP power-conversion control
 
@@ -127,6 +127,10 @@ The recovered sources grouped the projects below across both internships, but di
 - Configured each dependent B output to match or exactly invert its paired A waveform; B was not independently parameterized.
 - Translated requested converter behavior into coordinated switching configuration and supported ADC/PWM validation in Code Composer Studio.
 - A newer source also describes an ADC-read potentiometer that adjusted PWM6 duty cycle live during test.
+
+## Other Internship Projects — Exact Summer Unresolved
+
+The recovered sources grouped the projects below across both internships, but did not establish each exact summer. They are not supported as 2024 work by the reviewed presentation or latest clarification. Keep them unassigned pending confirmation rather than moving them into 2024 or guessing 2025. Any separately established 2025 dates remain unchanged.
 
 ### Connected PIC32/TMS320 firmware-update system
 
@@ -182,6 +186,7 @@ Reference wording: Performed an independent KiCad schematic review of a new AEGI
 - Created a Microsoft Access database structure intended to centralize historical and current manufacturing test data in one maintainable system.
 - Created multiple Access user forms for entering test data and wrote VBA input-validation code.
 - Wrote VBA scripts to parse existing Excel test files and upload parsed results into the ATP database.
+- **Current active résumé — September 20, 2026:** Parsed and validated **50,000+ entries of test data** using SQL/VBA with Access and Excel. This is an entry count, not a count of devices, files, or distinct test runs; no timing or accuracy improvement is implied.
 - Supported retrieval/reference of historical records and worked toward searchable, centralized test information.
 - Addressed inconsistent legacy spreadsheet formatting; slide 10 records continued parser rewrites as next steps, not a completed universal importer.
 - Slide 10 records an initially empty database plus forms and parsing/upload scripts. Do not infer a fully populated production database, complete migration, or final deployment.
@@ -206,7 +211,7 @@ Reference wording: Performed an independent KiCad schematic review of a new AEGI
 - The work evolved into development of an automated production burn-in fixture proof of concept for multiple power-supply devices under test (DUTs).
 - The control concept monitored DUT behavior and used relays to disconnect/isolate an individual DUT if a parameter exceeded its allowed range or a failure occurred, while leaving the other DUTs powered to continue their tests.
 - The concept included recording the relay-trip/fault-event time and the monitored parameter outside its acceptable range, providing traceability for why and when a DUT was removed.
-- Earlier working notes described isolation and event logging as completed actions. Preserve their functional intent, but the latest brief does not establish the exact demonstrated implementation/validation level of each behavior; do not infer successful multi-DUT test runs or field results.
+- **Current active résumé — September 20, 2026:** Reports isolating out-of-spec DUTs without interrupting remaining tests and logging trip events and fault parameters in the proof of concept. Preserve this as the current user-selected accomplishment wording, superseding the earlier concept-only description for these functions. Test conditions, number of DUTs, validation records, and production deployment remain unspecified.
 - An earlier direct correction says Connor did not run burn-in tests. Fixture development and communication/circuit testing do not contradict that boundary; do not convert them into claims of conducting production burn-in tests.
 - This is supported test-fixture proof-of-concept development. A complete production machine, commissioning, production deployment, measured throughput, and quantified reliability improvements are not established.
 
@@ -257,6 +262,10 @@ Reference wording: Performed an independent KiCad schematic review of a new AEGI
 
 ## Remaining Year and Outcome Questions
 
-- Exact summer for TMS320 converter control, the connected PIC32/TMS320 updater, and Git/CAN-J1939 handoff work remains unresolved in these notes; none is assigned to 2024 from technology overlap alone.
+- Exact summer for the connected PIC32/TMS320 updater and Git/CAN-J1939 handoff work remains unresolved in these notes; none is assigned to 2024 from technology overlap alone.
 - Dates for general diagnostic/network-discovery tools remain unresolved.
-- Final ATP population/deployment and parser coverage, and demonstrated multi-DUT isolation/event-logging validation level, remain unrecorded.
+- Final ATP population/deployment and parser coverage, and the test conditions/validation records behind the reported DUT isolation and event logging, remain unrecorded.
+
+## Active Versus Commented Résumé Content — September 20, 2026
+
+The current `Rev10-EE/Resume.tex` actively selects 2025 converter PWM control and serial flashing, and 2024 KiCad review, burn-in proof of concept, and ATP automation. SCB301 CLI remains supported 2024 experience even though its bullet is commented out. The PIC32/TMS320 and Git bullets sit as commented alternatives within the 2025 group; record this as a proposed 2025 placement, not a separately verified date. Existing full-time facts and project details remain unchanged.

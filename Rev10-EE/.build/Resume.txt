@@ -36,7 +36,7 @@ Production and engineering tools
 TEAM Industries | Engineering Intern                                                                        Summers 2021 & 2022
  ▷ Built Excel/VBA tools that parsed inspection data, checked dimensional and spline tolerances, and flagged out-of-spec parts
    for engineering and manufacturing teams.
- ▷ Created and maintained a 17,000+ entry tooling where-used list for the Inrite plant, linking each tool to part numbers,
+ ▷ Created and maintained a 17,000+ entry tooling where-used list for the entire plant, linking each tool to part numbers,
    operation numbers, storage locations, and vendors with custom lookup formulas and data-validation rules.
 
 PROJECTS

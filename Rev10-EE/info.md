@@ -11,7 +11,7 @@ Connor directly supplied the following experience for this revision:
 - Develop/troubleshoot CAN 2.0, CAN FD, and J1939-related controllers, batteries, harnesses, bitrate/address settings, and communications.
 - Develop AEGIS Power Systems ATP database automation with SQL, VBA, Access, and Excel: parsing, validation, historical retrieval, and database entry.
 - Develop TEAM Industries VBA inspection-data parsing and automatic tolerance verification.
-- Create and maintain a 17,000+ entry tooling where-used list for TEAM Industries' Inrite plant using custom Excel lookup formulas and data-validation rules; connect tools with part numbers, operation numbers, storage locations, and vendors.
+- Create and maintain a 17,000+ entry tooling where-used list for TEAM Industries' entire plant using custom Excel lookup formulas and data-validation rules; connect tools with part numbers, operation numbers, storage locations, and vendors.
 - Build repeatable internal diagnostic, network-discovery, and programming tools for engineers and production personnel.
 - Write firmware-programming, troubleshooting, development, test-setup, configuration, and commissioning procedures.
 

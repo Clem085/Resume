@@ -7,12 +7,12 @@
 - Parsed and validated manufacturing test data.
 - Retrieved historical test records.
 - Automated database entry.
-- Connor corrected the employer attribution to AEGIS Power Systems on September 19, 2026, superseding the earlier TEAM attribution. The latest explicit clarification and July 31, 2024 presentation supersede the earlier 2025 assignment. Database structure creation, Access forms, Excel input files, and VBA validation/parsing/upload are confirmed; exact schema, validation rules, coverage, deployment, and quantitative results remain unrecorded.
+- Connor corrected the employer attribution to AEGIS Power Systems on September 19, 2026, superseding the earlier TEAM attribution. The latest explicit clarification and July 31, 2024 presentation supersede the earlier 2025 assignment. Database structure creation, Access forms, Excel input files, and VBA validation/parsing/upload are confirmed; exact schema, validation rules, coverage and deployment remain unrecorded. The active résumé now reports 50,000+ test-data entries; no measured savings or accuracy improvement is recorded.
 - This project is distinct from the separate Excel/VBA inspection-data parser and part-tolerance checker completed at TEAM Industries.
 
 ## Resume-Ready Wording
 
-Developed SQL/VBA automation with Microsoft Access and Excel for an Acceptance Test Procedure (ATP) database, parsing and validating test data, retrieving historical records, and automating database entry.
+Developed SQL/VBA automation with Microsoft Access and Excel for an Acceptance Test Procedure (ATP) database, parsing and validating 50,000+ entries of test data, retrieving historical records, and automating database entry.
 
 ## Placement and Skill Boundaries
 
@@ -35,3 +35,7 @@ Source: `FINAL-AegisInternship-ConnorSavugot.pptx`, slides 8–10, plus Connor's
 - Slide 9 mentions a similar database at TEAM as prior experience. ATP itself belongs to AEGIS, not TEAM or school.
 
 Reference wording: Created an Acceptance Test Procedure (ATP) database in Microsoft Access with data-entry forms and VBA validation; parsed nonuniform Excel test files, automated result uploads, and supported historical-record retrieval.
+
+## Current Résumé Metric — September 20, 2026
+
+The active Rev10 bullet reports **50,000+ entries of test data parsed and validated**. Retain that exact unit; do not substitute 50,000 devices, tests, files, or unique records. This metric is sourced from the user-selected current résumé, not independently established by the 2024 presentation. Normalized the source typo “oftest” to “of test” in these notes only.

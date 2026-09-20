@@ -9,7 +9,7 @@ The blue 2024 résumé is a visual reference only: use its color, spacing, and v
 - Replaced the copied Rev8 profile, metadata, and MATLAB-heavy selection with electrical/embedded integration experience.
 - Added TI C2000 TMS320F28379D C++ serial-flasher customization and CCS build/image documentation, separately from the C++/Python/PIC32 updater.
 - Added KiCad schematic interpretation, PCB review in KiCad/P-CAD/Altium, and production diagnostic tools. The smart-battery interface-board bullet was removed at Connor's request.
-- Restored TEAM Industries inspection parsing/tolerance automation, the 17,000+ entry Inrite plant tooling where-used list, and included SQL/VBA/Access/Excel ATP automation under the AEGIS internships.
+- Restored TEAM Industries inspection parsing/tolerance automation, the 17,000+ entry entire plant tooling where-used list, and included SQL/VBA/Access/Excel ATP automation under the AEGIS internships.
 - Placed ATP manufacturing automation under AEGIS internship experience. Projects retain the STM32 sensor adapter, C++ maze solver, and C++ microarchitecture simulators.
 - Applied blue name and section rules, triangular bullets, and more section spacing while retaining separate AEGIS role titles and dates.
 - Tailored skills and wording to the Snap-on Electrical Engineer role, emphasizing manufacturing automation, production support, C/C++, SQL/VBA/Access data tools, Altium review, sensor and PWM experience, procedures, and cross-layer troubleshooting without claiming C#, SQL Server/MySQL, Creo, PLC, or production-equipment design experience.
