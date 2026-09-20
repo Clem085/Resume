@@ -6,11 +6,12 @@ The [`experience/`](experience/) folder is the detailed source library for futur
 
 The recovered résumés, cover letters, LaTeX sources, application packets, and supporting files are organized under [`history/`](history/). See the [archive guide](history/README.md) and [evidence inventory](history/INVENTORY.md) before relying on a historical claim; duplicates and conflicted drafts are intentionally preserved.
 
-Current attribution rules supersede wording in older revisions and archived prompts:
+Current attribution rules supersede wording in older revisions and archived prompts. See the [Rev10 reconciliation](experience/README.md#creating-new-revisions-from-rev10--september-19-2026) for the latest corrections, including ATP/flasher dates, CAN contribution boundaries, and maze iteration comparisons:
 
 - Active senior-design firmware uses an STM32G474, BQ79616 battery monitor, ten ADC thermistor channels, UART, and extended-identifier CAN telemetry in a timer-assisted service loop.
 - The STM32G474/BQ79616 EV sensor-adapter work belongs to NC State senior design; separate professional smart-battery CAN interface work belongs to AEGIS. MSP430FR2355 belongs to ECE 306.
 - Connor's current AEGIS title is Embedded Firmware Engineer beginning May 2026.
+- The July 31, 2024 internship presentation and latest clarification place SCB301 CLI/review, ATP database automation, and burn-in fixture proof-of-concept work in summer 2024. ATP's earlier TEAM/2025 attributions are superseded; the TI serial flasher remains summer 2025. See [AEGIS](experience/aegis-power-systems.md).
 - Current professional work includes dsPIC33CK firmware, VITA 46.11 Tier 2 VPX/IPMI management, data-driven ADC scaling/filter selection using MATLAB/CAN captures and embedded C, and TI AM62 embedded Linux integration.
 - Name the supported TI Linux work directly instead of using the broader label “BSP.”
 
@@ -26,10 +27,10 @@ Current attribution rules supersede wording in older revisions and archived prom
 | [`Rev5/`](Rev5/) | Linux-forward embedded-firmware résumé and blanket cover letter with the corrected AEGIS timeline, BMS confined to Senior Design, TI Yocto/Arago work, Docker, power-system integration, and the connected PIC32/TMS320 update workflow. |
 | [`Rev6/`](Rev6/) | Low-level-firmware-first résumé and cover letter emphasizing dsPIC33CK, PIC32/FreeRTOS, bare-metal TMS320 DSP control, communication interfaces, VPX/IPMI, and board bring-up. |
 | [`Rev7/`](Rev7/) | Qualcomm Power and Limits targeted résumé emphasizing real-time C/C++, TMS320 power-conversion control, PIC32/FreeRTOS processor partitioning, JTAG-driven bring-up, execution analysis, formal verification, and Python tooling/ML. |
-| [`Rev8/`](Rev8/) | General low-level embedded-firmware résumé adding professional ADC scaling, embedded-C rolling-average/EMA selection, MATLAB/CAN analysis, distributed firmware-team collaboration, MOSFET modeling, and academic MATLAB machine learning. |
-| [`Rev9/`](Rev9/) | Aditi Turf & Compact Utility targeted résumé prioritizing professional MATLAB/CAN filter analysis, academic MATLAB dynamic-system analysis, embedded C, FreeRTOS, CAN/J1939, robotics PID, Lustre, CARLA, requirements, and validation. |
+| [`Rev8-GeneralResume/`](Rev8-GeneralResume/) | General low-level embedded-firmware résumé adding professional ADC scaling, embedded-C rolling-average/EMA selection, MATLAB/CAN analysis, distributed firmware-team collaboration, MOSFET modeling, and academic MATLAB machine learning. |
+| [`Rev9-ControlsSDE/`](Rev9-ControlsSDE/) | Aditi Turf & Compact Utility targeted résumé prioritizing professional MATLAB/CAN filter analysis, academic MATLAB dynamic-system analysis, embedded C, FreeRTOS, CAN/J1939, robotics PID, Lustre, CARLA, requirements, and validation. |
 
-[Rev10-EE](Specialized/Rev10-EE/) is the newest résumé revision, emphasizing embedded hardware integration, production programming, and manufacturing automation.
+[Rev10-EE](Rev10-EE/) is the newest résumé revision, emphasizing embedded hardware integration, production programming, and manufacturing automation.
 
 ## Revision Layout
 
@@ -47,7 +48,7 @@ VS Code's LaTeX Workshop is configured by [`.vscode/settings.json`](.vscode/sett
 To compile Rev9 from a terminal:
 
 ```sh
-cd Rev9
+cd Rev9-ControlsSDE
 latexmk -pdf -synctex=0 -emulate-aux-dir -auxdir=.build -outdir=. Resume.tex
 ```
 

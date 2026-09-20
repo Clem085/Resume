@@ -22,7 +22,7 @@ Two summer internships provided early experience with manufacturing engineering,
 
 ### Attribution correction — September 19, 2026
 
-The SQL/VBA/Access/Excel ATP database work belongs to the summer 2025 Embedded Systems Internship at AEGIS Power Systems, not TEAM Industries. See [manufacturing test-data automation](manufacturing-test-automation.md).
+The SQL/VBA/Access/Excel ATP database work belongs to the summer 2024 Computer Science Internship at AEGIS Power Systems, not TEAM Industries. See [manufacturing test-data automation](manufacturing-test-automation.md).
 
 ### Manufacturing collaboration
 

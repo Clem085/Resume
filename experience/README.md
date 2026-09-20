@@ -33,7 +33,7 @@ The strongest general positioning is for:
 - `senior-design.md` — EV Active Sensor Adapter architecture, component evaluation, firmware, validation, documentation, and teamwork
 - `ece-306.md` — Fall 2024 MSP430 vehicle project and later embedded-systems TA work
 - `teaching-leadership.md` — electronics workshop instruction, TA work, mathematics tutoring, and earlier mentoring
-- `manufacturing-test-automation.md` — AEGIS SQL/VBA/Access/Excel ATP test-data parsing, validation, historical lookup, and database entry during the summer 2025 Embedded Systems Internship
+- `manufacturing-test-automation.md` — AEGIS SQL/VBA/Access/Excel ATP test-data parsing, validation, historical lookup, and database entry during the summer 2024 Computer Science Internship
 - `team-industries.md` — 2021/2022 manufacturing, tolerance validation, Excel/VBA automation, and reporting
 - `personal-projects.md` — detailed inventory of microarchitecture, real-time, formal-verification, RTL, controls, assembly, MATLAB, ML, quantum, Linux, and earlier programming projects
 - `github-projects.md` — repository-by-repository public-source audit, authorship boundaries, reproducible results, and safe résumé framing
@@ -82,7 +82,7 @@ Important facts recovered from the archive include:
 - Current full-time AEGIS work includes parsing captured CAN telemetry in MATLAB to determine ADC scaling factors and compare several filter functions by steady-input variation and time to follow large changes. Rolling-average and EMA approaches were selected; the rolling average used a fixed sample window, circular replacement, and a maintained sum in embedded C. This work does not belong to either internship.
 - CAN experience spans Classical CAN (CAN 2.0), CAN FD, J1939, and DroneCAN; J1939 and DroneCAN are higher-layer protocols and should not be presented as link-layer CAN variants.
 - The 2024 work included a restricted SSH CLI for embedded power hardware, Linux/Bash/Python, RS232, and CAN.
-- The 2024 hardware contribution included constructing the relay/load/power-supply test circuit; Connor did not perform or run burn-in tests.
+- The 2024 hardware work included independent KiCad reference-design review and collaborative relay/load/power-supply circuit construction for an automated burn-in fixture proof of concept. DUT isolation and event logging are part of the clarified concept; completed production deployment or running burn-in tests is not established.
 - The C++ HEX-file programmer, Python/TCP transport, PIC32 SPI-flash/golden-image logic, and TMS320 UART programming were connected stages of one product's update and boot-control workflow, not one monolithic program.
 - In that product, the PIC32 ran FreeRTOS for communication/update coordination and the TMS320 DSP ran bare-metal C with TI hardware libraries for real-time control.
 - The STM32G474/BQ79616 EV sensor-adapter work belongs to NC State senior design; separate professional smart-battery CAN interface work belongs to AEGIS. MSP430FR2355 belongs to ECE 306.
@@ -105,7 +105,7 @@ Important facts recovered from the archive include:
 
 ## Facts to Reconcile Before Future Variants
 
-- Which internship deliverables belong to 2024 versus 2025
+- Exact summer for TMS320 converter control, the connected PIC32/TMS320 updater, and Git/CAN-J1939 handoff work; the four explicitly documented 2024 projects and 2025 serial flasher are now separated
 - Current status of Adobe and FAA credentials
 - Exact standalone soldering-workshop dates and audience size
 - Public-disclosure boundaries for current AEGIS power topology and platform-management work
@@ -118,6 +118,31 @@ Important facts recovered from the archive include:
 
 ## September 2026 Direct Additions
 
-Connor's September 15 account adds the AEGIS C++ `serial_flasher.exe` customization for TMS320F28379D, CCS build/image-generation documentation, smart-battery CAN interface work, KiCad/P-CAD/Altium review, full-system fault isolation, and engineering/production diagnostic utilities. See [AEGIS](aegis-power-systems.md), [ATP automation](manufacturing-test-automation.md), and [TEAM Industries](team-industries.md). The serial-flasher customization is documented separately from the broader C++/Python/PIC32 update workflow; their exact relationship remains open. Connor confirmed the serial flasher as summer 2025 and confirmed ATP as summer 2025 AEGIS internship work on September 19, superseding the September 16 TEAM attribution. The expanded Inrite plant tooling-inventory details remain TEAM work.
+Connor's September 15 account adds the AEGIS C++ `serial_flasher.exe` customization for TMS320F28379D, CCS build/image-generation documentation, smart-battery CAN interface work, KiCad/P-CAD/Altium review, full-system fault isolation, and engineering/production diagnostic utilities. See [AEGIS](aegis-power-systems.md), [ATP automation](manufacturing-test-automation.md), and [TEAM Industries](team-industries.md). The serial-flasher customization is documented separately from the broader C++/Python/PIC32 update workflow; their exact relationship remains open. Connor confirmed the serial flasher as summer 2025 and confirmed ATP as summer 2024 AEGIS internship work (latest correction, superseding the earlier 2025 assignment) on September 19, superseding the September 16 TEAM attribution. The expanded Inrite plant tooling-inventory details remain TEAM work.
 
 Connor confirmed experience with PlatformIO, STM32Cube, MPLAB, and Code Composer Studio on September 16, 2026. These may be selected for a targeted résumé when the development environment matters; a general résumé does not need to list every IDE.
+
+## Creating New Revisions from Rev10 — September 19, 2026
+
+Use [current Rev10](../Rev10-EE/Resume.tex) as a wording/layout reference and these topic files as the factual source. Direct corrections from Connor supersede older résumé wording and archive summaries. A résumé's inclusion of a skill is not new proof of expertise beyond its supporting record.
+
+| Item | Confirmed fact or boundary | Source |
+| --- | --- | --- |
+| ATP automation | AEGIS summer 2024 Computer Science Internship; SQL/VBA/Access/Excel; expand Acceptance Test Procedure (ATP) | [ATP](manufacturing-test-automation.md) |
+| TI C++ serial flasher | AEGIS summer 2025; preserve Connor's preferred wording; separate from the connected PIC32 updater | [AEGIS](aegis-power-systems.md) |
+| TEAM manufacturing tools | 2021/2022; 17,000+ tooling records, configurable duplicate checks, tolerance validation and ACCEPT/REJECT/INCOMPLETE classifications; no ATP attribution | [TEAM](team-industries.md) |
+| Senior design | Voltage/temperature sensing, LEDs, state machine, error logging; CAN integration, not CAN middleware/message authorship | [Senior design](senior-design.md) |
+| Maze solver | Correctness and iteration counts compared; no established runtime or memory measurements | [Projects](personal-projects.md) |
+| PCB tools | Review and firmware integration, not established schematic/layout design ownership | [AEGIS](aegis-power-systems.md) |
+| PWM/motors | Professional buck/boost converter PWM; academic small 3.3 V motors; no industrial-drive or PLC experience | [ECE 306](ece-306.md) |
+| Unsupported target keywords | Do not add C#, SQL Server, MySQL, Creo, PLCs, production-equipment commissioning, or deployed production-fixture claims without new evidence | [AEGIS](aegis-power-systems.md) |
+
+For the Snap-on Electrical Engineer role (Murphy, NC; Job ID 2026-20685), emphasize professional C, manufacturing databases, production programming, electrical/firmware troubleshooting, and technical teaching. Experience precedes Projects in Rev10; relevant professional accomplishments belong under the employer rather than duplicated as projects. This is target-specific selection guidance, not a requirement to use the same order or project selection for every future role.
+
+Keep current-role ongoing work in present tense and completed work in past tense. Use “Embedded Platforms” for the MCU/OS list. Preserve the distinction between three semesters of ECE 306 support and one formal TA appointment. The IEEE $10,000/two-week result is already user-confirmed. Do not turn four internships into four years of professional experience.
+
+## Summer 2024 AEGIS Reconciliation — Latest Clarification
+
+The July 31, 2024 presentation `FINAL-AegisInternship-ConnorSavugot.pptx` and Connor's explicit clarification establish four areas: SCB301 restricted Linux CLI; independent KiCad schematic/reference-design review; ATP Access/VBA/Excel database automation; and programmable-load/relay communications with collaborative burn-in fixture proof-of-concept development. The [AEGIS source](aegis-power-systems.md) distinguishes presentation evidence, direct clarification, and remaining validation questions.
+
+Earlier ATP assignments to TEAM and summer 2025 are superseded. The TI C++ serial flasher remains summer 2025; May 2026–present work is unchanged. Unresolved internship deliverables must not be assigned to 2024 merely because they use similar technologies. The older blanket fixture-design exclusion is superseded only to the extent of the supported proof of concept; deployment and commissioning remain unestablished.

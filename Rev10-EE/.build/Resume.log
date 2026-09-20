@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.9.15)  19 SEP 2026 19:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026/Arch Linux) (preloaded format=pdflatex 2026.9.15)  19 SEP 2026 22:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/connor/code/Resume/Specialized/Rev10-EE/Resume.tex
-(/home/connor/code/Resume/Specialized/Rev10-EE/Resume.tex
+**/home/connor/code/Resume/Rev10-EE/Resume.tex
+(/home/connor/code/Resume/Rev10-EE/Resume.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
 (/usr/share/texmf-dist/tex/latex/base/article.cls
@@ -538,7 +538,12 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
 (Font)              `T1/SourceSansPro-TLF/bold/n' on input line 96.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
 (Font)              scaled to size 11.8pt on input line 96.
- (/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg) [1
+ (/usr/share/texmf-dist/tex/latex/microtype/mt-cmr.cfg)
+Underfull \hbox (badness 10000) in paragraph at lines 110--112
+ 
+ []
+
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texmf-dist/fonts/enc/dvips/sourcesanspro/a_emkxm5.enc}] (.build/Resume.aux)
  ***********
@@ -550,14 +555,14 @@ Package rerunfilecheck Info: File `Resume.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  12749 strings out of 469515
- 203859 string characters out of 5470807
- 688040 words of memory out of 5000000
+ 203823 string characters out of 5470807
+ 688055 words of memory out of 5000000
  41177 multiletter control sequences out of 15000+600000
  720497 words of font info for 104 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 75i,8n,79p,1049b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,79p,1037b,451s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb></usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-BoldIt.pfb></usr/share/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Regular.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-Output written on .build/Resume.pdf (1 page, 196615 bytes).
+Output written on .build/Resume.pdf (1 page, 196695 bytes).
 PDF statistics:
  61 PDF objects out of 1000 (max. 8388607)
  49 compressed objects within 1 object stream

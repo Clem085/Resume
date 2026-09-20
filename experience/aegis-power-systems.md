@@ -114,9 +114,9 @@ Completed during the summer 2025 Embedded Systems Internship (confirmed Septembe
 - Create procedures for firmware programming, hardware troubleshooting, embedded development, test setup, device configuration, and system commissioning to improve repeatability and knowledge transfer.
 - Tool names, discovery protocols, dates, and quantitative improvements are not yet recorded.
 
-## Projects Recorded Across the 2024 and 2025 Internships
+## Other Internship Projects — Exact Summer Unresolved
 
-The recovered sources group the projects below across both AEGIS summers. The exact role titles and dates are known, but the specific summer for each newer power-control and updater deliverable should be confirmed before a future résumé assigns it to only 2025.
+The recovered sources grouped the projects below across both internships, but did not establish each exact summer. They are not supported as 2024 work by the reviewed presentation or latest clarification. Keep them unassigned pending confirmation rather than moving them into 2024 or guessing 2025. Any separately established 2025 dates remain unchanged.
 
 ### TMS320 DSP power-conversion control
 
@@ -147,20 +147,73 @@ The recovered sources group the projects below across both AEGIS summers. The ex
 - A newer résumé reports an illustrated Git guide exceeding 80 pages plus a shorter handout and training slides. Confirm the exact page count and audience before using the metric publicly.
 - Documented firmware delivery, CLI usage, test procedures, and toolchain setup for engineering handoff.
 
-## Work Specifically Supported for the Computer Science Internship — May–August 2024
+## Computer Science Internship — May–August 2024
 
-### Embedded Linux and remote-control interface
+### Sources and chronology corrections
 
-- Built a secured chroot environment and restricted SSH command-line interface on a resource-constrained TI Yocto/Arago system used with embedded power hardware.
-- Developed Bash and Python commands that exposed approved inspection and control operations without providing an unrestricted shell.
-- Worked with Linux filesystem/tool availability, secure login, deployment constraints, and remote hardware control as one integrated workflow.
+- **Presentation corroboration:** `FINAL-AegisInternship-ConnorSavugot.pptx`, title slide dated July 31, 2024; reviewed from `/home/connor/Downloads/Internships/2024_Summer/Aeigis/FINAL-AegisInternship-ConnorSavugot.pptx`. Slides 4–6 cover SCB301, 8–10 ATP, and 13–15 resistive loads/test hardware.
+- **Direct clarification:** Connor's latest Summer 2024 reference-update brief adds the board-review ownership details and automated burn-in fixture concept below. These additions are distinguished from presentation evidence.
+- **Superseded attribution:** Earlier records first assigned ATP to TEAM Industries and then to AEGIS summer 2025. The presentation and latest explicit correction establish AEGIS summer 2024. The correct role title is Computer Science Intern, not the 2025 title Embedded Systems Intern.
+- Only projects supported by this presentation or the explicit 2024 clarification belong in this section. Similar technologies do not move later work into 2024. The TI C++ serial flasher remains summer 2025; full-time work remains May 2026–present.
 
-### Communication, test hardware, and debugging
+### 1. SCB301 embedded Linux command-line environment
 
-- Reverse-engineered RS232 command transactions from limited documentation and generated the checksums required for valid messages.
-- Worked with RS232 and CAN communication between embedded devices and host/control systems.
-- Reverse-engineered commands/checksums for programmable resistive loads and relay controllers, then helped construct the associated relay/load/power-supply test circuit; did not perform or run burn-in tests.
-- Reviewed schematics and assisted with soldering, wiring, hardware setup, and cross-functional electrical/mechanical integration during validation.
+- Designed and implemented a custom command-line interface for managing the SCB301 embedded device.
+- Worked in a stripped TI embedded Linux environment based on Yocto/Arago; researched the Arago toolchain and opkg/package-management environment under limited tooling constraints.
+- Created a chroot environment and restricted user login with limited permissions; the earlier source describes SSH access. Do not treat chroot alone as proof of a hardened security boundary.
+- Implemented specialized AEGIS commands in Bash and Python to view/modify system or product data and control approved operations.
+- Supported firmware updates to connected devices; slide 6 records uploading firmware to other devices.
+- Debugged and tested the embedded Linux environment (direct clarification). Slide 6 also lists further debugging/testing and additional commands as next steps; do not imply all planned features were completed.
+- Reviewed the SCB301 schematic as part of this work. The CLI/software contribution does not establish design ownership of the hardware platform.
+
+### 2. SCB301 KiCad schematic and board-revision review
+
+- Presentation slides 2 and 4 establish schematic review; the following specific scope and ownership come from Connor's latest clarification.
+- Grant created a new AEGIS board revision derived from a TI evaluation/reference-board design, simplifying it for the product and removing unnecessary evaluation-board features such as HDMI support.
+- Connor performed an independent review of the modified KiCad schematic against the original TI evaluation-kit/reference schematic and documentation.
+- Cross-checked required circuitry, component connections, and interfaces to verify that they remained correctly implemented after the reference-design features were removed.
+- Reviewed changes for discrepancies and implementation mistakes before/during hardware validation.
+- **Ownership:** Grant made the board revision. Connor's contribution was independent review, comparison, verification, and design validation—not entire PCB design or personal removal of every unused feature.
+
+Reference wording: Performed an independent KiCad schematic review of a new AEGIS PCB revision derived from a TI evaluation/reference design. Cross-checked the modified design against the TI reference schematic to verify component connections and interfaces after unnecessary evaluation-board features, including HDMI support, were removed.
+
+### 3. Acceptance Test Procedure (ATP) database and manufacturing test-data automation
+
+- Created a Microsoft Access database structure intended to centralize historical and current manufacturing test data in one maintainable system.
+- Created multiple Access user forms for entering test data and wrote VBA input-validation code.
+- Wrote VBA scripts to parse existing Excel test files and upload parsed results into the ATP database.
+- Supported retrieval/reference of historical records and worked toward searchable, centralized test information.
+- Addressed inconsistent legacy spreadsheet formatting; slide 10 records continued parser rewrites as next steps, not a completed universal importer.
+- Slide 10 records an initially empty database plus forms and parsing/upload scripts. Do not infer a fully populated production database, complete migration, or final deployment.
+- SQL remains previously user-reported experience; this presentation specifically corroborates Access, VBA, Excel, and user forms, not particular SQL queries or SQL Server/MySQL.
+- The presentation's reference to a similar earlier TEAM database describes prior experience, not the employer for ATP.
+- See [manufacturing test-data automation](manufacturing-test-automation.md) for the detailed record and reuse boundaries.
+
+### 4. Programmable resistive loads and automated burn-in fixture proof of concept
+
+**Presentation-supported communication and hardware work (slides 13–15):**
+
+- Established communications with new programmable resistive loads for power-supply burn-in testing and with relay-control hardware.
+- Reverse-engineered RS-232 command transactions using limited manufacturer documentation, trial and error, terminal software/PuTTY, and captured/sniffed serial communication.
+- Used the device manual and an Excel checksum-generation tool to determine/generate checksums and construct valid device instructions. Do not imply authorship of the Excel tool.
+- Grant set up the communication sniffer; Connor used the captured communication. Slide 14 says “RS302,” while Connor explicitly identifies the protocol as RS-232; retain RS-232 as the corrected reference wording rather than inventing another bus.
+- Helped construct and integrate a test circuit containing relays, programmable loads, and a power supply with Mike and other AEGIS engineers.
+- Contributed wiring, hardware setup, communication validation, and electrical/system debugging. The circuit was collaborative work, not sole hardware-design ownership.
+- The presentation lists accuracy testing and scaling up as next steps; it does not establish completed production qualification or deployment.
+
+**Direct clarification of the proof-of-concept function:**
+
+- The work evolved into development of an automated production burn-in fixture proof of concept for multiple power-supply devices under test (DUTs).
+- The control concept monitored DUT behavior and used relays to disconnect/isolate an individual DUT if a parameter exceeded its allowed range or a failure occurred, while leaving the other DUTs powered to continue their tests.
+- The concept included recording the relay-trip/fault-event time and the monitored parameter outside its acceptable range, providing traceability for why and when a DUT was removed.
+- Earlier working notes described isolation and event logging as completed actions. Preserve their functional intent, but the latest brief does not establish the exact demonstrated implementation/validation level of each behavior; do not infer successful multi-DUT test runs or field results.
+- An earlier direct correction says Connor did not run burn-in tests. Fixture development and communication/circuit testing do not contradict that boundary; do not convert them into claims of conducting production burn-in tests.
+- This is supported test-fixture proof-of-concept development. A complete production machine, commissioning, production deployment, measured throughput, and quantified reliability improvements are not established.
+
+### General 2024 skills and scope
+
+- Embedded Linux, Python, Bash, Yocto/Arago, Microsoft Access, VBA, Excel, RS-232, checksum/protocol debugging, schematic review, soldering, wiring, test hardware, and hardware/software troubleshooting.
+- The explicit clarification additionally supports KiCad reference-design comparison, CAN exposure, and collaboration across engineering disciplines. CAN exposure does not establish 2024 ownership of a CAN stack or the later CAN FD/J1939/DroneCAN work.
 
 ## Best Resume Themes
 
@@ -187,15 +240,23 @@ The recovered sources group the projects below across both AEGIS summers. The ex
 - Whether SocketCAN, PCAN, DBC/signal-mapping, and target-family names beyond those Connor directly approved are suitable for public disclosure
 - ADC details beyond the confirmed rolling-average/EMA selection: other candidate functions, sample cadence, window/EMA parameters, calibration results, final deployment, and quantitative improvements
 
-## Acceptance Test Procedure (ATP) Database — Summer 2025 Internship
-
-- Developed SQL/VBA automation with Microsoft Access and Excel for an Acceptance Test Procedure database, parsing and validating test data, retrieving historical records, and automating database entry.
-- Connor confirms this work belongs to AEGIS, superseding the earlier TEAM Industries attribution. Completed during the summer 2025 Embedded Systems Internship, confirmed by Connor on September 19, 2026.
-- See [manufacturing test-data automation](manufacturing-test-automation.md).
-
 ## Confirmed Skill Boundaries — September 19, 2026
 
-- Altium/KiCad/P-CAD experience supports PCB review and firmware programming/integration, not schematic or PCB-layout design ownership.
+- Altium/KiCad/P-CAD experience supports PCB review and firmware programming/integration, including independent KiCad reference-design validation in 2024, not schematic or PCB-layout design ownership.
 - Professional PWM experience includes buck/boost power converters; academic motor experience involves small 3.3 V motors, not large industrial motors or drives.
-- No PLC experience. Equipment commissioning and fixture-design experience remain unestablished.
+- No PLC experience. The 2024 burn-in test-fixture proof of concept is supported; the older blanket exclusion of fixture-design experience is superseded by this clarification. Complete production-equipment design, deployment, and commissioning remain unestablished.
 - No established SQL Server, MySQL, C#, or Creo experience; do not infer these from SQL/Access or C/C++.
+
+## Rev10 Wording and Reuse Notes — September 19, 2026
+
+- Connor explicitly requested preserving the serial-flasher bullet: “Simplified TI's C++ CLI serial flasher for C2000 devices by removing unused device, CPU2, and dual-boot options, allowing production staff to program precompiled firmware with the click of a single button.” Treat this as user-retained résumé wording; do not infer a specific GUI framework, measured time savings, or ownership of TI's original utility.
+- ATP belongs to summer 2024 (latest correction); the serial flasher remains summer 2025 internship work. This does not assign the other combined 2024/2025 internship accomplishments to a particular summer.
+- Rev10 describes Git-based development and release processes supporting firmware/hardware traceability, defect and revision history, multi-engineer work, and controlled production releases/documentation. Retain the previously recorded GitLab/Git Extensions and release-tag context; do not add CI/CD automation or unconfirmed metrics.
+- Writing commissioning procedures does not by itself establish hands-on installation or commissioning of manufacturing equipment.
+- Use “hardware validation against datasheet specifications,” not “datasheet validation.” Use “PCB review in Altium, KiCad, and P-CAD” without implying electrical-design or layout ownership.
+
+## Remaining Year and Outcome Questions
+
+- Exact summer for TMS320 converter control, the connected PIC32/TMS320 updater, and Git/CAN-J1939 handoff work remains unresolved in these notes; none is assigned to 2024 from technology overlap alone.
+- Dates for general diagnostic/network-discovery tools remain unresolved.
+- Final ATP population/deployment and parser coverage, and demonstrated multi-DUT isolation/event-logging validation level, remain unrecorded.

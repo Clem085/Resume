@@ -1,7 +1,7 @@
-PWD /home/connor/code/Resume/Specialized/Rev10-EE
+PWD /home/connor/code/Resume/Rev10-EE
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/connor/code/Resume/Specialized/Rev10-EE/Resume.tex
+INPUT /home/connor/code/Resume/Rev10-EE/Resume.tex
 OUTPUT .build/Resume.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls

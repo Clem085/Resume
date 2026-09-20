@@ -1,5 +1,9 @@
 # Resume Evidence Review
 
+## Current AEGIS Chronology Correction — Reference Only
+
+The July 31, 2024 `FINAL-AegisInternship-ConnorSavugot.pptx` and latest explicit clarification supersede older ATP attribution: ATP belongs to AEGIS summer 2024, alongside SCB301 CLI, independent KiCad reference-design review, and programmable-load/relay burn-in fixture proof-of-concept work. The TI serial flasher remains summer 2025; established full-time work stays May 2026–present. See [AEGIS source](experience/aegis-power-systems.md) for ownership, evidence, and unresolved dates. Older review entries below describe historical revisions, not authority to move later projects into 2024.
+
 ## Rev9 Aditi Turf & Compact Utility Controls Variant — August 17, 2026
 
 Rev9 targets the Cary, North Carolina Software Engineer I contract shared by Aditi Consulting. It leads with MATLAB, embedded C, controls, CAN/J1939, FreeRTOS, testing, and hardware integration while keeping the résumé to one page.
@@ -52,7 +56,7 @@ Rev7 is a one-page targeted variant for Qualcomm's Power and Limits Software Eng
 Connor directly clarified the processor roles and current VPX work used in Rev6:
 
 - **Positioning correction:** low-level embedded firmware is Connor's primary discipline. Embedded Linux is valuable supporting systems-integration experience and must not be presented as the main professional identity.
-- **Burn-in correction:** Connor helped construct the relay/load/power-supply test circuit during the 2024 internship but did not perform, conduct, monitor, or run burn-in tests. Public wording must not imply otherwise.
+- **Burn-in correction (expanded by latest clarification):** Connor helped construct the relay/load/power-supply test circuit during the 2024 internship and developed a burn-in fixture proof of concept with programmable-load/relay communication. The clarified concept includes individual DUT isolation and fault-event traceability. The earlier restriction on claiming actual burn-in test execution remains; production deployment and demonstrated multi-DUT outcomes are not established.
 
 - Use **dsPIC33CK** for the 16-bit digital signal controller; do not shorten it to the nonexistent family name “PIC33.” The locally preserved source directly supports dsPIC33CK toolchain and device-pack bring-up.
 - The PIC32 ran FreeRTOS and handled communication/update coordination in the connected PIC32/TMS320 product.

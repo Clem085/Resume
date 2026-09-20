@@ -56,7 +56,7 @@ The MSP430FR2355 belongs to ECE 306. MSP430 examples retained beside this reposi
 - Worked within the team-developed CAN path that sent address-claim, thermal-summary, individual-thermistor, and segmented external-voltage messages using extended identifiers.
 - Maintained separate subsystem states so a failed BQ path did not stop thermistor acquisition or CAN reporting.
 - Added structured logs and subsystem-specific LED behavior so initialization and runtime faults were visible during bring-up.
-- Do not claim sole authorship of the complete CAN subsystem; public Git history shows meaningful teammate ownership of CAN, fault-testing, timing, and external-ADC-to-CAN work.
+- Connor did not author the CAN middleware or CAN messaging subsystem. His CAN contribution was integration/debugging involving timers, CAN-port GPIO configuration, and associated interrupts. Public Git history also shows teammate ownership of CAN, fault-testing, timing, and external-ADC-to-CAN work.
 
 ## Debugging, Timing, and Validation
 
@@ -110,3 +110,9 @@ The MSP430FR2355 belongs to ECE 306. MSP430 examples retained beside this reposi
 ## Personal Contribution Clarification — September 19, 2026
 
 Connor confirms ownership of voltage and temperature sensing firmware, LED indicators, state-machine logic, and error logging. He did not author the CAN middleware or CAN messaging subsystem. His CAN integration work included adjusting timers used by CAN, validating and modifying CAN-port GPIO configuration, and programming the associated interrupts. Public résumé wording should mention CAN integration without detailing that subsystem or implying CAN middleware/message ownership.
+
+## Resume-Ready Wording from Rev10
+
+Developed STM32G474 firmware for voltage and temperature sensing, LED indicators, state-machine logic, and error logging on a team-built EV sensor board; supported CAN integration.
+
+For future résumé variants, prioritize Connor's sensing, state-machine, and diagnostic work. Connor requested less emphasis on CRC and a general mention of CAN without subsystem details. CRC remains a supported implementation detail for technical discussion, not a required résumé keyword. This is firmware ownership within a team-built system, not sole board or complete-system ownership.

@@ -65,7 +65,7 @@ The active firmware is a timer-assisted service-loop design. `main()` repeatedly
 
 ### Teamwork and ownership boundary
 
-The public history contains **46 commits**: 35 under Connor/Connor Savugot and 11 under teammate Kayla Radu. Connor's history specifically records BQ bring-up, successful voltage-tap reads, wake-path simplification, CRC/fault fixes, service-loop and subsystem-status restructuring, thermistor logging/data changes, shutdown control, logging/LED improvements, and documentation. Teammate commits record meaningful CAN, fault-testing, external-ADC-to-CAN, and timing work. Present this as a collaborative senior-design system and identify Connor's BQ/bring-up/integration work; do not claim sole authorship of the complete CAN subsystem or board.
+The public history contains **46 commits**: 35 under Connor/Connor Savugot and 11 under teammate Kayla Radu. Connor's history specifically records BQ bring-up, successful voltage-tap reads, wake-path simplification, CRC/fault fixes, service-loop and subsystem-status restructuring, thermistor logging/data changes, shutdown control, logging/LED improvements, and documentation. Teammate commits record meaningful CAN, fault-testing, external-ADC-to-CAN, and timing work. Present this as a collaborative senior-design system and identify Connor's BQ/bring-up/integration work; Connor explicitly confirmed that he did not author CAN middleware or messaging. His CAN work involved timer, GPIO, and interrupt integration. Do not imply CAN middleware/message ownership or sole board ownership. See [the direct contribution clarification](senior-design.md#personal-contribution-clarification--september-19-2026).
 
 ### Important source-of-truth boundary
 

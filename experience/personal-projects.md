@@ -310,6 +310,11 @@ The Aegis ADC-filter comparison is professional experience and belongs in `aegis
 - Implemented breadth-first search, depth-first search, and greedy best-first search with Manhattan-distance priority.
 - Parsed maze and coordinate files, used `vector`, `queue`, `stack`, `priority_queue`, and map-like predecessor storage, and reconstructed the resulting path.
 - Compared how search order and frontier choice affected solution behavior across maze inputs.
+- **Direct — September 19, 2026:** Connor confirmed comparing iteration counts across implementations. This supports an algorithmic-work comparison; it does not establish measured wall-clock runtime, memory profiling, or a numerical speedup.
+
+**Current Rev10 wording:** Developed an object-oriented C++ maze-solving application using reusable classes, dynamic data structures, and multiple search strategies; compared correctness and iteration counts across implementations.
+
+**Boundary:** Earlier Rev10 wording mentioned memory use and execution performance. Use the corrected iteration-count wording unless separate measurements are supplied. Do not transfer the linked-list access counts below to the maze project.
 
 ### Self-organizing linked lists
 
