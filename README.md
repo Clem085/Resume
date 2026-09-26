@@ -30,7 +30,9 @@ Current attribution rules supersede wording in older revisions and archived prom
 | [`Rev8-GeneralResume/`](Rev8-GeneralResume/) | General low-level embedded-firmware résumé adding professional ADC scaling, embedded-C rolling-average/EMA selection, MATLAB/CAN analysis, distributed firmware-team collaboration, MOSFET modeling, and academic MATLAB machine learning. |
 | [`Rev9-ControlsSDE/`](Rev9-ControlsSDE/) | Aditi Turf & Compact Utility targeted résumé prioritizing professional MATLAB/CAN filter analysis, academic MATLAB dynamic-system analysis, embedded C, FreeRTOS, CAN/J1939, robotics PID, Lustre, CARLA, requirements, and validation. |
 
-[Rev10-EE](Rev10-EE/) is the newest résumé revision, emphasizing embedded hardware integration, production programming, and manufacturing automation.
+[Rev10-EE](Rev10-EE/) emphasizes embedded hardware integration, production programming, and manufacturing automation.
+
+[Rev11-EmbeddedDiagnostics](Rev11-EmbeddedDiagnostics/) targets Snap-on Diagnostics Sr. Embedded Software Engineer (2026-20708), emphasizing real-time firmware, protocol debugging, STM32, and C/C++. See its [fit and gap notes](Rev11-EmbeddedDiagnostics/info.md).
 
 ## Revision Layout
 

@@ -1,0 +1,174 @@
+% Rev 10 -- Embedded Hardware Integration and Production Engineering
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[hmargin=0.58in,vmargin=0.50in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default,type1]{sourcesanspro}
+\usepackage[final]{microtype}
+\usepackage[explicit]{titlesec}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage{iftex}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\ifPDFTeX
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\hypersetup{
+  pdftitle={Connor Savugot Resume},
+  pdfauthor={Connor Savugot},
+  pdfsubject={Electrical Engineering, Manufacturing Automation, and Production Support},
+  pdfkeywords={electrical engineering, manufacturing automation, production equipment, tooling, manufacturing processes, troubleshooting, C, C++, SQL, VBA, Microsoft Access, Excel, Altium, sensors, motor control, embedded firmware, STM32, PIC32, dsPIC, TI C2000, CAN, production programming, test automation, technical procedures}
+}
+
+\pagestyle{empty}
+\definecolor{resumeBlue}{HTML}{0065A8}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\hfuzz=0.4pt
+
+\titleformat{\section}
+  {\color{resumeBlue}\fontsize{11.8}{12.4}\selectfont\bfseries\uppercase}
+  {}{0pt}{#1\hspace{0.12cm}\titlerule[0.65pt]}
+\titlespacing{\section}{0pt}{0.18cm}{0.12cm}
+
+\newlist{resumebullets}{itemize}{1}
+\setlist[resumebullets]{
+  label=$\triangleright$,
+  leftmargin=0.50cm,
+  topsep=0.025cm,
+  itemsep=0.025cm,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\newcommand{\companyheader}[1]{%
+  {\fontsize{10.4}{10.8}\selectfont\bfseries #1}\par\vspace{-0.03cm}
+}
+
+\newcommand{\resumeentry}[2]{%
+  \begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{2.40in}@{}}
+    \textbf{#1} & \textbf{\textit{#2}}
+  \end{tabularx}\vspace{-0.075cm}
+}
+
+\newcommand{\roleentry}[2]{%
+  \begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{2.40in}@{}}
+    \textbf{#1} & \textbf{\textit{#2}}
+  \end{tabularx}\vspace{-0.075cm}
+}
+
+\newcommand{\descriptorentry}[1]{%
+  \begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{2.40in}@{}}
+    \textit{#1} &
+  \end{tabularx}\vspace{-0.075cm}
+}
+
+\begin{document}
+\fontsize{9.85}{10.85}\selectfont
+\setlength{\RaggedRightRightskip}{0pt plus 5em}
+\RaggedRight
+\emergencystretch=1em
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\begin{center}
+  {\color{resumeBlue}\fontsize{24.5}{25.2}\selectfont\bfseries Connor Savugot}\\[2.5pt]
+  {\bfseries B.S. in Computer Engineering | North Carolina State University | Graduated May 2026}\\[1.5pt]
+  {\fontsize{9.6}{10.2}\selectfont
+    \href{mailto:consav04@gmail.com}{consav04@gmail.com}
+    \enspace|\enspace \href{tel:+18285419487}{+1 (828) 541-9487}
+    \enspace|\enspace Murphy, NC
+    \enspace|\enspace \href{https://linkedin.com/in/connorsavugot}{linkedin.com/in/connorsavugot}
+    \enspace|\enspace \href{https://github.com/Clem085}{github.com/Clem085}}
+\end{center}
+\vspace{-0.18cm}
+
+Computer engineering graduate with four internships and full-time engineering experience spanning embedded firmware, production support, and manufacturing-data automation. Develops C/C++ software, troubleshoots electrical and embedded systems, and builds tools and procedures for engineering and production users.
+
+\section{Skills}
+\textbf{Programming \& Data:} C, C++, SQL, VBA, Microsoft Access, Excel, Python, MATLAB, Bash\\
+\textbf{Embedded Platforms:} STM32, dsPIC33, PIC32, TI AM62, TMS320, MSP430; bare-metal firmware, FreeRTOS, Embedded Linux\\
+\textbf{Peripherals:} GPIO, DAC control, ADC sensing and filtering, PWM control, timers, interrupts, watchdogs, and communications\\
+\textbf{Interfaces:} CAN 2.0, CAN FD, DroneCAN, J1939, I2C, IPMI, SPI, UART/RS-232, Ethernet, TCP/IP\\
+\textbf{Hardware \& Manufacturing:} Schematic interpretation; hardware validation against datasheet specifications, PCB review in Altium, KiCad, and P-CAD; MCU programming/debug interfaces, oscilloscopes, logic/protocol analyzers; production programming, test automation, tooling data
+
+\section{Experience}
+
+\resumeentry{AEGIS Power Systems | Embedded Firmware Engineer}{May 2026--Present}
+\begin{resumebullets}
+  \item Develop and debug C firmware; perform system testing using software logs, protocol analyzers, oscilloscopes, and multimeter measurements to validate hardware and software behavior.
+  \item Isolate root causes and verify corrective actions by assessing system-level failures across PCBs, wiring, power, firmware, CAN/Ethernet, Linux services, and application software using schematics, datasheets, and diagnostic tools.
+  \item Support firmware development, hardware integration, and documentation for VPX/IPMI power systems and TI AM62 Embedded Linux controllers; troubleshoot Yocto/Arago images, device trees, boot issues, CAN power devices, and watchdogs.
+\end{resumebullets}
+
+
+\resumeentry{AEGIS Power Systems | Embedded Systems Intern | Computer Science Intern}{Summers 2024 \& 2025}
+% \descriptorentry{Selected work across both internships}
+\begin{resumebullets}
+  % 2025 Embedded Systems Intern
+  \item Wrote bare-metal C firmware for a TMS320-controlled bidirectional power converter with 12 PWM A/B pairs (24 outputs); configured frequency, period, duty cycle, and phase shift for each A output and set its paired B output to follow or invert it.
+  \item Simplified TI's C++ CLI serial flasher for C2000 devices by removing unused device, CPU2, and dual-boot options, allowing production staff to program precompiled firmware with the click of a single button.
+  \item Worked on a multi-processor power system where a FreeRTOS PIC32 managed communications and DSP firmware updates over TCP/IP, SPI, UART, and CAN/J1939, while a C2000 TI DSP executed real-time converter controls.
+  \item Established Git-based development and release processes to maintain firmware-to-hardware traceability, preserve defect and revision history, support multi-engineer development, and provide production with controlled software releases and documentation.
+  
+  % 2024 Computer Science Intern
+  \item Developed a secure command-line environment for the SCB301 using Bash and Python on a stripped TI Yocto/Arago Linux system; created a chroot environment, restricted user access, product-management commands, and firmware-update functionality.
+  % \item Performed an independent KiCad schematic review of a new PCB revision derived from a TI evaluation design, cross-checking modified circuitry and interfaces after unnecessary features such as HDMI support were removed.
+  % \item Developed a proof-of-concept automated burn-in fixture for power supplies using RS-232-controlled programmable loads and relays; isolated out-of-spec DUTs without interrupting remaining tests and logged trip events and fault parameters for traceability.
+  % \item Developed SQL/VBA automation with Microsoft Access and Excel for an Acceptance Test Procedure (ATP) database, parsing and validating 50,000+ entries oftest data, retrieving historical records, and automating database entry.
+\end{resumebullets}
+
+
+\resumeentry{TEAM Industries | Engineering Intern}{Summers 2021 \& 2022}
+\begin{resumebullets}
+  % 2022 Engineering Intern
+  \item Developed VBA-driven inspection tools that validated production measurements against engineering tolerances, enforced data-entry rules, and automatically classified inspected parts as ACCEPT, REJECT, or INCOMPLETE.  
+  % \item Developed Excel-based finished-goods and raw-material cost verification tools that cross-referenced component/where-used data with labor, burden, material, and surcharge costs and flagged records requiring review or correction.
+  % \item Sorted approximately 2,000 gears by spline measurements and engineering tolerances during a heat-treatment quality investigation; organized results by production group to help isolate out-of-spec parts to one of three heat-treat chambers, which the engineering team later traced to newly replaced oil.
+  % 2021 Engineering Intern
+  \item Built a configurable validation and duplicate-detection system for an existing 17,000+ record plant-wide Tooling Where-Used List (TWUL), using advanced Excel formulas and conditional formatting to let users define comparison criteria and automatically identify, locate, and highlight duplicate or inconsistent records.
+  % \item Reorganized physical merchandise inventory and built an Excel tracking system for storage location, pricing, quantities, sales, and stock status.
+\end{resumebullets}
+
+\section{Projects}
+
+\resumeentry{EV Active Sensor Adapter | Battery Monitoring \& CAN}{NC State University}
+\begin{resumebullets}
+  \item Developed STM32G474 firmware for voltage and temperature sensing, LED indicators, state-machine logic, and error logging on a team-built EV sensor board; supported CAN integration.
+\end{resumebullets}
+
+\resumeentry{C++ Maze Solver}{NC State University}
+\begin{resumebullets}
+  \item Developed an object-oriented C++ maze-solving application using reusable classes, dynamic data structures, and multiple search strategies; compared correctness and iteration counts across implementations.
+\end{resumebullets}
+
+\resumeentry{C++ Microarchitecture Simulators}{NC State University}
+\begin{resumebullets}
+  \item Developed modular C++ simulators for processor subsystems using classes and objects to model system state, component interactions, and configurable behavior; validated results across multiple test configurations.
+\end{resumebullets}
+
+
+
+\section{Teaching Experience}
+\resumeentry{ECE 306 Embedded Systems | Teaching Assistant \& Course Mentor}{Spring 2025--Spring 2026}
+\begin{resumebullets}
+  \item Taught supplemental lessons and helped students debug MSP430FR2355 firmware and custom PCBs across three semesters, including ADC sensors, PWM motor control, timers, wiring, soldering, and toolchain problems.
+\end{resumebullets}
+
+\section{IEEE Leadership}
+\resumeentry{IEEE at NC State | OPS2 Lead \& Parts Distribution Coordinator}{Fall 2025--Spring 2026}
+\begin{resumebullets}
+  \item Led two semesters of OPS2, IEEE's ten-week applied electronics course that paired classroom theory with hands-on soldering, PCB and BOM development, embedded programming, PlatformIO, and GitHub.
+  \item Built and managed an ECE 306 parts program that cut student costs and raised \$10,000 for IEEE in two weeks.
+\end{resumebullets}
+
+
+\end{document}
